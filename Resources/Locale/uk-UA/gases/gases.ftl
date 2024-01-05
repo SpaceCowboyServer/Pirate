@@ -1,9 +1,9 @@
-gases-oxygen = Oxygen
-gases-nitrogen = Nitrogen
-gases-co2 = Carbon Dioxide
-gases-plasma = Plasma
-gases-tritium = Tritium
-gases-water-vapor = Water Vapor
+gases-oxygen = Кисень
+gases-nitrogen = Азот
+gases-co2 = Диоксид карбону
+gases-plasma = Плазма
+gases-tritium = Тритій
+gases-water-vapor = Водяна пара
 gases-ammonia = Ammonia
-gases-n2o = Nitrous Oxide
-gases-frezon = Frezon
+gases-n2o = Диоксид азоту
+gases-frezon = Фрезон

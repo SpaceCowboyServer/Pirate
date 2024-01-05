@@ -1,12 +1,12 @@
-admin-player-actions-bans = Ban List
-admin-player-actions-notes = Notes
-admin-player-actions-kick = Kick
-admin-player-actions-ban = Ban
-admin-player-actions-ahelp = AHelp
-admin-player-actions-respawn = Respawn
-admin-player-actions-spawn = Spawn here
+admin-player-actions-bans = Список банів
+admin-player-actions-notes = Замітки
+admin-player-actions-kick = Кікнути
+admin-player-actions-ban = Забанити
+admin-player-actions-ahelp = ЄДопомога
+admin-player-actions-respawn = Респавн
+admin-player-actions-spawn = Заспавнити тут
 admin-player-spawn-failed = Failed to find valid coordinates
 
-admin-player-actions-clone = Clone
-admin-player-actions-teleport = Teleport To
-admin-player-actions-confirm = Are you sure?
+admin-player-actions-clone = Клонувати
+admin-player-actions-teleport = Телепортуватись до
+admin-player-actions-confirm = Ви впевнені?

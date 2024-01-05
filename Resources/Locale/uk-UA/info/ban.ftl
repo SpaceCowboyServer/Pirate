@@ -1,5 +1,5 @@
 # ban
-cmd-ban-desc = Bans somebody
+cmd-ban-desc = Забанити когось
 cmd-ban-help = Usage: ban <name or user ID> <reason> [duration in minutes, leave out or 0 for permanent ban]
 cmd-ban-player = Unable to find a player with that name.
 cmd-ban-invalid-minutes = ${minutes} is not a valid amount of minutes!
@@ -10,12 +10,12 @@ cmd-ban-hint-reason = <reason>
 cmd-ban-hint-duration = [duration]
 cmd-ban-hint-severity = [severity]
 
-cmd-ban-hint-duration-1 = Permanent
-cmd-ban-hint-duration-2 = 1 day
-cmd-ban-hint-duration-3 = 3 days
-cmd-ban-hint-duration-4 = 1 week
-cmd-ban-hint-duration-5 = 2 week
-cmd-ban-hint-duration-6 = 1 month
+cmd-ban-hint-duration-1 = Назавжди
+cmd-ban-hint-duration-2 = 1 день
+cmd-ban-hint-duration-3 = 3 дні
+cmd-ban-hint-duration-4 = 1 тиждень
+cmd-ban-hint-duration-5 = 2 тижні
+cmd-ban-hint-duration-6 = 1 місяць
 
 # ban panel
 cmd-banpanel-desc = Opens the ban panel

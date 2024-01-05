@@ -108,11 +108,11 @@ accent-dwarf-words-replace-34 = da
 accent-dwarf-words-35 = mom
 accent-dwarf-words-replace-35 = maw
 
-accent-dwarf-words-36 = newbie
-accent-dwarf-words-replace-36 = greenbeard
+accent-dwarf-words-36 = новачок
+accent-dwarf-words-replace-36 = зеленобородий
 
-accent-dwarf-words-37 = noob
-accent-dwarf-words-replace-37 = greenbeard
+accent-dwarf-words-37 = нуб
+accent-dwarf-words-replace-37 = зеленобородий
 
 accent-dwarf-words-38 = noobie
 accent-dwarf-words-replace-38 = greenbeard
@@ -120,8 +120,8 @@ accent-dwarf-words-replace-38 = greenbeard
 accent-dwarf-words-39 = professional
 accent-dwarf-words-replace-39 = greybeard
 
-accent-dwarf-words-40 = veteran
-accent-dwarf-words-replace-40 = greybeard
+accent-dwarf-words-40 = ветеран
+accent-dwarf-words-replace-40 = сіробородий
 
 accent-dwarf-words-41 = fuck
 accent-dwarf-words-replace-41 = sod
@@ -195,6 +195,9 @@ accent-dwarf-words-replace-63 = be
 accent-dwarf-words-64 = am
 accent-dwarf-words-replace-64 = be
 
+accent-dwarf-words-65 = beer
+accent-dwarf-words-replace-65 = booze
+
 accent-dwarf-words-66 = food
 accent-dwarf-words-replace-66 = grub
 
@@ -202,7 +205,7 @@ accent-dwarf-words-67 = have
 accent-dwarf-words-replace-67 = hae
 
 accent-dwarf-words-68 = hey
-accent-dwarf-words-replace-68 = oi
+accent-dwarf-words-replace-68 = oye
 
 accent-dwarf-words-69 = what
 accent-dwarf-words-replace-69 = wot
@@ -264,6 +267,9 @@ accent-dwarf-words-replace-87 = babee
 accent-dwarf-words-88 = after
 accent-dwarf-words-replace-88 = efter
 
+accent-dwarf-words-89 = for
+accent-dwarf-words-replace-89 = fer
+
 accent-dwarf-words-90 = gonna
 accent-dwarf-words-replace-90 = gaun'ae
 
@@ -324,6 +330,9 @@ accent-dwarf-words-replace-108 = hou'er
 accent-dwarf-words-109 = think
 accent-dwarf-words-replace-109 = reckon
 
+accent-dwarf-words-110 = thinking
+accent-dwarf-words-replace-110 = fer
+
 accent-dwarf-words-111 = hamlet
 accent-dwarf-words-replace-111 = hammy
 
@@ -342,6 +351,18 @@ accent-dwarf-words-replace-115 = reddie
 accent-dwarf-words-116 = nuclear agent
 accent-dwarf-words-replace-116 = reddie
 
+accent-dwarf-words-117 = antag
+accent-dwarf-words-replace-117 = baddie
+
+accent-dwarf-words-118 = syndicate
+accent-dwarf-words-replace-118 = baddie
+
+accent-dwarf-words-119 = syndi
+accent-dwarf-words-replace-119 = baddie
+
+accent-dwarf-words-120 = syndie
+accent-dwarf-words-replace-120 = baddie
+
 accent-dwarf-words-121 = more
 accent-dwarf-words-replace-121 = maer
 
@@ -350,6 +371,9 @@ accent-dwarf-words-replace-122 = maero'er
 
 accent-dwarf-words-123 = over
 accent-dwarf-words-replace-123 = o'er
+
+accent-dwarf-words-124 = shuttle
+accent-dwarf-words-replace-124 = molly
 
 accent-dwarf-words-125 = human
 accent-dwarf-words-replace-125 = humi
@@ -387,8 +411,8 @@ accent-dwarf-words-replace-135 = benae
 accent-dwarf-words-136 = aint
 accent-dwarf-words-replace-136 = benae
 
-accent-dwarf-words-137 = zombie
-accent-dwarf-words-replace-137 = rotter
+accent-dwarf-words-137 = зомбі
+accent-dwarf-words-replace-137 = гнильці
 
 accent-dwarf-words-138 = zomb
 accent-dwarf-words-replace-138 = rotter
@@ -414,8 +438,8 @@ accent-dwarf-words-replace-144 = dobber
 accent-dwarf-words-145 = stupid
 accent-dwarf-words-replace-145 = diteit
 
-accent-dwarf-words-146 = officer
-accent-dwarf-words-replace-146 = bobby
+accent-dwarf-words-146 = офіцер
+accent-dwarf-words-replace-146 = бобі
 
 accent-dwarf-words-147 = seccie
 accent-dwarf-words-replace-147 = bobby

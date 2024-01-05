@@ -3,22 +3,8 @@ ghost-role-component-default-rules = You don't remember any of your previous lif
                                      You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
                                      You are absolutely [color=red]NOT[/color] allowed to remember, say, the name, appearance, etc. of your previous character.
 
-# Delta V soft antag rule
-deltav-ghost-role-information-softantag-rules = You are allowed to attack the crew without provocation. 
-                                                You are allowed to coexist with the crew.
-                                                The crew is allowed to kill you without warning.
-
-# Delta V salvage antag rule
-deltav-ghost-role-information-salvageantag-rules =  You are a salvage mob. 
-                                                    You are allowed to attack salvagers without provocation. DO NOT GIB THEIR CORPSES!
-                                                    You are allowed to attack the salvage shuttle. 
-                                                    You are NOT allowed to go to the station. If the salvagers go to the station, you can't follow them.
-
 ghost-role-information-mouse-name = Mouse
 ghost-role-information-mouse-description = A hungry and mischievous mouse.
-
-ghost-role-information-mothroach-name = Mothroach
-ghost-role-information-mothroach-description = A cute but mischievous mothroach.
 
 ghost-role-information-giant-spider-name = Giant spider
 ghost-role-information-giant-spider-description = Wreak havoc on the station's inhabitants!
@@ -37,16 +23,13 @@ ghost-role-information-angry-slimes-description = Everything around you irritate
 
 ghost-role-information-smile-name = Smile the Slime
 ghost-role-information-smile-description = The sweetest creature in the world. Smile Slime!
-ghost-role-information-smile-rules = You are a crew-aligned pet. You can defend yourself and even attack threats to the station, but you generally should not attack the station's crew nor destroy their property.
 
 ghost-role-information-punpun-name = Pun Pun
 ghost-role-information-punpun-description = An honorable member of the monkey society in charge of the bar and helping the bartenders in any way he can.
 
 ghost-role-information-xeno-name = Xeno
 ghost-role-information-xeno-description = You are a xeno, co-operate with your hive to kill all crewmembers!
-ghost-role-information-xeno-rules = You are a xeno.
-                                    Your objective is to cooperate with your fellow xenos and kill all the crew.
-                                    Strike fast, make them fear the shadows.
+ghost-role-information-xeno-rules = You are an antagonist, smack, slash, and wack!
 
 ghost-role-information-revenant-name = Revenant
 ghost-role-information-revenant-description = You are a Revenant. Use your powers to harvest souls and unleash chaos upon the crew. Unlock new abilities with the essence you harvest.
@@ -194,16 +177,15 @@ ghost-role-information-behonker-name = Behonker
 ghost-role-information-behonker-description = You are an antagonist, bring death and honks to those who do not follow the honkmother.
 
 ghost-role-information-Death-Squad-name = Death Squad Operative
-ghost-role-information-Death-Squad-description = One of Nanotrasen's top internal affairs agents. Await orders from CentComm or an official.
+ghost-role-information-Death-Squad-description = Prepare for an all-out offensive on the station. As a heavily armed operative, your mission is to obliterate all life in your path. No witnesses.
 
-ghost-role-information-Shiva-name = Shiva
-ghost-role-information-Shiva-description = Shiva, the stations first defender. Help the Head of Security in their work
-ghost-role-information-Shiva-rules = Protect security staff and the crew from danger. Stay with Security staff or around the Security department, try to disable criminals and not kill them if the situation allows for it.
+ghost-role-information-mothroach-name = Mothroach
+ghost-role-information-mothroach-description = A cute but mischievous mothroach.
+ghost-role-information-Death-Squad-description = One of Nanotrasen's top internal affairs agents. Await orders from CentComm or an official.
 
 ghost-role-information-Cak-name = Cak
 ghost-role-information-Cak-description = You are the chef's favorite child. You're a living cake cat.  
 ghost-role-information-Cak-rules = You are a living edible sweet cat. Your task is to find your place in this world where everything wants to eat you.
 
-ghost-role-information-BreadDog-name = BreadDog
-ghost-role-information-BreadDog-description = You are the chef's favorite child. You're a living bread dog.
-ghost-role-information-BreadDog-rules = You're an edible dog made of bread. Your task is to find your place in this world where everything wants to eat you.
+ghost-role-information-closet-mage-name = Чаклун у шафі
+ghost-role-information-closet-mage-description = Як довго я спав? Час привнести хаос, аби розвеселити себе на цій нудній станцію.

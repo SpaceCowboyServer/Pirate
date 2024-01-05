@@ -1,10 +1,9 @@
 # Types
-mixing-verb-centrifuge = centrifugation
-mixing-verb-electrolysis = electrolyze
-mixing-verb-holy = bless
-
+mixing-verb-centrifuge = цетрифугування
+mixing-verb-electrolysis = електроліз
+mixing-verb-holy = освятити
 ## Entity
 
-default-mixing-success = You mix the {$mixed} with the {$mixer}
-bible-mixing-success = You bless the {$mixed} with the {$mixer}
+default-mixing-success = Ви змішали {$mixed} з {$mixer}
+bible-mixing-success = Ви освятили {$mixed} з {$mixer}
 

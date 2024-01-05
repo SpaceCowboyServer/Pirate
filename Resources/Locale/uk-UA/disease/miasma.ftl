@@ -1,4 +1,4 @@
-ammonia-smell = Something smells pungent!
-rotting-rotting = [color=orange]It's rotting![/color]
-rotting-bloated = [color=orangered]It's bloated![/color]
-rotting-extremely-bloated = [color=red]It's extremely bloated![/color]
+ammonia-smell = Щось погано тхне!
+rotting-rotting = [color=orange]Воно гниє![/color]
+rotting-bloated = [color=orangered]Роздулось![/color]
+rotting-extremely-bloated = [color=red]Дуже сильно роздулось![/color]

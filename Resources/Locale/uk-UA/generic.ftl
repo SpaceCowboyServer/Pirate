@@ -4,11 +4,11 @@ generic-not-available-shorthand = N/A
 generic-article-a = a
 generic-article-an = an
 
-generic-unknown = unknown
-generic-unknown-title = Unknown
-generic-error = error
-generic-invalid = invalid
+generic-unknown = невідомо
+generic-unknown-title = Невідомо
+generic-error = помилка
+generic-invalid = невірно
 
-generic-hours = hours
+generic-hours = години
 
-generic-playtime-title = Playtime
+generic-playtime-title = Час гри

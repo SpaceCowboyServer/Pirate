@@ -81,8 +81,8 @@ accent-italian-words-replace-24 = greeks
 accent-italian-words-24 = ops
 accent-italian-words-replace-24 = greeks
 
-accent-italian-words-25 = sec
-accent-italian-words-replace-25 = polizia
+accent-italian-words-25 = безпека
+accent-italian-words-replace-25 = поліція
 
 accent-italian-words-26 = security
 accent-italian-words-replace-26 = polizia
@@ -105,17 +105,17 @@ accent-italian-words-replace-31 = SPAGHETT
 accent-italian-words-32 = spicy
 accent-italian-words-replace-32 = a-spicy
 
-accent-italian-words-33 = thanks
-accent-italian-words-replace-33 = grazie
+accent-italian-words-33 = дякую
+accent-italian-words-replace-33 = граціас
 
 accent-italian-words-34 = thing
 accent-italian-words-replace-34 = thing-a
 
-accent-italian-words-35 = traitor
-accent-italian-words-replace-35 = mafioso
+accent-italian-words-35 = зрадник
+accent-italian-words-replace-35 = мафіозі
 
-accent-italian-words-36 = traitors
-accent-italian-words-replace-36 = mafioso
+accent-italian-words-36 = зрадники
+accent-italian-words-replace-36 = мафіозі
 
 accent-italian-words-37 = use
 accent-italian-words-replace-37 = use-a

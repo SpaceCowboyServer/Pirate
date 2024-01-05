@@ -3,23 +3,23 @@
 ## General
 
 shell-server-cannot = Server cannot do this.
-shell-command-success = Command successful
-shell-invalid-command = Invalid command.
+shell-command-success = Команда успішна
+shell-invalid-command = Невірна команда.
 shell-invalid-command-specific = Invalid {$commandName} command.
 shell-cannot-run-command-from-server = You cannot run this command from the server.
-shell-only-players-can-run-this-command = Only players can run this command.
+shell-only-players-can-run-this-command = Тільки гравці можуть робити цю команду.
 shell-must-be-attached-to-entity = You must be attached to an entity to run this command.
 
 ## Arguments
 
-shell-need-exactly-one-argument = Need exactly one argument.
-shell-wrong-arguments-number-need-specific = Need {$properAmount} arguments, there were {$currentAmount}.
-shell-argument-must-be-number = Argument must be a number.
-shell-argument-must-be-boolean = Argument must be a boolean.
-shell-wrong-arguments-number = Wrong number of arguments.
+shell-need-exactly-one-argument = Потрібно рівно 1 аргумент (параметр).
+shell-wrong-arguments-number-need-specific = Потрібно {$properAmount} аргументів, а було надано {$currentAmount}.
+shell-argument-must-be-number = аргумент має бути числом.
+shell-argument-must-be-boolean = аргумент має бути true/false.
+shell-wrong-arguments-number = Невірна кількість аргументів.
 shell-need-between-arguments = Need {$lower} to {$upper} arguments!
 shell-need-minimum-arguments = Need at least {$minimum} arguments!
-shell-need-minimum-one-argument = Need at least one argument!
+shell-need-minimum-one-argument = Потрібно хоча б 1 аргумент!
 
 shell-argument-uid = EntityUid
 

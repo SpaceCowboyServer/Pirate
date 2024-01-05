@@ -1,4 +1,4 @@
-﻿whitelist-not-whitelisted = You are not whitelisted.
+﻿whitelist-not-whitelisted = Ви не у вайтлісті.
 
 # proper handling for having a min/max or not
 whitelist-playercount-invalid = {$min ->
@@ -8,34 +8,32 @@ whitelist-playercount-invalid = {$min ->
        *[other] -> players and below {$max} players, so you may be able to join later.
     }
 }
-whitelist-not-whitelisted-rp = You are not whitelisted. To become whitelisted, visit our Discord (which can be found at https://spacestation14.io) and check the #rp-whitelist channel.
+whitelist-not-whitelisted-rp = Ви не у вайтлісті. Якщо ви досвідчений гравець, щоб вас додали у вайтліст, зайдіть у наш Дискорд (посилання в лаунчері) та створіть тікет.
 
-cmd-whitelistadd-desc = Adds the player with the given username to the server whitelist.
-cmd-whitelistadd-help = Usage: whitelistadd <username>
-cmd-whitelistadd-existing = {$username} is already on the whitelist!
-cmd-whitelistadd-added = {$username} added to the whitelist
-cmd-whitelistadd-not-found = Unable to find '{$username}'
-cmd-whitelistadd-arg-player = [player]
+command-whitelistadd-description = Додає гравця з зазначеним ніком до вайтліста.
+command-whitelistadd-help = whitelistadd <нік>
+command-whitelistadd-existing = {$username} вже у вайтлісті!
+command-whitelistadd-added = {$username} додано у вайтліст
+command-whitelistadd-not-found = Не вийшло знайти '{$username}'
 
-cmd-whitelistremove-desc = Removes the player with the given username from the server whitelist.
-cmd-whitelistremove-help = Usage: whitelistremove <username>
-cmd-whitelistremove-existing = {$username} is not on the whitelist!
-cmd-whitelistremove-removed = {$username} removed from the whitelist
-cmd-whitelistremove-not-found = Unable to find '{$username}'
-cmd-whitelistremove-arg-player = [player]
+command-whitelistremove-description = Видалити гравця з таким ніком з вайтлісту.
+command-whitelistremove-help = whitelistremove <нік>
+command-whitelistremove-existing = {$username} не у вайтлісті!
+command-whitelistremove-removed = {$username} видалено з вайтліста
+command-whitelistremove-not-found = Неможливо знайти '{$username}'
 
-cmd-kicknonwhitelisted-desc = Kicks all non-whitelisted players from the server.
-cmd-kicknonwhitelisted-help = Usage: kicknonwhitelisted
+command-kicknonwhitelisted-description = Кікнути всіх гравців не у вайтлісті з сервера.
+command-kicknonwhitelisted-help = kicknonwhitelisted
 
-ban-banned-permanent = This ban will only be removed via appeal.
-ban-banned-permanent-appeal = This ban will only be removed via appeal. You can appeal at {$link}
-ban-expires = This ban is for {$duration} minutes and will expire at {$time} UTC.
-ban-banned-1 = You, or another user of this computer or connection, are banned from playing here.
-ban-banned-2 = The ban reason is: "{$reason}"
-ban-banned-3 = Attempts to circumvent this ban such as creating a new account will be logged.
+ban-banned-permanent = Цього бану можна позбавитись лише оскарежнням.
+ban-banned-permanent-appeal = Цього бану можна позбавитись лише оскарежнням. Ви можете оскаржити на {$link}
+ban-expires = Цей бан на {$duration} хвилин і він скінчиться в {$time} UTC (час Лондона).
+ban-banned-1 = Ви або інший користувач цього компа або мережі забанені на цьому сервері.
+ban-banned-2 = Причина бану: "{$reason}"
+ban-banned-3 = Спроба обійти бан, наприклад свторення нового профіля, буде знайдена.
 
-soft-player-cap-full = The server is full!
-panic-bunker-account-denied = This server is in panic bunker mode, often enabled as a precaution against raids. New connections by accounts not meeting certain requirements are temporarily not accepted. Try again later
-panic-bunker-account-denied-reason = This server is in panic bunker mode, often enabled as a precaution against raids. New connections by accounts not meeting certain requirements are temporarily not accepted. Try again later. Reason: "{$reason}"
-panic-bunker-account-reason-account = Your Space Station 14 account is too new. It must be older than {$minutes} minutes
-panic-bunker-account-reason-overall = Your overall playtime on the server must be greater than {$hours} hours
+soft-player-cap-full = Сервер повний!
+panic-bunker-account-denied = Сервер у режимі бункера для захисту від атаки. Нові підключення не будуть прийняті. Спробуйте пізніше.
+panic-bunker-account-denied-reason = Сервер у режимі бункера для захисту від атаки, вас не підключило. Причина: "{$reason}"
+panic-bunker-account-reason-account = Профіль має бути старшим за {$minutes} хвилин
+panic-bunker-account-reason-overall = Кількість награних годин має бути {$hours} годин

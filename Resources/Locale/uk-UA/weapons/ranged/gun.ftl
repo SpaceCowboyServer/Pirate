@@ -8,7 +8,7 @@ gun-clumsy = Зброя розривається тобі в обличчя!
 gun-set-fire-mode = Вибрано {$mode}
 gun-component-wrong-ammo = Не той патрон!
 
-# SelectiveFire
+# SelectiveFire.
 gun-SemiAuto = напів-авто
 gun-Burst = чергами
 gun-FullAuto = авто

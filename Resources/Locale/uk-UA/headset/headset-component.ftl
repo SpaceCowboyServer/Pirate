@@ -6,7 +6,7 @@ examine-headset-default-channel = Пиши {$prefix} для звичайного
 
 chat-radio-common = Загальний
 chat-radio-centcom = ЦентКом
-chat-radio-command = Трафік
+chat-radio-command = Командування
 chat-radio-engineering = Інженерний
 chat-radio-medical = Медичний
 chat-radio-science = Науковий

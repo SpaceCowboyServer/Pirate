@@ -5,7 +5,7 @@
   playTimeTracker: JobPrisonGuard
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 18000
+      time: 10000
   startingGear: PrisonGuardGear
   alwaysUseSpawner: true
   canBeAntag: false

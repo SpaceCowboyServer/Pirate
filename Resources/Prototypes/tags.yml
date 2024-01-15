@@ -800,6 +800,9 @@
   id: Medkit
 
 - type: Tag
+  id: Medipen
+
+- type: Tag
   id: Metal
 
 - type: Tag

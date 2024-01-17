@@ -41,13 +41,3 @@
     - HamsterWearable
     - WhitelistChameleon
 
-- type: entity
-  parent: ClothingNeckBase
-  id: ClothingNeckTieBlue
-  name: синя краватка
-  description: Синя краватка із застібкою з неошовку.
-  components:
-  - type: Sprite
-    sprite: Clothing/Neck/Ties/bluetie.rsi
-  - type: Clothing
-    sprite: Clothing/Neck/Ties/bluetie.rsi

@@ -21,6 +21,7 @@
           availableJobs:
             #service
             Captain: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 2 ]
@@ -49,6 +50,7 @@
             ResearchAssistant: [2, 4]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
             Detective: [ 1, 1 ]

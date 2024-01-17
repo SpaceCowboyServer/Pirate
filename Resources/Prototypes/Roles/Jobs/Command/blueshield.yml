@@ -34,12 +34,12 @@
   - Detective
   - Salvage
   - Security
-  - Brig 
+#  - Brig Delta-V removed 
   - Cargo
   - Atmospherics
   - Medical
   - Armory 
-  - Mercenary
+#  - Mercenary
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant, StorageImplant ]

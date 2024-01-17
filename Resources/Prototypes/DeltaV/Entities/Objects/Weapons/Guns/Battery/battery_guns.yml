@@ -166,10 +166,10 @@
 
 - type: entity
   name: advanced energy revolver
-  parent: WeaponEnergyGunMultiphase
+  parent: BaseWeaponBatterySmall
   id: WeaponEnergyGunAdvancedRevolver
   description: A light version of the Energy gun with a smaller capacity.
-  components: 
+  components:
   - type: Sprite
     sprite: DeltaV/Objects/Weapons/Guns/Battery/advanced_revolver.rsi
     layers:
@@ -178,12 +178,19 @@
     - state: mode-disabler
       shader: unshaded
       map: [ "Firemode" ]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
   - type: Clothing
     sprite: DeltaV/Objects/Weapons/Guns/Battery/advanced_revolver.rsi
   - type: Gun
+    soundGunshot:
+      path: /Audio/DeltaV/Weapons/Guns/Gunshots/laser.ogg
+    soundEmpty:
+      path: /Audio/DeltaV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 2600
-    startingCharge: 2600
+    maxCharge: 2000
+    startingCharge: 2000
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
@@ -215,7 +222,10 @@
           Special: { state: mode-ion }
   - type: Tag
     tags:
+    - HighRiskItem
     - Sidearm
+  - type: StaticPrice
+    price: 750
 
 - type: entity
   name: PDW-9 Energy Pistol

@@ -42,7 +42,7 @@
   - Mercenary
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, TrackingImplant ]
+    implants: [ MindShieldImplant, TrackingImplant, StorageImplant ]
 
 - type: startingGear
   id: BlueshieldGear
@@ -56,7 +56,7 @@
     outerClothing: ClothingOuterVestBlueshield
     id: BlueshieldPDA
     ears: ClothingHeadsetAltSecurity
-    pocket1: WeaponPistolCobra
+    pocket1: WeaponEnergyGunAdvancedRevolver
     belt: ClothingBeltSecurityBlueshieldFilled
     neck: ClothingNeckTieBlue
   innerClothingSkirt: ClothingUniformJumpskirtBlueshield

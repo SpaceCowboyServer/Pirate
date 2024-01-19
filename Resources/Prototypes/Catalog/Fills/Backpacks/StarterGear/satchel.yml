@@ -276,3 +276,16 @@
     contents:
       - id: BoxSurvival
       - id: RubberStampMime
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSatchelBlueshield
+  id: ClothingBackpackSatchelBlueshieldFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvivalSecurity
+      - id: MedkitAdvancedFilled
+      - id: HandheldCrewMonitor
+      - id: Flash
+      - id: WeaponDisabler

@@ -47,3 +47,7 @@
   license: "Custom"
   copyright: "CC-BY-NC-ND-4.0 / threlo on discord / @threlo on itaku"
   source: "https://linktr.ee/threlo"
+
+- files: ["Pirate.png"]
+  license: "CC-BY-4.0"
+  copyright: "amatadorro on discord"

@@ -1,0 +1,38 @@
+- type: job
+  id: Mercenary
+  name: job-name-mercenary
+  description: job-description-mercenary
+  playTimeTracker: JobMercenary
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800
+  startingGear: MercenaryGear
+  canBeAntag: true
+  icon: "JobIconMercenary" 
+  supervisors: job-supervisors-captain
+  setPreference: true
+  access:
+  - Maintenance
+  - External
+  - Mercenary
+
+- type: startingGear
+  id: MercenaryGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    back: ClothingBackpackMercenaryFilled
+    shoes: ClothingShoesBootsMercenaryFilled
+    # shoes: ClothingShoesBootsMagMercenaryFilled # Give this only to new spawns
+    mask: ClothingMaskGasMerc
+    eyes: ClothingEyesGlassesMercenary
+    gloves: ClothingHandsMercGlovesCombat
+#    head: ClothingHeadHatBeretMercenary
+    head: ClothingHeadHelmetMerc
+    outerClothing: ClothingOuterVestWebMerc
+    id: MercenaryPDA
+    ears: ClothingHeadsetAltMercenary
+    belt: ClothingBeltMercenaryWebbing
+    pocket1: WeaponPistolMk58Nonlethal
+  innerClothingSkirt: ClothingUniformJumpskirtMercenary
+  satchel: ClothingBackpackSatchelMercenaryFilled
+  duffelbag: ClothingBackpackDuffelMercenaryFilled

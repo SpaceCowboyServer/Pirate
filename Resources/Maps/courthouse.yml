@@ -3648,19 +3648,6 @@ entities:
     - pos: 2.5,-13.5
       parent: 1
       type: Transform
-- proto: ComputerWallmountWithdrawBankATM
-  entities:
-  - uid: 568
-    components:
-    - pos: -1.5,-22.5
-      parent: 1
-      type: Transform
-    - containers:
-        board: !type:Container
-          ents: []
-        bank-ATM-cashSlot: !type:ContainerSlot {}
-      type: ContainerContainer
-    - type: ItemSlots
 - proto: ConveyorBelt
   entities:
   - uid: 569

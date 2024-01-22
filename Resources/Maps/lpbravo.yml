@@ -2491,7 +2491,7 @@ entities:
       type: Transform
     - enabled: False
       type: AmbientSound
-- proto: PoweredlightColoredRed
+- proto: PoweredLightColoredRed
   entities:
   - uid: 434
     components:

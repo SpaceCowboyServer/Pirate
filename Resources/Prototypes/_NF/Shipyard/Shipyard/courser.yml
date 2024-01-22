@@ -1,0 +1,31 @@
+- type: vessel
+  id: Courser
+  name: NT Courser-X
+  description: Середнього розміру багатоцільова переробка популярної протягом тривалого часу моделі Courser.
+  # price: 68650
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/Shuttles/courserx.yml
+
+- type: gameMap
+  id: Courser
+  mapName: 'NT Courser-X'
+  mapPath: /Maps/Shuttles/courserx.yml
+  minPlayers: 0
+  stations:
+    Courser:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Courser-X {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          overflowJobs: []
+          availableJobs:
+            Passenger: [ 0, 0 ]
+            Bartender: [ 0, 0 ]
+            StationEngineer: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]
+            Paramedic: [ 0, 0 ]

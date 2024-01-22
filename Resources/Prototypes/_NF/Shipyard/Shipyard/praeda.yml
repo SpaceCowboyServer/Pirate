@@ -1,0 +1,34 @@
+- type: vessel
+  id: Praeda
+  name: NT Praeda
+  description: Це Крузак, великий модульний корабель, створений Nanotrasen як частина серії варіантів, заснованих на тому самому командному модулі. Крузак — спеціалізоване рекультиваційне та рятувальне судно, здатне переробити достатньо матеріалу, щоб побудувати повнорозмірну станцію за відносно короткий проміжок часу.
+  # price: 160210
+  category: Large
+  group: Expedition
+  shuttlePath: /Maps/Shuttles/praeda.yml
+
+- type: gameMap
+  id: Praeda
+  mapName: 'NT Praeda'
+  mapPath: /Maps/Shuttles/praeda.yml
+  minPlayers: 0
+  stations:
+    Praeda:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Praeda {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          overflowJobs: []
+          availableJobs:
+            Quartermaster: [ 0, 0 ]
+            SalvageSpecialist: [ 0, 0 ]
+            CargoTechnician: [ 0, 0 ]
+            ChiefEngineer: [ 0, 0 ]
+            StationEngineer: [ 0, 0 ]
+            Bartender: [ 0, 0 ]
+            Paramedic: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

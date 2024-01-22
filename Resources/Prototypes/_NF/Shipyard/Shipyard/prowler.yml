@@ -1,0 +1,27 @@
+# - type: vessel
+#   id: Prowler
+#   name: NT Prowler
+#   description: Патрульний корабель середнього розміру класу Бродяга — це спеціальне судно для глибокої космічної розвідки та контролю, оснащене технологією ECM, щоб уникнути виявлення.
+#   # price: 49220
+#   category: Medium
+#   group: Security
+#   shuttlePath: /Maps/Shuttles/prowler.yml
+
+# - type: gameMap
+#   id: Prowler
+#   mapName: 'NSF Prowler'
+#   mapPath: /Maps/Shuttles/prowler.yml
+#   minPlayers: 0
+#   stations:
+#     Prowler:
+#       stationProto: StandardFrontierSecurityVessel
+#       components:
+#         - type: StationNameSetup
+#           mapNameTemplate: 'Prowler {1}'
+#           nameGenerator:
+#             !type:NanotrasenNameGenerator
+#             prefixCreator: '14'
+#         - type: StationJobs
+#           overflowJobs: []
+#           availableJobs:
+#             SecurityOfficer: [ 0, 0 ]

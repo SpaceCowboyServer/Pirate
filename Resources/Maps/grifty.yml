@@ -2166,20 +2166,6 @@ entities:
       pos: -5.5,8.5
       parent: 1
       type: Transform
-- proto: ComputerWithdrawBankATM
-  entities:
-  - uid: 209
-    components:
-    - rot: -1.5707963267948966 rad
-      pos: 0.5,3.5
-      parent: 1
-      type: Transform
-    - containers:
-        board: !type:Container
-          ents: []
-        bank-ATM-cashSlot: !type:ContainerSlot {}
-      type: ContainerContainer
-    - type: ItemSlots
 - proto: DefibrillatorCabinetFilledOpen
   entities:
   - uid: 569

@@ -1,0 +1,27 @@
+- type: vessel
+  id: Pathfinder
+  name: NT Pathfinder
+  description: Колись розвідувальний корабель, який служив у космічних експедиційних силах Nanotrasen, тепер списаний експедиційний корабель може бути вашим!
+  # price: 52920
+  category: Small
+  group: Expedition
+  shuttlePath: /Maps/Shuttles/pathfinder.yml
+  
+- type: gameMap
+  id: Pathfinder
+  mapName: 'KC Pathfinder'
+  mapPath: /Maps/Shuttles/pathfinder.yml
+  minPlayers: 0
+  stations: 
+    Pathfinder:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Pathfinder {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          overflowJobs: []
+          availableJobs:
+            SalvageSpecialist: [ 0, 0 ]

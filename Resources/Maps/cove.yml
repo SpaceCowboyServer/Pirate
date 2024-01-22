@@ -3691,23 +3691,6 @@ entities:
     - pos: 2.1622126,0.41409087
       parent: 1
       type: Transform
-- proto: ComputerBlackMarketBankATM
-  entities:
-  - uid: 1909
-    components:
-    - pos: -6.5,-0.5
-      parent: 1
-      type: Transform
-    - containers:
-        bank-ATM-cashSlot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
-      type: ContainerContainer
 - proto: ComputerFrame
   entities:
   - uid: 570

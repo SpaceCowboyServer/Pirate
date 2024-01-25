@@ -8,6 +8,7 @@
   - type: StealCondition
     prototype: SpaceCashLuckyBill
     # owner: job-name-qm
+    stealGroup: SpaceCashLuckyBill
 
 - type: entity # Head of Personnel steal objective.
   noSpawn: true
@@ -19,6 +20,7 @@
   - type: StealCondition
     prototype: BookIanDossier
     # owner: job-name-hop
+    stealGroup: BookIanDossier
 
 - type: entity # Head of Security steal objective.
   noSpawn: true
@@ -32,3 +34,4 @@
   - type: StealCondition
     prototype: WeaponEnergyGunMultiphase
     owner: job-name-hos
+    stealGroup: WeaponEnergyGunMultiphase

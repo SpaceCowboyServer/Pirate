@@ -28,7 +28,6 @@ public sealed partial class NpcFactionSystem : EntitySystem
         _sawmill = Logger.GetSawmill("faction");
         SubscribeLocalEvent<NpcFactionMemberComponent, ComponentStartup>(OnFactionStartup);
         SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnProtoReload);
-        _protoManager.PrototypesReloaded += OnProtoReload;
 
         InitializeException();
         RefreshFactions();

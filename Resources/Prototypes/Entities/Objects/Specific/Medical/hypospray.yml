@@ -26,6 +26,8 @@
   - type: Tag
     tags:
     - HighRiskItem
+  - type: StealTarget
+    stealGroup: Hypospray
 
 - type: entity
   name: gorlex hypospray
@@ -314,8 +316,6 @@
     layers:
     - state: stimpen
       map: ["enum.SolutionContainerLayers.Fill"]
-  - type: Item
-    sprite: Objects/Specific/Medical/medipen.rsi
   - type: SolutionContainerManager
     solutions:
       pen:
@@ -346,9 +346,6 @@
     layers:
     - state: microstimpen
       map: ["enum.SolutionContainerLayers.Fill"]
-  - type: Item
-    sprite: Objects/Specific/Medical/medipen.rsi
-    size: Tiny
   - type: SolutionContainerManager
     solutions:
       pen:

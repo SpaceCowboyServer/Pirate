@@ -32,7 +32,7 @@
     idSlot:
       name: ID Card
       ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
         - IdCard
@@ -73,7 +73,7 @@
       priority: -1
       name: Cartridge
       ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
           - Cartridge
@@ -151,10 +151,6 @@
     accentVColor: "#447987"
   - type: Icon
     state: pda-internmed
-  - type: HealthAnalyzer
-    scanDelay: 1
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"
   - type: GuideHelp
     guides:
     - Medical Doctor
@@ -552,10 +548,6 @@
     accentVColor: "#447987"
   - type: Icon
     state: pda-medical
-  - type: HealthAnalyzer
-    scanDelay: 1
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"
   - type: GuideHelp
     guides:
     - Medical Doctor
@@ -574,10 +566,6 @@
     accentVColor: "#2a4b5b"
   - type: Icon
     state: pda-paramedic
-  - type: HealthAnalyzer
-    scanDelay: 1
-    scanningEndSound:
-      path: "/Audio/Items/Medical/healthscanner.ogg"
 
 - type: entity
   parent: BaseMedicalPDA
@@ -803,7 +791,7 @@
       priority: -1
       name: Cartridge
       ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
           - Cartridge
@@ -833,47 +821,38 @@
   components:
   - type: Pda
     id: ERTChaplainIDCard
-    state: pda-ert
 
 - type: entity
   parent: ERTLeaderPDA
   id: ERTEngineerPDA
-  name: ERT PDA
   suffix: Engineer
   components:
   - type: Pda
     id: ERTEngineerIDCard
-    state: pda-ert
 
 - type: entity
   parent: ERTLeaderPDA
   id: ERTJanitorPDA
-  name: ERT PDA
   suffix: Janitor
   components:
   - type: Pda
     id: ERTJanitorIDCard
-    state: pda-ert
 
 - type: entity
   parent: ERTLeaderPDA
   id: ERTMedicPDA
-  name: ERT PDA
   suffix: Medic
   components:
   - type: Pda
     id: ERTMedicIDCard
-    state: pda-ert
 
 - type: entity
   parent: ERTLeaderPDA
   id: ERTSecurityPDA
-  name: ERT PDA
   suffix: Security
   components:
   - type: Pda
     id: ERTSecurityIDCard
-    state: pda-ert
 
 - type: entity
   parent: ERTLeaderPDA
@@ -1118,7 +1097,7 @@
       priority: -1
       name: Cartridge
       ejectSound: /Audio/Machines/id_swipe.ogg
-      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
           - Cartridge

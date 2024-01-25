@@ -3,7 +3,6 @@ using Content.Shared.Audio;
 using Content.Shared.GameTicking;
 using Robust.Server.Audio;
 using Robust.Shared.Audio;
-using Robust.Shared.Audio.Components;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.Audio;
@@ -11,7 +10,6 @@ namespace Content.Server.Audio;
 public sealed class ContentAudioSystem : SharedContentAudioSystem
 {
     [Dependency] private readonly AudioSystem _serverAudio = default!;
-    [Dependency] private readonly IPrototypeManager _protoManager = default!;
 
     public override void Initialize()
     {

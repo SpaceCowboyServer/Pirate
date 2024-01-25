@@ -163,6 +163,7 @@ public sealed partial class ClimbSystem : VirtualController
          if (args.Handled)
              return;
 
+
          var canVault = args.User == args.Dragged
              ? CanVault(component, args.User, uid, out _)
              : CanVault(component, args.User, args.Dragged, uid, out _);

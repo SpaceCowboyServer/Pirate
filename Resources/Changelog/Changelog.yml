@@ -3507,3 +3507,265 @@ Entries:
   id: 5451
   time: '2023-12-21T17:19:45.0000000+00:00'
   url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22824
+- author: Admiral-Obvious-001
+  changes:
+  - message: Reduced per pellet damage of shotguns slightly.
+    type: Tweak
+  id: 5452
+  time: '2023-12-27T09:26:42.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23042
+- author: mirrorcult
+  changes:
+  - message: Pacifists can now attack in general, but are still forbidden from hurting
+      living creatures or dangerous things.
+    type: Tweak
+  - message: Pacifists can now disarm people. They are pacifist, after all.
+    type: Tweak
+  - message: Pacifists can now use flashes (and zero-damaging melee weapons, in general)
+    type: Tweak
+  id: 5453
+  time: '2023-12-27T09:55:48.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23037
+- author: snebl
+  changes:
+  - message: Fixed emergency and extended nitrogen tanks having the same volume.
+    type: Fix
+  id: 5454
+  time: '2023-12-27T09:56:00.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23040
+- author: Blazeror
+  changes:
+  - message: You can now pry open windoors by hand when they are unpowered.
+    type: Fix
+  id: 5455
+  time: '2023-12-27T12:28:29.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23047
+- author: Emisse
+  changes:
+  - message: The Grand Lottery now has much more prizes in store!
+    type: Tweak
+  id: 5456
+  time: '2023-12-27T12:31:03.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23048
+- author: TheShuEd
+  changes:
+  - message: The thief will temporarily not steal structures for the time being, as
+      this task seems too difficult.
+    type: Tweak
+  - message: Added Emag into thief's syndie kit
+    type: Add
+  - message: Added 3 smoke grenades into thief's smuggler kit
+    type: Add
+  - message: Replaced radio jammer to cyber pen into thief's communicator kit
+    type: Tweak
+  - message: Replaced omnizine bottle to omega soap into thief's chemistry kit
+    type: Tweak
+  id: 5457
+  time: '2023-12-27T20:42:16.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22976
+- author: Alekshhh
+  changes:
+  - message: Changed brown fedora and inspector's coat palette and minor adjustments
+    type: Tweak
+  id: 5458
+  time: '2023-12-27T22:53:10.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23065
+- author: Velcroboy
+  changes:
+  - message: Added melee dmg to salami logs!
+    type: Add
+  id: 5459
+  time: '2023-12-28T02:59:14.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23041
+- author: Emisse
+  changes:
+  - message: Ion Storm is silent now
+    type: Tweak
+  id: 5460
+  time: '2023-12-28T03:03:00.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23045
+- author: Alekshhh
+  changes:
+  - message: Changed wall lockers visually to match regular lockers and sit on walls
+      better
+    type: Tweak
+  id: 5461
+  time: '2023-12-28T03:05:05.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23060
+- author: EmoGarbage404
+  changes:
+  - message: Added the clerical error station event, which causes a small amount of
+      station records to be destroyed.
+    type: Add
+  id: 5462
+  time: '2023-12-28T03:09:05.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23091
+- author: EmoGarbage404
+  changes:
+  - message: Added the GORILLA gauntlet. When powered with an anomaly core, a single
+      blow from this is able to send anomalies flying through the air. Just try not
+      to let it out on the clown.
+    type: Add
+  - message: Added Anomaly Core Harnessing technology to the Experimental discipline,
+      which contains the GORILLA gauntlet.
+    type: Add
+  id: 5463
+  time: '2023-12-28T03:11:13.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23012
+- author: Ubaser
+  changes:
+  - message: You can now purchase kobolds from cargo as an alternative to monkeys!
+    type: Add
+  id: 5464
+  time: '2023-12-28T05:32:55.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22108
+- author: TheShuEd
+  changes:
+  - message: Tesla has been added to the game! Engineers can build a tesla power generator
+      using a tesla generator, tesla coils, and grounding wands that can be purchased
+      from the cargo.
+    type: Add
+  id: 5465
+  time: '2023-12-28T13:11:50.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/21124
+- author: TheShuEd
+  changes:
+  - message: thieves can now appear in rounds with nuclear operatives
+    type: Add
+  id: 5466
+  time: '2023-12-28T23:50:25.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23102
+- author: EmoGarbage404
+  changes:
+  - message: Added station beacons. These devices create custom labels on the station
+      map. Order them from cargo today.
+    type: Add
+  id: 5467
+  time: '2023-12-29T00:02:21.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23136
+- author: lzk228
+  changes:
+  - message: Directional barricade is constructable now!
+    type: Tweak
+  id: 5468
+  time: '2023-12-29T00:45:10.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22988
+- author: themias
+  changes:
+  - message: Toy swords can be turned on.
+    type: Fix
+  id: 5469
+  time: '2023-12-29T00:59:23.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23137
+- author: Ubaser
+  changes:
+  - message: Magboots produced by science now have new sprites.
+    type: Add
+  id: 5470
+  time: '2023-12-29T03:08:08.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23107
+- author: metalgearsloth
+  changes:
+  - message: Added sounds to UI clicking and hovering.
+    type: Add
+  id: 5471
+  time: '2023-12-29T04:43:37.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22410
+- author: FairlySadPanda
+  changes:
+  - message: Talking, whispering and emoting will now strip out any markup tags in
+      the input text. This also means intercoms tuned to the science channel will
+      no longer squawk out "[bold]", and so on, when reporting on research unlocks.
+    type: Fix
+  id: 5472
+  time: '2023-12-30T00:38:11.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23055
+- author: Admiral-Obvious-001
+  changes:
+  - message: Normalized researched secfab shotgun ammo damages to align with the rest
+      of the ammo sizes.
+    type: Tweak
+  id: 5473
+  time: '2023-12-30T05:34:27.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23163
+- author: metalgearsloth
+  changes:
+  - message: Fix decals such as grass drawing over shuttles on planet maps.
+    type: Fix
+  id: 5474
+  time: '2023-12-30T16:12:39.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22953
+- author: metalgearsloth
+  changes:
+  - message: Fix mobs not gibbing upon shuttle FTL.
+    type: Fix
+  id: 5475
+  time: '2023-12-30T16:12:52.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22952
+- author: metalgearsloth
+  changes:
+  - message: Surveillance cameras now cycle their animation forwards and backwards.
+    type: Add
+  id: 5476
+  time: '2023-12-30T16:14:14.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22950
+- author: EmoGarbage404
+  changes:
+  - message: Added the Hyper convection protolathe and autolathe to Industrial Engineering
+      tech. These lathes have a discounted printing price at the cost of venting hot
+      air into the surroundings.
+    type: Add
+  - message: Added the industrial ore processor, an improved version with discounted
+      printing prices, to salvage equipment technology.
+    type: Add
+  - message: Moved autolathe, protolathe, circuit imprinter, ore processor, and material
+      reclaimer boards to be available by default in the circuit imprinter.
+    type: Tweak
+  - message: Removed machine part upgrades from all lathes.
+    type: Remove
+  id: 5477
+  time: '2023-12-30T16:18:58.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23202
+- author: Ubaser
+  changes:
+  - message: The uncloneable trait has been removed.
+    type: Remove
+  id: 5478
+  time: '2023-12-30T16:45:43.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23229
+- author: Ubaser
+  changes:
+  - message: Syndicate implanters have received a new sprite.
+    type: Add
+  id: 5479
+  time: '2023-12-30T16:46:13.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23227
+- author: lzk228
+  changes:
+  - message: Shivs crafting now based on construct. Click with cloth on shard to create
+      shiv.
+    type: Tweak
+  id: 5480
+  time: '2023-12-30T17:08:52.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23134
+- author: Alekshhh
+  changes:
+  - message: Changed disposal units visually
+    type: Tweak
+  id: 5481
+  time: '2023-12-30T17:14:20.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23067
+- author: quatre
+  changes:
+  - message: Artifact Analyzer now pauses on power-loss.
+    type: Tweak
+  id: 5482
+  time: '2023-12-30T17:49:25.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/22974
+- author: Blazeror
+  changes:
+  - message: Pinpointers now use the correct sprites.
+    type: Fix
+  id: 5483
+  time: '2023-12-30T19:12:13.0000000+00:00'
+  url: https://api.github.com/repos/space-wizards/space-station-14/pulls/23236

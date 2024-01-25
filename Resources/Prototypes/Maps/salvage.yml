@@ -105,6 +105,11 @@
   name: "Crashed Shuttle"
   mapPath: /Maps/Salvage/DeltaV/DV-med-crashed-shuttle.yml #DeltaV: DV salvage map Location
 
+- type: salvageMap
+  id: Meatball
+  name: "Meatball"
+  mapPath: /Maps/Salvage/meatball.yml
+
 # """Large""" maps
 
 #- type: salvageMap #DeltaV: Remove non-salvage testing map from pool
@@ -264,3 +269,8 @@
   id: AsteroidMiningLarge1
   name: "Large Asteroid Mining 1"
   mapPath: /Maps/Salvage/DeltaV/DV-med-asteroid-mining-01.yml
+
+- type: salvageMap
+  id: EngineeringChunk
+  name: "Engineering Department Chunk"
+  mapPath: /Maps/Salvage/engineering-chunk.yml

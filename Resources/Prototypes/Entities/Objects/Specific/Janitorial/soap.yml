@@ -7,7 +7,6 @@
   - type: Tag
     tags:
     - Soap
-    - CleansForensics
   - type: Sprite
     sprite: Objects/Specific/Janitorial/soap.rsi
     layers:

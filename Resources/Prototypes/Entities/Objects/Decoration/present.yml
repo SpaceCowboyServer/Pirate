@@ -1,6 +1,6 @@
 - type: entity
   id: PresentBase
-  name: Present
+  name: present
   description: A little box with incredible surprises inside.
   abstract: true
   components:
@@ -95,6 +95,7 @@
       - id: PlushieMothBartender # Nyanotrasen Moth Bartender Plushie
         orGroup: GiftPool
       - id: PlushieMothMusician # Nyanotrasen Moth Musician Plushie
+      - id: PlushieArachind
         orGroup: GiftPool
       - id: ClothingNeckCloakMoth
         orGroup: GiftPool

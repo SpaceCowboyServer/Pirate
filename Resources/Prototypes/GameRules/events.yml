@@ -455,3 +455,14 @@
       path: /Audio/Announcements/attention.ogg # ion_storm.ogg does not use our announcer
     duration: 1
   - type: IonStormRule
+
+- type: entity
+  id: MimicVendorRule
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+    - type: StationEvent
+      earliestStart: 0
+      minimumPlayers: 20
+      weight: 5
+    - type: MobReplacementRule

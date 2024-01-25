@@ -13,8 +13,6 @@
       guides:
       - MachineUpgrading
 
-# Rating 1
-
 - type: entity
   id: CapacitorStockPart
   name: capacitor

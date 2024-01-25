@@ -10,13 +10,13 @@
       - id: NitrogenTankFilled
       - id: ClothingShoesBootsMag
       - id: ClothingMaskGasExplorer
-# Currently do not function as 'true' mesons, so they're useless for salvagers.
-#      - id: ClothingEyesGlassesMeson
       - id: ClothingBeltUtilityFilled
       - id: SurvivalKnife
       - id: HandheldGPSBasic
       - id: RadioHandheld
       - id: ClothingShoesBootsWinterMiner #Delta V: Add departmental winter boots
+      - id: SeismicCharge
+        amount: 2
       - id: OreBag
         prob: 0.5
       - id: Flare
@@ -42,6 +42,8 @@
       - id: HandheldGPSBasic
       - id: RadioHandheld
       - id: ClothingShoesBootsWinterMiner #Delta V: Add departmental winter boots
+      - id: SeismicCharge
+        amount: 2
       - id: OreBag
         prob: 0.5
       - id: Flare

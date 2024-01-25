@@ -1,7 +1,4 @@
-# So the way things are done as of now is that Salvages are measured by world AABBs in their maps.
-# Remember, first two coordinates should be the minimum X/Y, second two should be maximum.
-# You can also use the salvageruler command to get these, once you're sure the transform's been reset.
-# Ultimately, you should still be keeping the maps centred.
+# Dear god please stop adding ones with thousands of entities, learn how procgen works.
 
 # "Small"-class maps - Max size square: 7x7, indicated size: 3.5
 
@@ -107,7 +104,6 @@
 
 - type: salvageMap
   id: Meatball
-  name: "Meatball"
   mapPath: /Maps/Salvage/meatball.yml
 
 # """Large""" maps
@@ -272,5 +268,4 @@
 
 - type: salvageMap
   id: EngineeringChunk
-  name: "Engineering Department Chunk"
   mapPath: /Maps/Salvage/engineering-chunk.yml

@@ -1186,7 +1186,7 @@
 
 - type: entity
   id: WallForce
-  name: Force wall
+  name: force wall
   components:
     - type: TimedDespawn
       lifetime: 20

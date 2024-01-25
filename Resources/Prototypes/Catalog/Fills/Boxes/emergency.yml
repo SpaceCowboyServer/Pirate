@@ -8,7 +8,6 @@
     contents:
       - id: ClothingMaskBreath
       - id: EmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
@@ -29,7 +28,6 @@
     contents:
       - id: ClothingMaskBreath
       - id: ExtendedEmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
@@ -51,7 +49,6 @@
     contents:
       - id: ClothingMaskGasSecurity
       - id: EmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
@@ -94,7 +91,6 @@
     contents:
       - id: ClothingMaskBreathMedical
       - id: EmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
@@ -121,7 +117,6 @@
     contents:
       - id: ClothingMaskBreath
       - id: EmergencyFunnyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
@@ -141,7 +136,6 @@
     contents:
       - id: ClothingMaskGasSyndicate
       - id: ExtendedEmergencyOxygenTankFilled
-      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodTinMRE

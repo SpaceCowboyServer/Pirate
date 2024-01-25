@@ -37,7 +37,7 @@
     - BaseStationRecords
     - BaseStationArrivals
     - BaseStationGateway
-    - BaseStationShuttlesCore
+    # - BaseStationShuttlesCore
     - BaseStationCentcomm
     - BaseStationEvacuation
     - BaseStationAlertLevels

@@ -53,8 +53,6 @@ public sealed class ArtifactAnalyzerSystem : EntitySystem
         SubscribeLocalEvent<ActiveArtifactAnalyzerComponent, ComponentShutdown>(OnAnalyzeEnd);
         SubscribeLocalEvent<ActiveArtifactAnalyzerComponent, PowerChangedEvent>(OnPowerChanged);
 
-        SubscribeLocalEvent<ArtifactAnalyzerComponent, UpgradeExamineEvent>(OnUpgradeExamine);
-        SubscribeLocalEvent<ArtifactAnalyzerComponent, RefreshPartsEvent>(OnRefreshParts);
         SubscribeLocalEvent<ArtifactAnalyzerComponent, ItemPlacedEvent>(OnItemPlaced);
         SubscribeLocalEvent<ArtifactAnalyzerComponent, ItemRemovedEvent>(OnItemRemoved);
 
@@ -84,7 +82,7 @@ public sealed class ArtifactAnalyzerSystem : EntitySystem
             if (active.AnalysisPaused)
                 continue;
 
-            if (_timing.CurTime - active.StartTime < scan.AnalysisDuration * scan.AnalysisDurationMulitplier - active.AccumulatedRunTime)
+            if (_timing.CurTime - active.StartTime < scan.AnalysisDuration - active.AccumulatedRunTime)
                 continue;
 
             FinishScan(uid, scan, active);
@@ -201,7 +199,7 @@ public sealed class ArtifactAnalyzerSystem : EntitySystem
         {
             artifact = analyzer.LastAnalyzedArtifact;
             msg = GetArtifactScanMessage(analyzer);
-            totalTime = analyzer.AnalysisDuration * analyzer.AnalysisDurationMulitplier;
+            totalTime = analyzer.AnalysisDuration;
             if (TryComp<ItemPlacerComponent>(component.AnalyzerEntity, out var placer))
                 canScan = placer.PlacedEntities.Any();
             canPrint = analyzer.ReadyToPrint;

@@ -193,6 +193,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 30
     minimumPlayers: 35
     weight: 5
@@ -215,6 +219,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     weight: 5
     duration: 50
   - type: VentCrittersRule
@@ -318,7 +326,10 @@
   noSpawn: true
   components:
   - type: StationEvent
-    id: VentCritters
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -338,6 +349,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -357,6 +372,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -380,6 +399,24 @@
 #     entries:
 #     - id: MobClownSpider
 #       prob: 0.05
+- type: entity
+  id: SpiderClownSpawn
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
+    earliestStart: 20
+    minimumPlayers: 15
+    weight: 1
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobClownSpider
+      prob: 0.05
 
 - type: entity
   id: ZombieOutbreak

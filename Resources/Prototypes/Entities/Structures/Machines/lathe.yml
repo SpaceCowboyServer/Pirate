@@ -170,6 +170,7 @@
        - MagazineBoxMagnum
        - MagazineBoxRifle
        - MagazineBoxLightRifle
+       - GrenadeBlast
     emagDynamicRecipes:
       - CartridgePistolRubber
       - CartridgeSpecialRubber # DeltaV - .38 Special revolver
@@ -199,6 +200,12 @@
       - MagazineBoxMagnumUranium
       - MagazineBoxLightRifleUranium
       - MagazineBoxRifleUranium
+      - PowerCageSmall
+      - PowerCageMedium
+      - PowerCageHigh
+      - MagazineGrenadeEmpty
+      - GrenadeEMP
+      - GrenadeFlash
 
 - type: entity
   id: AutolatheHyperConvection
@@ -433,10 +440,12 @@
       - WallmountGeneratorElectronics
       - WallmountGeneratorAPUElectronics
       - WallmountSubstationElectronics
+      - PowerCageRechargerCircuitboard
       - EmitterCircuitboard
       - ThrusterMachineCircuitboard
       - GyroscopeMachineCircuitboard
       - MiniGravityGeneratorCircuitboard
+      - ShuttleGunKineticCircuitboard
       - GasRecyclerMachineCircuitboard
       - SeedExtractorMachineCircuitboard
       - AnalysisComputerCircuitboard
@@ -732,6 +741,9 @@
       - MagazineBoxMagnumRubber
       - MagazineBoxPistolRubber
       - MagazineBoxRifleRubber
+      - MagazineGrenadeEmpty
+      - GrenadeEMP
+      - GrenadeFlash
       - ShellShotgunBeanbag
       - ShellShotgunIncendiary
       - ShellShotgunUranium
@@ -754,6 +766,13 @@
       - WeaponEnergyGunMini #DeltaV - Energy Gun but miniature
       - WeaponEnergyGunPistol #DeltaV - Energy Gun Mini but with the power of a normal energy gun
       - WeaponGunLaserCarbineAutomatic #DeltaV - New Laser Projectiles with a 20 round carbine
+      - PowerCageSmall
+      - PowerCageMedium
+      - PowerCageHigh
+      - ShuttleGunSvalinnMachineGunCircuitboard
+      - ShuttleGunPerforatorCircuitboard
+      - ShuttleGunFriendshipCircuitboard
+      - ShuttleGunDusterCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -1121,6 +1140,20 @@
   - type: Lathe
     materialUseMultiplier: 0.75
     timeMultiplier: 0.5
+    staticRecipes:
+      - SheetSteel30
+      - SheetGlass30
+      - SheetRGlass30
+      - SheetPlasma30
+      - SheetPGlass30
+      - SheetRPGlass30
+      - SheetPlasteel30
+      - SheetUranium30
+      - SheetUGlass30
+      - SheetRUGlass30
+      - IngotGold30
+      - IngotSilver30
+      - MaterialBananium10
 
 - type: entity
   parent: BaseLathe

@@ -226,7 +226,7 @@
   - SyringeBluespace
 
 - type: technology
-  id: MedipenFabrication
+  id: MedipenRefilling
   name: research-technology-medipen-fabrication
   icon:
     sprite: Structures/Machines/medipen_refiller.rsi

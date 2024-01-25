@@ -180,6 +180,9 @@ public partial class NavMapControl : MapGridControl
     {
         base.KeyBindUp(args);
 
+        if (TrackedEntitySelectedAction == null)
+            return;
+
         if (args.Function == EngineKeyFunctions.Use)
             _draggin = false;
 

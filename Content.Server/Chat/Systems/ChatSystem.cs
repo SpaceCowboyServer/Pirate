@@ -751,7 +751,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 
         return ev.Message;
     }
-
+ 
     public bool CheckIgnoreSpeechBlocker(EntityUid sender, bool ignoreBlocker)
     {
         if (ignoreBlocker)

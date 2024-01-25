@@ -893,6 +893,7 @@
       Glass: 2
       Cable: 5
 
+
 - type: entity
   id: StasisBedMachineCircuitboard
   parent: BaseMachineCircuitboard

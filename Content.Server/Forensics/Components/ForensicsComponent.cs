@@ -16,6 +16,12 @@ namespace Content.Server.Forensics
         public HashSet<string> Residues = new();
 
         /// <summary>
+        /// How long it takes to wipe the prints/blood/etc. off of this entity
+        /// </summary>
+        [DataField("cleanDelay")]
+        public float CleanDelay = 12.0f;
+
+        /// <summary>
         /// How close you must be to wipe the prints/blood/etc. off of this entity
         /// </summary>
         [DataField("cleanDistance")]

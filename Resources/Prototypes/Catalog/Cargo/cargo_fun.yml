@@ -187,7 +187,6 @@
   cost: 4000
   category: Fun
   group: market
-
 - type: cargoProduct
   id: FunDartsSet
   icon:

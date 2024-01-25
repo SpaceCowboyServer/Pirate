@@ -221,6 +221,8 @@
       - AnomalyScanner
       - AnomalyLocator
       - AnomalyLocatorWide
+      - RCD
+      - RCDAmmo
       - HandheldCrewMonitor
       - Scalpel
       - Retractor
@@ -650,6 +652,7 @@
       - Truncheon
       - VoiceTrigger
       - WeaponAdvancedLaser
+      - WeaponDisablerPractice
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - ClothingHeadHelmetInsulated # Nyanotrasen - Insulative headgear

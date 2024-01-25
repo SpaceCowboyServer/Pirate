@@ -68,7 +68,7 @@
         - 0 # oxygen
         - 0.615413715 #nitrogen
       temperature: 293.15
-
+      
 - type: entity
   id: ExtendedEmergencyOxygenTankFilled
   parent: ExtendedEmergencyOxygenTank
@@ -82,7 +82,7 @@
       moles:
         - 0.615413715 # oxygen
       temperature: 293.15
-
+      
 - type: entity
   id: ExtendedEmergencyNitrogenTankFilled
   parent: ExtendedEmergencyNitrogenTank

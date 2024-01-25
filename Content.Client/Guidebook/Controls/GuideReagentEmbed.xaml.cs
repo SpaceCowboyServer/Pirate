@@ -185,6 +185,12 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         reactantMsg.Pop();
         control.ReactantsLabel.SetMessage(reactantMsg);
 
+        // if (reactionPrototype.MinimumTemperature > 0.0f)
+        // {
+        //     control.MixLabel.Text = Loc.GetString("guidebook-reagent-recipes-mix-and-heat",
+        //         ("temperature", reactionPrototype.MinimumTemperature));
+        // }
+
         var productMsg = new FormattedMessage();
         var productCount = reactionPrototype.Products.Count;
         var u = 0;

@@ -226,14 +226,14 @@
   - SyringeBluespace
 
 - type: technology
-  id: BluespaceChemistry
+  id: MedipenFabrication
   name: research-technology-medipen-fabrication
   icon:
     sprite: Structures/Machines/medipen_refiller.rsi
     state: base
-  discipline: Biochemical
-  tier: 2
-  cost: 10000
+  discipline: CivilianServices
+  tier: 1
+  cost: 7500
   recipeUnlocks:
   - MedipenRefillerMachineCircuitboard
   - ChemicalMedipen

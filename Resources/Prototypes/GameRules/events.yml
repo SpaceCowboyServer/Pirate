@@ -67,6 +67,29 @@
 #    prototype: MobSkeletonCloset
 
 - type: entity
+  id: ClericalError
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-clerical-error-announcement
+    minimumPlayers: 15
+    weight: 5
+    duration: 1
+  - type: ClericalErrorRule
+
+- type: entity
+  parent: BaseGameRule
+  id: ClosetSkeleton
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 10
+    duration: 1
+  - type: RandomEntityStorageSpawnRule
+    prototype: MobSkeletonCloset
+
+- type: entity
   parent: BaseGameRule
   id: DragonSpawn
   noSpawn: true
@@ -88,7 +111,7 @@
   - type: StationEvent
     weight: 3 # DeltaV - was 10
     duration: 1
-    earliestStart: 45 # DeltaV - was 30
+    earliestStart: 35 # DeltaV - was 30
     reoccurrenceDelay: 60
     minimumPlayers: 40
   - type: NinjaSpawnRule
@@ -170,6 +193,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 30
     minimumPlayers: 35
     weight: 5
@@ -192,6 +219,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     weight: 5
     duration: 50
   - type: VentCrittersRule
@@ -261,6 +292,19 @@
     doorToggleChancePerSecond: 0.001
 
 - type: entity
+  parent: BaseGameRule
+  id: TerminatorSpawn
+  noSpawn: true
+  components:
+  - type: StationEvent
+    weight: 8
+    duration: 1
+    earliestStart: 30
+    minimumPlayers: 20
+  - type: RandomSpawnRule
+    prototype: SpawnPointGhostTerminator
+
+- type: entity
   id: VentClog
   parent: BaseGameRule
   noSpawn: true
@@ -282,7 +326,10 @@
   noSpawn: true
   components:
   - type: StationEvent
-    id: VentCritters
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -302,6 +349,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -321,6 +372,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -344,6 +399,24 @@
 #     entries:
 #     - id: MobClownSpider
 #       prob: 0.05
+- type: entity
+  id: SpiderClownSpawn
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
+    earliestStart: 20
+    minimumPlayers: 15
+    weight: 1
+    duration: 60
+  - type: VentCrittersRule
+    entries:
+    - id: MobClownSpider
+      prob: 0.05
 
 - type: entity
   id: ZombieOutbreak
@@ -419,3 +492,14 @@
       path: /Audio/Announcements/attention.ogg # ion_storm.ogg does not use our announcer
     duration: 1
   - type: IonStormRule
+
+- type: entity
+  id: MimicVendorRule
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+    - type: StationEvent
+      earliestStart: 0
+      minimumPlayers: 20
+      weight: 5
+    - type: MobReplacementRule

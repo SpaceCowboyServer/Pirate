@@ -14,6 +14,7 @@ using Content.Server.Medical;
 using Content.Server.Nutrition.EntitySystems;
 using Content.Server.Nutrition.Components;
 using Content.Server.Chemistry.EntitySystems;
+using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Popups;
 using Content.Shared.Chemistry.EntitySystems;
 using Robust.Shared.Audio;
@@ -164,12 +165,12 @@ public sealed partial class FelinidSystem : EntitySystem
 
         if (TryComp<BloodstreamComponent>(uid, out var bloodstream))
         {
-            var temp = bloodstream.ChemicalSolution.SplitSolution(20);
+            // var temp = bloodstream.ChemicalSolution.SplitSolution(20);
 
-            if (_solutionSystem.TryGetSolution(hairball, hairballComp.SolutionName, out var hairballSolution))
-            {
-                _solutionSystem.TryAddSolution(hairball, hairballSolution, temp);
-            }
+            // if (_solutionSystem.TryGetSolution(hairball, hairballComp.SolutionName, out var hairballSolution))
+            // {
+            //     _solutionSystem.TryAddSolution(hairball, hairballSolution, temp);
+            // }
         }
     }
     private void OnHairballHit(EntityUid uid, HairballComponent component, ThrowDoHitEvent args)

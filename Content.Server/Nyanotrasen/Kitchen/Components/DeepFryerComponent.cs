@@ -17,7 +17,7 @@ using Content.Shared.Whitelist;
 namespace Content.Server.Kitchen.Components
 {
     [RegisterComponent]
-    [Access(typeof(DeepFryerSystem))]
+    // [Access(typeof(DeepFryerSystem))]
     // This line appears to be depracted: [ComponentReference(typeof(SharedDeepFryerComponent))]
     public sealed partial class DeepFryerComponent : SharedDeepFryerComponent
     {

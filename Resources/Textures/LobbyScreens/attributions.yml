@@ -52,10 +52,10 @@
   license: "CC-BY-4.0"
   copyright: "amatadorro on discord"
 
-- files: ["ssxiv.png"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "Abyssal#4842 on discord / @aby_doodles on Twitter"
-  source: "https://twitter.com/aby_doodles"
+# - files: ["ssxiv.png"]
+#   license: "CC-BY-NC-SA-3.0"
+#   copyright: "Abyssal#4842 on discord / @aby_doodles on Twitter"
+#   source: "https://twitter.com/aby_doodles"
 
 - files: ["susstation.png"]
   license: "CC-BY-NC-SA-3.0"

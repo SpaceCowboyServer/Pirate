@@ -1,7 +1,4 @@
-# So the way things are done as of now is that Salvages are measured by world AABBs in their maps.
-# Remember, first two coordinates should be the minimum X/Y, second two should be maximum.
-# You can also use the salvageruler command to get these, once you're sure the transform's been reset.
-# Ultimately, you should still be keeping the maps centred.
+# Dear god please stop adding ones with thousands of entities, learn how procgen works.
 
 # "Small"-class maps - Max size square: 7x7, indicated size: 3.5
 
@@ -35,6 +32,30 @@
 #  id: Small4
 #  name: "Small / Bar Salvage"
 #  mapPath: /Maps/Salvage/small-4.yml
+
+- type: salvageMap
+  id: SmallCargo
+  mapPath: /Maps/Salvage/small-cargo.yml
+
+- type: salvageMap
+  id: SmallChapel
+  mapPath: /Maps/Salvage/small-chapel.yml
+
+- type: salvageMap
+  id: SmallChef
+  mapPath: /Maps/Salvage/small-chef.yml
+
+- type: salvageMap
+  id: SmallParty
+  mapPath: /Maps/Salvage/small-party.yml
+
+- type: salvageMap
+  id: SmallSyndicate
+  mapPath: /Maps/Salvage/small-syndicate.yml
+
+- type: salvageMap
+  id: SmallTesla
+  mapPath: /Maps/Salvage/small-tesla.yml
 
 # Small - Asteroids
 
@@ -106,9 +127,12 @@
   mapPath: /Maps/Salvage/DeltaV/DV-med-crashed-shuttle.yml #DeltaV: DV salvage map Location
 
 - type: salvageMap
-  id: EngineeringChunk
-  name: "Engineering Department Chunk"
-  mapPath: /Maps/Salvage/engineering-chunk.yml
+  id: Meatball
+  mapPath: /Maps/Salvage/meatball.yml
+
+- type: salvageMap
+  id: MediumHaulingShuttleWreck
+  mapPath: /Maps/Salvage/hauling-shuttle.yml
 
 # """Large""" maps
 
@@ -131,7 +155,6 @@
   id: SecurityChunk
   name: "Security Department Chunk"
   mapPath: /Maps/Salvage/DeltaV/DV-security-chunk.yml #DeltaV: DV salvage map Location
-
 
   #Nyano Maps
   #Medium
@@ -270,3 +293,7 @@
   id: AsteroidMiningLarge1
   name: "Large Asteroid Mining 1"
   mapPath: /Maps/Salvage/DeltaV/DV-med-asteroid-mining-01.yml
+
+- type: salvageMap
+  id: EngineeringChunk
+  mapPath: /Maps/Salvage/engineering-chunk.yml

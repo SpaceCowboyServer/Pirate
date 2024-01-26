@@ -93,7 +93,7 @@
   id: Crying
   icon: Interface/Emotes/crying.png
   category: Vocal
-  chatMessages: [crying]
+  chatMessages: [плаче]
   chatTriggers:
     - cry
     - cry.
@@ -149,6 +149,19 @@
    - squeaked
    - squeaked.
    - squeaked!
+
+- type: emote
+  id: Click
+  icon: Interface/Emotes/click.png
+  category: Vocal
+  chatMessages: [клікає.]
+  chatTriggers:
+   - click
+   - click.
+   - click!
+   - clicks
+   - clicks.
+   - clicks!
 
 # hand emotes
 - type: emote

@@ -81,7 +81,6 @@
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
     state: gauze_shoulder
-    
 - type: marking
   id: GauzeStomach
   bodyPart: Chest
@@ -179,7 +178,6 @@
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
     state: gauze_upperleg_r
-    
 - type: marking
   id: GauzeLowerLegRight
   bodyPart: RFoot
@@ -198,7 +196,7 @@
   id: GauzeBoxerWrapRight
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Harpy, Vulpkanin] # Delta V - Felinid, Oni, Harpy, Vulpkanin
+  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid]
   coloring:
     default:
       type:
@@ -212,7 +210,7 @@
   id: GauzeBoxerWrapLeft
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Harpy, Vulpkanin] # Delta V - Felinid, Oni, Harpy, Vulpkanin
+  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid]
   coloring:
     default:
       type:

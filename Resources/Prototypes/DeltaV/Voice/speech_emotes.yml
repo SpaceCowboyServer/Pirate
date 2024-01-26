@@ -68,17 +68,16 @@
     - revving
     - revved
 
-- type: emote
-  id: Click
-  icon: Interface/Emotes/click.png
-  category: Vocal
-  chatMessages: [клікає.]
-  chatTriggers:
-    - clicks.
-    - click.
-    - click!
-    - clicking.
-    - clicked.
+# - type: emote
+#   id: Click
+#   category: Vocal
+#   chatMessages: [clicks.]
+#   chatTriggers:
+#     - clicks.
+#     - click.
+#     - click!
+#     - clicking.
+#     - clicked.
 
 - type: emote
   id: Caw

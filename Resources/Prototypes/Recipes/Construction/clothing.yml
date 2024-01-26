@@ -9,6 +9,17 @@
 #   icon: { sprite: Clothing/OuterClothing/Hardsuits/clown.rsi, state: icon }
 #   objectType: Item
 
+# - type: construction
+#   name: bone armor
+#   id: BoneArmor
+#   graph: BoneArmor
+#   startNode: start
+#   targetNode: armor
+#   category: construction-category-clothing
+#   description: Armor made of bones.
+#   icon: { sprite: Clothing/OuterClothing/Armor/bone_armor.rsi, state: icon }
+#   objectType: Item
+
 - type: construction
   name: bone armor
   id: BoneArmor
@@ -62,4 +73,15 @@
   category: construction-category-clothing
   description: A pair of clown shoes upgraded with banana peels.
   icon: { sprite: Clothing/Shoes/Specific/clown_banana.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  name: medsec hud
+  id: ClothingEyesHudMedSec
+  graph: HudMedSec
+  startNode: start
+  targetNode: medsecHud
+  category: construction-category-clothing
+  description: Two huds joined by arms
+  icon: { sprite: Clothing/Eyes/Hud/medsec.rsi, state: icon }
   objectType: Item

@@ -75,7 +75,10 @@
       "directions": 4
     },
     {
-      "name": "up-equipped-MASK-vulpkanin",
+      "name": "up-equipped-MASK-vulpkanin"
+    },
+    {
+      "name": "equipped-MASK-reptilian",
       "directions": 4
     }
   ]

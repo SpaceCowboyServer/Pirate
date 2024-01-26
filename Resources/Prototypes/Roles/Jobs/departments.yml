@@ -12,6 +12,7 @@
   id: Civilian
   description: department-Civilian-description
   color: "#9FED58"
+  weight: -10
   roles:
   - Bartender
   - Borg
@@ -48,6 +49,8 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
+  primary: false
+  weight: 100
 
 - type: department
   id: Engineering
@@ -56,7 +59,6 @@
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
-  - SeniorEngineer
   - StationEngineer
   - TechnicalAssistant
 
@@ -71,18 +73,17 @@
   - MedicalIntern
   - Psychologist
   - Paramedic
-  - SeniorPhysician
 
 - type: department
   id: Security
   description: department-Security-description
   color: "#DE3A3A"
+  weight: 20
   roles:
   - HeadOfSecurity
   - Blueshield
   - SecurityCadet
   - SecurityOfficer
-  - SeniorOfficer
   - Detective
   - Warden
   - PrisonGuard # Nyanotrasen - PrisonGuard, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Security/prisonguard.yml
@@ -94,7 +95,6 @@
   color: "#D381C9"
   roles:
   - ResearchDirector
-  - SeniorResearcher
   - Scientist
   - ResearchAssistant
   - Chaplain # DeltaV - Move Chaplain into Epistemics
@@ -104,6 +104,7 @@
   id: Specific
   description: department-Specific-description
   color: "#9FED58"
+  weight: 10
   roles:
   - Boxer
   - Reporter
@@ -113,3 +114,4 @@
   - Gladiator # Nyanotrasen - Gladiator, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/gladiator.yml
   - Prisoner # Nyanotrasen - Prisoner, see Resrouces/Prototypes/Nyanotrasen/Roles/Jobs/Wildcards/prisoner.yml
   - Brigmedic # DeltaV - Corpsman, see Resources/Prototypes/DeltaV/Roles/Jobs/Security/brigmedic.yml
+  primary: false

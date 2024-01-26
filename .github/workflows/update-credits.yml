@@ -4,19 +4,18 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 0 0 * * 0
-
+    
 jobs:
   get_credits:
     runs-on: ubuntu-latest
     # Hey there fork dev! If you like to include your own contributors in this then you can probably just change this to your own repo
     # Do this in dump_github_contributors.ps1 too into your own repo
-    if: github.repository == 'DeltaV-Station/Delta-v-rebase'
+    if: github.repository == 'DeltaV-Station/Delta-v'
 
     steps:
       - uses: actions/checkout@v3.6.0
         with:
           ref: master
-
       - name: Get this week's Contributors
         shell: pwsh
         run: Tools/dump_github_contributors.ps1 > Resources/Credits/GitHub.txt
@@ -37,11 +36,11 @@ jobs:
       #  with:
       #    commit_message: Update Credits
       #    commit_author: PJBot <pieterjan.briers+bot@gmail.com>
-      
+
       # This will make a PR
       - name: Set current date as env variable
         run: echo "NOW=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_ENV
-        
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:

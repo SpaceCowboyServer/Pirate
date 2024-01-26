@@ -38,9 +38,13 @@
   id: TechnologicalProgress
   background: /Textures/LobbyScreens/DeltaV__Technological_Progress_by_threlo.png
 
-- type: lobbyBackground 
-  id: SSXIV
-  background: /Textures/LobbyScreens/ssxiv.png
+- type: lobbyBackground
+  id: Pirates
+  background: /Textures/LobbyScreens/pirate.png
+
+# - type: lobbyBackground 
+#   id: SSXIV
+#   background: /Textures/LobbyScreens/ssxiv.png
 
 - type: lobbyBackground
   id: Susstation

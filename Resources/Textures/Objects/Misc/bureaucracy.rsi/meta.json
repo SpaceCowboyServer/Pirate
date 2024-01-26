@@ -97,60 +97,6 @@
       "name": "paper_plane"
     },
     {
-      "name": "paper_stamp-cap"
-    },
-    {
-      "name": "paper_stamp-ce"
-    },
-    {
-      "name": "paper_stamp-centcom"
-    },
-    {
-      "name": "paper_stamp-chaplain"
-    },
-    {
-      "name": "paper_stamp-clown"
-    },
-    {
-      "name": "paper_stamp-cmo"
-    },
-    {
-      "name": "paper_stamp-deny"
-    },
-    {
-      "name": "paper_stamp-hop"
-    },
-    {
-      "name": "paper_stamp-hos"
-    },
-    {
-      "name": "paper_stamp-ok"
-    },
-    {
-      "name": "paper_stamp-mime"
-    },
-    {
-      "name": "paper_stamp-qm"
-    },
-    {
-      "name": "paper_stamp-rd"
-    },
-    {
-      "name": "paper_stamp-syndicate"
-    },
-    {
-      "name": "paper_stamp-trader"
-    },
-    {
-      "name": "paper_stamp-warden"
-    },
-    {
-      "name": "paper_stamp-generic"
-    },
-    {
-      "name": "paper_stamp-mantis"
-    },
-    {
       "name": "paper_talisman"
     },
     {
@@ -252,52 +198,55 @@
       "name": "scrap_bloodied"
     },
     {
-      "name": "stamp-cap"
+      "name": "paper_stamp-cap"
     },
     {
-      "name": "stamp-ce"
+      "name": "paper_stamp-ce"
     },
     {
-      "name": "stamp-centcom"
+      "name": "paper_stamp-centcom"
     },
     {
-      "name": "stamp-chaplain"
+      "name": "paper_stamp-chaplain"
     },
     {
-      "name": "stamp-clown"
+      "name": "paper_stamp-clown"
     },
     {
-      "name": "stamp-cmo"
+      "name": "paper_stamp-cmo"
     },
     {
-      "name": "stamp-deny"
+      "name": "paper_stamp-deny"
     },
     {
-      "name": "stamp-hop"
+      "name": "paper_stamp-hop"
     },
     {
-      "name": "stamp-hos"
+      "name": "paper_stamp-hos"
     },
     {
-      "name": "stamp-ok"
+      "name": "paper_stamp-ok"
     },
     {
-      "name": "stamp-mime"
+      "name": "paper_stamp-mime"
     },
     {
-      "name": "stamp-qm"
+      "name": "paper_stamp-qm"
     },
     {
-      "name": "stamp-rd"
+      "name": "paper_stamp-rd"
     },
     {
-      "name": "stamp-syndicate"
+      "name": "paper_stamp-syndicate"
     },
     {
-      "name": "stamp-trader"
+      "name": "paper_stamp-trader"
     },
     {
-      "name": "stamp-warden"
+      "name": "paper_stamp-warden"
+    },
+    {
+      "name": "paper_stamp-generic"
     }
   ]
 }

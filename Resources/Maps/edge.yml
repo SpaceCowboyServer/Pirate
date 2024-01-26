@@ -89172,7 +89172,6 @@ entities:
         680:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
   - uid: 13594
     components:
     - pos: -11.5,40.5
@@ -89208,7 +89207,6 @@ entities:
         684:
         - Pressed: Toggle
       type: DeviceLinkSource
-    - type: ItemCooldown
   - uid: 13595
     components:
     - pos: -50.5,48.5
@@ -91218,7 +91216,7 @@ entities:
     - pos: -49.5,-12.5
       parent: 2
       type: Transform
-- proto: SpareIdCabinet
+- proto: SpareIdCabinetFilled
   entities:
   - uid: 16973
     components:

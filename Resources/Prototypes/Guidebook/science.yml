@@ -18,6 +18,12 @@
   text: "/ServerInfo/Guidebook/Science/Technologies.xml"
   filterEnabled: True
 
+# - type: guideEntry
+#   id: Technologies
+#   name: guide-entry-technologies
+#   text: "/ServerInfo/Guidebook/Science/Technologies.xml"
+#   filterEnabled: True
+
 - type: guideEntry
   id: AnomalousResearch
   name: guide-entry-anomalous-research
@@ -60,11 +66,6 @@
   id: TraversalDistorter
   name: guide-entry-traversal-distorter
   text: "/ServerInfo/Guidebook/Science/TraversalDistorter.xml"
-
-- type: guideEntry
-  id: MachineUpgrading
-  name: guide-entry-machine-upgrading
-  text: "/ServerInfo/Guidebook/Science/MachineUpgrading.xml"
 
 - type: guideEntry
   id: Cyborgs

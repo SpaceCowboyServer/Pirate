@@ -11,11 +11,17 @@ using Content.Shared.Mobs.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
+using Content.Server.Disease;
+using Content.Server.Popups;
+using Content.Server.UserInterface;
+using Content.Shared.IdentityManagement;
 
 namespace Content.Server.Medical
 {
     public sealed class HealthAnalyzerSystem : EntitySystem
     {
+        [Dependency] private readonly DiseaseSystem _disease = default!;
+        [Dependency] private readonly PopupSystem _popupSystem = default!;
         [Dependency] private readonly PowerCellSystem _cell = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedDoAfterSystem _doAfterSystem = default!;
@@ -52,6 +58,32 @@ namespace Content.Server.Medical
             _audio.PlayPvs(entity.Comp.ScanningEndSound, args.User);
 
             UpdateScannedUser(entity, args.User, args.Target.Value, entity.Comp);
+            
+            // Below is for the traitor item
+            // Piggybacking off another component's doafter is complete CBT so I gave up
+            // and put it on the same component
+            /*
+             * this code is cursed wuuuuuuut
+             */
+            if (string.IsNullOrEmpty(entity.Comp.Disease))
+            {
+                args.Handled = true;
+                return;
+            }
+
+            _disease.TryAddDisease(args.Target.Value, entity.Comp.Disease);
+
+            if (args.User == args.Target)
+            {
+                _popupSystem.PopupEntity(Loc.GetString("disease-scanner-gave-self", ("disease", entity.Comp.Disease)),
+                    args.User, args.User);
+            }
+            else
+            {
+                _popupSystem.PopupEntity(Loc.GetString("disease-scanner-gave-other", ("target", Identity.Entity(args.Target.Value, EntityManager)),
+                    ("disease", entity.Comp.Disease)), args.User, args.User);
+            }
+
             args.Handled = true;
         }
 

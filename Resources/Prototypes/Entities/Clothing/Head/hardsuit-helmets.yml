@@ -421,6 +421,8 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
+  - type: DiseaseProtection
+    protection: 0.25
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -446,6 +448,8 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
+  - type: DiseaseProtection
+    protection: 0.25
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -604,6 +608,8 @@
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertmedical.rsi
   - type: PointLight
     color: "#adffec"
+  - type: DiseaseProtection
+    protection: 0.20
 
 #ERT Security Hardsuit
 - type: entity

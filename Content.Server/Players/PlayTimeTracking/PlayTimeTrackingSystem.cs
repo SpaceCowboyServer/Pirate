@@ -189,11 +189,6 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         }
 
         var isWhitelisted = player.ContentData()?.Whitelisted ?? false; // DeltaV - Whitelist requirement
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
-        {
-            Log.Error($"Unable to check playtimes {Environment.StackTrace}");
-            playTimes = new Dictionary<string, TimeSpan>();
-        }
 
         foreach (var job in _prototypes.EnumeratePrototypes<JobPrototype>())
         {

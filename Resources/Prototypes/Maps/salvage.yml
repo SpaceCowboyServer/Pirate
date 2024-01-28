@@ -50,30 +50,6 @@
   id: SmallTesla
   mapPath: /Maps/Salvage/small-tesla.yml
 
-- type: salvageMap
-  id: SmallCargo
-  mapPath: /Maps/Salvage/small-cargo.yml
-
-- type: salvageMap
-  id: SmallChapel
-  mapPath: /Maps/Salvage/small-chapel.yml
-
-- type: salvageMap
-  id: SmallChef
-  mapPath: /Maps/Salvage/small-chef.yml
-
-- type: salvageMap
-  id: SmallParty
-  mapPath: /Maps/Salvage/small-party.yml
-
-- type: salvageMap
-  id: SmallSyndicate
-  mapPath: /Maps/Salvage/small-syndicate.yml
-
-- type: salvageMap
-  id: SmallTesla
-  mapPath: /Maps/Salvage/small-tesla.yml
-
 # Small - Asteroids
 
 - type: salvageMap
@@ -138,14 +114,6 @@
   id: MediumHaulingShuttleWreck
   mapPath: /Maps/Salvage/hauling-shuttle.yml
 
-- type: salvageMap
-  id: Meatball
-  mapPath: /Maps/Salvage/meatball.yml
-
-- type: salvageMap
-  id: MediumHaulingShuttleWreck
-  mapPath: /Maps/Salvage/hauling-shuttle.yml
-
 # """Large""" maps
 
 - type: salvageMap
@@ -163,6 +131,141 @@
 - type: salvageMap
   id: SecurityChunk
   mapPath: /Maps/Salvage/security-chunk.yml
+
+- type: salvageMap
+  id: AnimalFarm
+  name: "Animal Farm"
+  mapPath: /Maps/Salvage/DeltaV/DV-animalfarm.yml
+
+- type: salvageMap
+  id: MediumChunk01
+  name: "Medium Station Chunk"
+  mapPath: /Maps/Salvage/DeltaV/DV-med-chunk-01.yml
+
+- type: salvageMap
+  id: MediumMiningOutpost01
+  name: "Medium Mining Outpost"
+  mapPath: /Maps/Salvage/DeltaV/DV-mining-outpost-01.yml
+
+- type: salvageMap
+  id: AtlasPerma
+  name: "Atlas Perma"
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-perma.yml
+
+- type: salvageMap
+  id: AtlasCells
+  name: "Atlas Jail Cells"
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-jailcells.yml
+
+- type: salvageMap
+  id: AtlasSalvage
+  name: "Atlas Salvage Dept."
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-salvage.yml
+
+- type: salvageMap
+  id: AtlasAtmos
+  name: "Atlas Atmospherics"
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-atmos.yml
+
+- type: salvageMap
+  id: AtlasCargo
+  name: "Atlas Cargo Dept."
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-cargo.yml
+
+- type: salvageMap
+  id: ServiceChunk
+  name: "Medium Service Chunk"
+  mapPath: /Maps/Salvage/DeltaV/DV-med-service-chunk-01.yml
+
+# Large
+- type: salvageMap
+  id: ResearchPost
+  name: "Reasearch Post"
+  mapPath: /Maps/Salvage/DeltaV/DV-research-outpost-01.yml
+
+- type: salvageMap
+  id: LargeEngineerChunk
+  name: "Engineer Outpost Chunk"
+  mapPath: /Maps/Salvage/DeltaV/DV-large-engineer-chunk.yml
+
+- type: salvageMap
+  id: AtlasConferenceRoom
+  name: "Atlas Conference Room"
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-conference-room.yml
+
+- type: salvageMap
+  id: AtlasDorms
+  name: "Atlas Dorms"
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-dorms.yml
+
+- type: salvageMap
+  id: AtlasEpistemics
+  name: "Atlas Epistemics Dept."
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-epi.yml
+
+- type: salvageMap
+  id: AtlasMedbay
+  name: "Atlas Medbay"
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-medical.yml
+
+- type: salvageMap
+  id: AtlasService
+  name: "Atlas Service Area"
+  mapPath: /Maps/Salvage/DeltaV/DV-atlas-salvage.yml
+
+# Asteroids
+
+- type: salvageMap
+  id: LargeAsteroid_1
+  name: "30x30 Medical Asteroid"
+  mapPath: /Maps/Salvage/DeltaV/DV-asteroid-large-01.yml
+
+- type: salvageMap
+  id: LargeAsteroid_2
+  name: "30x30 Botanical Asteroid"
+  mapPath: /Maps/Salvage/DeltaV/DV-asteroid-large-02.yml
+
+- type: salvageMap
+  id: LargeAsteroid_3
+  name: "30x30 Artifact Asteroid"
+  mapPath: /Maps/Salvage/DeltaV/DV-asteroid-large-03.yml
+
+#Delta V Maps
+#Medium
+
+- type: salvageMap
+  id: AsteroidSyndiHideout
+  name: "Asteroid Syndicate Hideout"
+  mapPath: /Maps/Salvage/DeltaV/DV-syndi-hideout.yml
+
+#Large
+
+- type: salvageMap
+  id: AsteroidChemlab
+  name: "Asteroid Mining Chemlab"
+  mapPath: /Maps/Salvage/DeltaV/DV-asteroid-mining-chemlab.yml
+
+- type: salvageMap
+  id: LaundromatChunk
+  name: "Laundromat Chunk"
+  mapPath: /Maps/Salvage/DeltaV/DV-laundromat-chunk.yml
+
+# Asteroids
+
+- type: salvageMap
+  id: AsteroidTickNest
+  name: "Tick Nest"
+  mapPath: /Maps/Salvage/DeltaV/DV-tick-nest.yml
+
+- type: salvageMap
+  id: AsteroidMiningMed1
+  name: "Medium Asteroid Mining 1"
+  mapPath: /Maps/Salvage/DeltaV/DV-large-asteroid-mining-01.yml
+
+- type: salvageMap
+  id: AsteroidMiningLarge1
+  name: "Large Asteroid Mining 1"
+  mapPath: /Maps/Salvage/DeltaV/DV-med-asteroid-mining-01.yml
 
 - type: salvageMap
   id: EngineeringChunk

@@ -8,7 +8,6 @@
   - type: StealCondition
     stealGroup: AntiPsychicKnife
     owner: job-name-mantis
-    stealGroup: AntiPsychicKnife
 
 - type: entity
   id: BecomePsionicObjective

@@ -121,6 +121,8 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField("maxAge")]
     public int MaxAge = 120;
 
+
+    // Parkstation-HeightSlider Start
     /// <summary>
     /// The minimum height for this species
     /// </summary>
@@ -138,24 +140,7 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField("defaultHeight")]
     public float DefaultHeight = 1f;
-
-    /// <summary>
-    /// The default width for this species
-    /// </summary>
-    [DataField("defaultWidth")]
-    public float DefaultWidth = 1f;
-
-    /// <summary>
-    /// Whether to scale horizontally or not
-    /// </summary>
-    [DataField("scaleWidth")]
-    public bool ScaleWidth = true;
-
-    /// <summary>
-    /// Whether to scale vertically or not
-    /// </summary>
-    [DataField("scaleHeight")]
-    public bool ScaleHeight = true;
+    // Parkstation-HeightSlider End
 }
 
 public enum SpeciesNaming : byte

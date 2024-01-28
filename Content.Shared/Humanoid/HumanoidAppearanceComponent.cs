@@ -87,7 +87,7 @@ public sealed partial class HumanoidAppearanceComponent : Component
     ///     The height of this humanoid.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Height = 1f;
+    public float Height = 1f; // Parkstation-HeightSlider
 }
 
 [DataDefinition]

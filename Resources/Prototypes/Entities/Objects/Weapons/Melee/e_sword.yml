@@ -38,8 +38,6 @@
             Slash: 15
             Heat: 15
             Structural: 20
-            Blunt: -4.5
-    litDisarmMalus: 0.6
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword.rsi
     layers:
@@ -89,14 +87,8 @@
   description: 'A dark ink pen.'
   components:
   - type: EnergySword
-    secret: true
-    litDamageBonus:
-        types:
-            Slash: 10
-            Heat: 10
-            Blunt: -1
-    litDisarmMalus: 0.4
-    activateSound: !type:SoundPathSpecifier
+  - type: ItemToggle
+    soundActivate:
       path: /Audio/Weapons/ebladeon.ogg
       params:
         volume: -6
@@ -195,8 +187,9 @@
         types:
             Slash: 10
             Heat: 12
-            Blunt: -1
-    litDisarmMalus: 0.6
+    deactivatedSecret: true
+  - type: ItemToggleDisarmMalus
+    activatedDisarmMalus: 0.6
   - type: Sprite
     sprite: DeltaV/Objects/Weapons/Melee/e_cutlass.rsi # DeltaV
     layers:
@@ -253,8 +246,6 @@
             Slash: 12
             Heat: 12
             Structural: 15
-            Blunt: -4.5
-    litDisarmMalus: 0.7
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -283,7 +274,6 @@
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
   - type: Reflect
-    enabled: true
     reflectProb: .80 #DeltaV: 80% Energy Reflection but no ballistics.
     spread: 75
     reflects:

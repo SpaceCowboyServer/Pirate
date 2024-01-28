@@ -97,6 +97,8 @@
       - id: PlushieMothMusician # Nyanotrasen Moth Musician Plushie
       - id: PlushieArachind
         orGroup: GiftPool
+      - id: PlushieArachind
+        orGroup: GiftPool
       - id: ClothingNeckCloakMoth
         orGroup: GiftPool
       - id: ToyMouse

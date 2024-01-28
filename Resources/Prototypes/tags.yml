@@ -1214,9 +1214,4 @@
 - type: Tag
   id: WriteIgnoreStamps
 
-- type: Tag
-  id:  boots
-
-- type: Tag
-  id: CleansForensics
 # PUT YOUR TAGS IN ALPHABETICAL ORDER

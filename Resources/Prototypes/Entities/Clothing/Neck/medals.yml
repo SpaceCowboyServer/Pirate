@@ -88,6 +88,5 @@
     sprite: DeltaV/Clothing/Neck/Medals/clownmedal.rsi # DeltaV - resprite
   - type: Clothing
     sprite: DeltaV/Clothing/Neck/Medals/clownmedal.rsi # DeltaV - resprite
-    # sprite: Clothing/Neck/Medals/clownmedal.rsi
   - type: StealTarget
     stealGroup: ClothingNeckClownmedal

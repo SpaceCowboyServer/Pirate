@@ -298,3 +298,15 @@
       - id: HandheldCrewMonitor
       - id: Flash
       - id: WeaponDisabler
+
+- type: entity
+  noSpawn: true  
+  parent: ClothingBackpackSatchelHolding
+  id: ClothingBackpackSatchelHoldingAdmin
+  components:
+  - type: StorageFill
+    contents:
+    - id: AdminPDA
+    - id: GasAnalyzer
+    - id: trayScanner
+  - type: Unremoveable

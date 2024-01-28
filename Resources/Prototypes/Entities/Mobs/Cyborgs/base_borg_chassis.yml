@@ -225,9 +225,6 @@
     enabled: false
     groups:
     - AllAccessBorg
-  - type: Lock
-    locked: true
-  - type: ActivatableUIRequiresLock
   - type: AccessReader
     access: [["Command"], ["Research"]]
   - type: ShowSecurityIcons

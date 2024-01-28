@@ -94,7 +94,7 @@ public partial class NavMapControl : MapGridControl
         Margin = new Thickness(4f, 0f),
         VerticalAlignment = VAlignment.Center,
         HorizontalAlignment = HAlignment.Center,
-        Pressed = false,
+        Pressed = true,
     };
 
     public NavMapControl() : base(MinDisplayedRange, MaxDisplayedRange, DefaultDisplayedRange)
@@ -190,16 +190,6 @@ public partial class NavMapControl : MapGridControl
         if (args.Function == EngineKeyFunctions.Use)
             _draggin = false;
 
-        if (TrackedEntitySelectedAction == null)
-            return;
-
-        if (args.Function == EngineKeyFunctions.Use)
-            _draggin = false;
-
-        if (TrackedEntitySelectedAction == null)
-            return;
-
-        // if (args.Function == EngineKeyFunctions.Use)
         if (args.Function == EngineKeyFunctions.UIClick)
         {
             if (TrackedEntitySelectedAction == null)

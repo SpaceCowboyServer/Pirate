@@ -873,7 +873,7 @@
   id: spaceshroomcooked
   flavorType: Complex
   description: flavor-complex-spaceshroom-cooked
-  
+
 - type: flavor
   id: lostfriendship
   flavorType: Complex
@@ -888,11 +888,6 @@
   id: punishment
   flavorType: Complex
   description: flavor-complex-punishment
-
-- type: flavor
-  id: holy
-  flavorType: Base
-  description: flavor-base-holy
 
 - type: flavor
   id: horrible

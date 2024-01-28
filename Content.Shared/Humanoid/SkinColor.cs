@@ -163,7 +163,7 @@ public static class SkinColor
     ///     This takes in a color, and returns a color guaranteed to be above MinHuesLightness
     /// </summary>
     /// <param name="color"></param>
-    /// <returns>Either the color as-is if it's above MinHuesLightness, or the color with luminosity increased above MinHuesLightness</returns> 
+    /// <returns>Either the color as-is if it's above MinHuesLightness, or the color with luminosity increased above MinHuesLightness</returns>
     public static Color MakeHueValid(Color color)
     {
         var manipulatedColor = Color.ToHsv(color);
@@ -188,7 +188,6 @@ public static class SkinColor
             HumanoidSkinColor.HumanToned => VerifyHumanSkinTone(color),
             HumanoidSkinColor.TintedHues => VerifyTintedHues(color),
             HumanoidSkinColor.TintedHuesSkin => true, // DeltaV - Tone blending
-            // HumanoidSkinColor.Hues => true,
             HumanoidSkinColor.Hues => VerifyHues(color),
             _ => false,
         };

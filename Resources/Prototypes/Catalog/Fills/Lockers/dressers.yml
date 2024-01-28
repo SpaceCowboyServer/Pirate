@@ -11,7 +11,7 @@
       - id: ClothingNeckCloakCapFormal
       - id: ClothingUniformJumpsuitCapFormal
       - id: ClothingUniformJumpskirtCapFormalDress
-      - id: ClothingHandsGlovesCaptain
+      - id: ClothingHandsGlovesInspection # DeltaV - ClothingHandsGlovesCaptain replaced in favour of inspection gloves
       - id: ClothingNeckMantleCap
 
 - type: entity
@@ -90,7 +90,7 @@
   - type: StorageFill
     contents:
       - id: ClothingNeckMantleRD
-      - id: ClothingNeckCloakRd
+      - id: ClothingNeckCloakMystagogue # DeltaV - ClothingNeckCloakRd replaced in favour of Velta variant
       - id: ClothingHeadHatBeretRND
       - id: ClothingHandsGlovesColorPurple
       - id: ClothingHeadsetAltScience

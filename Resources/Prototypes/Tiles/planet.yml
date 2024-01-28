@@ -116,9 +116,8 @@
     East: /Textures/Tiles/Planet/Snow/snow_double_edge_east.png
     North: /Textures/Tiles/Planet/Snow/snow_double_edge_north.png
     West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
-  baseTurf: FloorDirt
+  isSubfloor: true
   itemDrop: FloorTileItemSnow # Delta V
-  canCrowbar: false # Come back
   canShovel: true # Delta V
   isSubfloor: true
   footstepSounds:

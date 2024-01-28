@@ -54,6 +54,9 @@
     },
     {
       "name": "stamp-warden"
+    },
+    {
+      "name": "paper_stamp-mantis"
     }
   ]
 }

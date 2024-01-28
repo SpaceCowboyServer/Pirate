@@ -12,7 +12,7 @@
   recipeUnlocks:
   - MiningDrill
   - BorgModuleMining
-  - OreProcessorMachineCircuitboard
+  - OreProcessorIndustrialMachineCircuitboard
   - OreBagOfHolding
   - SalvageExpeditionsComputerCircuitboard # DeltaV
 

@@ -65,7 +65,7 @@
       task: SimpleHostileCompound
   - type: NpcFactionMember
     factions:
-    - SimpleNeutral
+    - Syndicate
     - PsionicInterloper #Nyano - Summary: makes part of the psionoic faction.
     - Syndicate
   - type: InteractionPopup

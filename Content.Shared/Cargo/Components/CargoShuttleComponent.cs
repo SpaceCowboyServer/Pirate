@@ -10,7 +10,10 @@ namespace Content.Shared.Cargo.Components;
 [RegisterComponent, NetworkedComponent, Access(typeof(SharedCargoSystem))]
 public sealed partial class CargoShuttleComponent : Component
 {
-    /*
-     * Still needed for drone console for now.
-     */
+    /// <summary>
+    ///     The paper-type prototype to spawn with the order information.
+    /// </summary>
+    [DataField("printerOutput", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    public string PrinterOutput = "PaperCargoInvoice";
+
 }

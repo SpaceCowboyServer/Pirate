@@ -2,13 +2,13 @@ using System.Linq;
 using Content.Server.Botany;
 using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
+using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Psionics;
 using Content.Shared.Abilities.Psionics;
 using Content.Shared.Chat;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
-using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
@@ -129,7 +129,7 @@ public sealed class OracleSystem : EntitySystem
 
         EntityManager.SpawnEntity("ResearchDisk5000", Transform(args.User).Coordinates);
 
-        // DispenseLiquidReward(uid, component);
+        DispenseLiquidReward(uid, component);
 
         var i = _random.Next(1, 4);
 
@@ -154,33 +154,33 @@ public sealed class OracleSystem : EntitySystem
         return false;
     }
 
-    // private void DispenseLiquidReward(EntityUid uid, OracleComponent component)
-    // {
-    //     if (!_solutionSystem.TryGetSolution(uid, OracleComponent.SolutionName, out var fountainSol))
-    //         return;
+    private void DispenseLiquidReward(EntityUid uid, OracleComponent component)
+    {
+        if (!_solutionSystem.TryGetSolution(uid, OracleComponent.SolutionName, out var fountainSol))
+            return;
 
-    //     var allReagents = _prototypeManager.EnumeratePrototypes<ReagentPrototype>()
-    //         .Where(x => !x.Abstract)
-    //         .Select(x => x.ID).ToList();
+        var allReagents = _prototypeManager.EnumeratePrototypes<ReagentPrototype>()
+            .Where(x => !x.Abstract)
+            .Select(x => x.ID).ToList();
 
-    //     var amount = 20 + _random.Next(1, 30) + _glimmerSystem.Glimmer / 10f;
-    //     amount = (float) Math.Round(amount);
+        var amount = 20 + _random.Next(1, 30) + _glimmerSystem.Glimmer / 10f;
+        amount = (float) Math.Round(amount);
 
-    //     var sol = new Solution();
-    //     var reagent = "";
+        var sol = new Solution();
+        var reagent = "";
 
-    //     if (_random.Prob(0.2f))
-    //         reagent = _random.Pick(allReagents);
-    //     else
-    //         reagent = _random.Pick(component.RewardReagents);
+        if (_random.Prob(0.2f))
+            reagent = _random.Pick(allReagents);
+        else
+            reagent = _random.Pick(component.RewardReagents);
 
-    //     sol.AddReagent(reagent, amount);
+        sol.AddReagent(reagent, amount);
 
-    //     _solutionSystem.TryMixAndOverflow(uid, fountainSol, sol, fountainSol.MaxVolume, out var overflowing);
+        _solutionSystem.TryMixAndOverflow(fountainSol.Value, sol, fountainSol.Value.Comp.Solution.MaxVolume, out var overflowing);
 
-    //     if (overflowing != null && overflowing.Volume > 0)
-    //         _puddleSystem.TrySpillAt(uid, overflowing, out var _);
-    // }
+        if (overflowing != null && overflowing.Volume > 0)
+            _puddleSystem.TrySpillAt(uid, overflowing, out var _);
+    }
 
     private void NextItem(OracleComponent component)
     {

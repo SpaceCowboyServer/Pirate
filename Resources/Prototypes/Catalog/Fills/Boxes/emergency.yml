@@ -11,7 +11,6 @@
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
-      # - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -31,7 +30,6 @@
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
-      # - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -73,7 +71,6 @@
       - id: EmergencyMedipen
       - id: EmergencyMedipen
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
-      # - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -94,7 +91,6 @@
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
-      # - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
@@ -117,10 +113,10 @@
     contents:
       - id: ClothingMaskBreath
       - id: EmergencyFunnyOxygenTankFilled
+      - id: SpaceMedipen
       - id: EmergencyMedipen
       - id: Flare
       - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
-      # - id: FoodTinMRE
       - id: DrinkWaterBottleFull
   - type: Tag
     tags:
@@ -138,7 +134,8 @@
       - id: ExtendedEmergencyOxygenTankFilled
       - id: EmergencyMedipen
       - id: Flare
-      - id: FoodTinMRE
+      - id: FoodPSB # Nyanotrasen - Replace Tinned Meat with PSB
+      - id: DrinkWaterBottleFull
   - type: Sprite
     layers:
       - state: internals

@@ -283,7 +283,7 @@
 - type: entity
   id: BedsheetBrigmedic
   parent: BedsheetBase
-  name: Corpsman's bedsheet # DeltaV - rename brigmedic to corpsman
+  name: corpsman's bedsheet # DeltaV - rename brigmedic to corpsman
   description: Not worse than cotton.
   components:
   - type: Sprite

@@ -1355,9 +1355,8 @@
   name: tiles-planet-grass-floor
   sprite: /Textures/Tiles/grass.png
   baseTurf: FloorDirt
-  #canCrowbar: false # Come back
-  canShovel: true # Delta V
   isSubfloor: true
+  canShovel: true #DV
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrass
@@ -1369,9 +1368,8 @@
   name: tiles-jungle-grass-floor
   sprite: /Textures/Tiles/grassjungle.png
   baseTurf: FloorDirt
-  #canCrowbar: false # Come back
-  canShovel: true # Delta V
   isSubfloor: true
+  canShovel: true # Delta V
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassJungle
@@ -1389,7 +1387,6 @@
   - 1.0
   - 1.0
   baseTurf: FloorDirt
-  #canCrowbar: false # Come back
   canShovel: true # Delta V
   isSubfloor: true
   footstepSounds:
@@ -1409,7 +1406,6 @@
   - 1.0
   - 1.0
   baseTurf: FloorDirt
-  #canCrowbar: false # Come back
   canShovel: true # Delta V
   isSubfloor: true
   footstepSounds:
@@ -1428,8 +1424,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: FloorBedrock # Delta V
-  #canCrowbar: false # Come back
+  baseTurf: Plating
   canShovel: true # Delta V
   # baseTurf: Plating
   isSubfloor: true

@@ -430,6 +430,7 @@
 #- type: latheRecipe
 #  id: BorgModuleGrapplingGun
 #  result: BorgModuleGrapplingGun
+#  category: Robotics
 #  completetime: 3
 #  materials:
 #    Steel: 500

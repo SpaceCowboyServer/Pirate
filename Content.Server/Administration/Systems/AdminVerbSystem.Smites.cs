@@ -796,5 +796,55 @@ public sealed partial class AdminVerbSystem
             Message = Loc.GetString("admin-smite-super-speed-description"),
         };
         args.Verbs.Add(superSpeed);
+
+        //Bonk
+        Verb superBonkLite = new()
+        {
+            Text = "Super Bonk Lite",
+            Category = VerbCategory.Smite,
+            Icon = new SpriteSpecifier.Rsi(new("Structures/Furniture/Tables/glass.rsi"), "full"),
+            Act = () =>
+            {
+                _superBonkSystem.StartSuperBonk(args.Target, stopWhenDead: true);
+            },
+            Message = Loc.GetString("admin-smite-super-bonk-lite-description"),
+            Impact = LogImpact.Extreme,
+        };
+        args.Verbs.Add(superBonkLite);
+        Verb superBonk= new()
+        {
+            Text = "Super Bonk",
+            Category = VerbCategory.Smite,
+            Icon = new SpriteSpecifier.Rsi(new("Structures/Furniture/Tables/generic.rsi"), "full"),
+            Act = () =>
+            {
+                _superBonkSystem.StartSuperBonk(args.Target);
+            },
+            Message = Loc.GetString("admin-smite-super-bonk-description"),
+            Impact = LogImpact.Extreme,
+        };
+        args.Verbs.Add(superBonk);
+
+        Verb terminate = new()
+        {
+            Text = "Terminate",
+            Category = VerbCategory.Smite,
+            Icon = new SpriteSpecifier.Rsi(new ("Mobs/Species/Terminator/parts.rsi"), "skull_icon"),
+            Act = () =>
+            {
+                if (!TryComp<MindContainerComponent>(args.Target, out var mindContainer) || mindContainer.Mind == null)
+                    return;
+
+                var coords = Transform(args.Target).Coordinates;
+                var mindId = mindContainer.Mind.Value;
+                _terminator.CreateSpawner(coords, mindId);
+
+                _popupSystem.PopupEntity(Loc.GetString("admin-smite-terminate-prompt"), args.Target,
+                    args.Target, PopupType.LargeCaution);
+            },
+            Impact = LogImpact.Extreme,
+            Message = Loc.GetString("admin-smite-terminate-description")
+        };
+        args.Verbs.Add(terminate);
     }
 }

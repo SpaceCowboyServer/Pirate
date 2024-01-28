@@ -516,7 +516,7 @@
       behaviors:
       - !type:PlaySoundBehavior #Nyano
         sound:
-          path: /Audio/Effects/metalbreak.ogg
+          collection: MetalBreak
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
@@ -533,8 +533,8 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-    destroySound: #Nyano
-      path: /Audio/Effects/metalbreak.ogg
+    destroySound:
+      collection: MetalBreak
   - type: IconSmooth
     key: walls
     base: reinf_over
@@ -788,7 +788,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
     destroySound:
-      path: /Audio/Effects/metalbreak.ogg
+      collection: MetalBreak
   - type: Construction
     graph: Girder
     node: diagonalshuttleWall

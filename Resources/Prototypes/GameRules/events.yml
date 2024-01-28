@@ -55,17 +55,6 @@
 #     duration: 1
 #   - type: BureaucraticErrorRule
 
-#- type: entity
-#  parent: BaseGameRule # DeltaV - this shit is busted most of the time
-#  id: ClosetSkeleton
-#  noSpawn: true
-#  components:
-#  - type: StationEvent
-#    weight: 10
-#    duration: 1
-#  - type: RandomEntityStorageSpawnRule
-#    prototype: MobSkeletonCloset
-
 - type: entity
   id: ClericalError
   parent: BaseGameRule
@@ -77,6 +66,17 @@
     weight: 5
     duration: 1
   - type: ClericalErrorRule
+
+#- type: entity
+#  parent: BaseGameRule # DeltaV - this shit is busted most of the time
+#  id: ClosetSkeleton
+#  noSpawn: true
+#  components:
+#  - type: StationEvent
+#    weight: 10
+#    duration: 1
+#  - type: RandomEntityStorageSpawnRule
+#    prototype: MobSkeletonCloset
 
 - type: entity
   parent: BaseGameRule
@@ -291,6 +291,19 @@
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0.001
 
+# - type: entity
+#   parent: BaseGameRule
+#   id: TerminatorSpawn
+#   noSpawn: true
+#   components:
+#   - type: StationEvent
+#     weight: 8
+#     duration: 1
+#     earliestStart: 30
+#     minimumPlayers: 20
+#   - type: RandomSpawnRule
+#    prototype: SpawnPointGhostTerminator
+
 - type: entity
   parent: BaseGameRule
   id: TerminatorSpawn
@@ -425,6 +438,7 @@
   components:
   - type: StationEvent
     earliestStart: 90 # DeltaV - was 50
+    minimumPlayers: 15
     weight: 2.5 # DeltaV - was 5
     duration: 1
   - type: ZombieRule
@@ -484,12 +498,9 @@
   id: IonStorm
   components:
   - type: StationEvent
-    weight: 5
+    weight: 10
     earliestStart: 20
     reoccurrenceDelay: 60
-    startAnnouncement: station-event-ion-storm-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg # ion_storm.ogg does not use our announcer
     duration: 1
   - type: IonStormRule
 

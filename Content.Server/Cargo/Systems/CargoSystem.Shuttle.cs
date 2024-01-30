@@ -1,27 +1,39 @@
+using System.Linq;
 using Content.Server.Cargo.Components;
+using Content.Server.GameTicking.Events;
+using Content.Server.Shuttles.Components;
+using Content.Server.Shuttles.Events;
 using Content.Shared.Stacks;
 using Content.Shared.Cargo;
 using Content.Shared.Cargo.BUI;
 using Content.Shared.Cargo.Components;
 using Content.Shared.Cargo.Events;
+using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
+using Content.Shared.Whitelist;
+using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
-using Robust.Shared.Audio;
+using Robust.Shared.Utility;
+using Content.Shared.Coordinates;
+using Content.Shared.Mobs;
+using Content.Shared.Mobs.Components;
 
 namespace Content.Server.Cargo.Systems;
 
 public sealed partial class CargoSystem
 {
     /*
-     * Handles cargo shuttle / trade mechanics.
+     * Handles cargo shuttle mechanics.
      */
 
-    private static readonly SoundPathSpecifier ApproveSound = new("/Audio/Effects/Cargo/ping.ogg");
+    public MapId? CargoMap { get; private set; }
 
     private void InitializeShuttle()
     {
-        SubscribeLocalEvent<TradeStationComponent, GridSplitEvent>(OnTradeSplit);
+        SubscribeLocalEvent<CargoShuttleComponent, FTLStartedEvent>(OnCargoFTLStarted);
+        SubscribeLocalEvent<CargoShuttleComponent, FTLCompletedEvent>(OnCargoFTLCompleted);
+        SubscribeLocalEvent<CargoShuttleComponent, FTLTagEvent>(OnCargoFTLTag);
 
         SubscribeLocalEvent<CargoShuttleConsoleComponent, ComponentStartup>(OnCargoShuttleConsoleStartup);
 
@@ -30,6 +42,32 @@ public sealed partial class CargoSystem
         SubscribeLocalEvent<CargoPalletConsoleComponent, BoundUIOpenedEvent>(OnPalletUIOpen);
 
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
+        SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
+
+        _cfgManager.OnValueChanged(CCVars.GridFill, SetGridFill);
+    }
+
+    private void ShutdownShuttle()
+    {
+        _cfgManager.UnsubValueChanged(CCVars.GridFill, SetGridFill);
+    }
+
+    private void SetGridFill(bool obj)
+    {
+        if (obj)
+        {
+            SetupCargoShuttle();
+        }
+    }
+
+    private void OnCargoFTLTag(EntityUid uid, CargoShuttleComponent component, ref FTLTagEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        // Just saves mappers forgetting.
+        args.Handled = true;
+        args.Tag = "DockCargo";
     }
 
     #region Console
@@ -118,15 +156,6 @@ public sealed partial class CargoSystem
 
     #endregion
 
-    private void OnTradeSplit(EntityUid uid, TradeStationComponent component, ref GridSplitEvent args)
-    {
-        // If the trade station gets bombed it's still a trade station.
-        foreach (var gridUid in args.NewGrids)
-        {
-            EnsureComp<TradeStationComponent>(gridUid);
-        }
-    }
-
     #region Shuttle
 
     /// <summary>
@@ -177,9 +206,9 @@ public sealed partial class CargoSystem
         return space;
     }
 
-    private List<(EntityUid Entity, CargoPalletComponent Component, TransformComponent PalletXform)> GetCargoPallets(EntityUid gridUid)
+    private List<(EntityUid Entity, CargoPalletComponent Component)> GetCargoPallets(EntityUid gridUid)
     {
-        _pads.Clear();
+        var pads = new List<(EntityUid, CargoPalletComponent)>();
         var query = AllEntityQuery<CargoPalletComponent, TransformComponent>();
 
         while (query.MoveNext(out var uid, out var comp, out var compXform))
@@ -190,42 +219,22 @@ public sealed partial class CargoSystem
                 continue;
             }
 
-            _pads.Add((uid, comp, compXform));
+            pads.Add((uid, comp));
         }
 
-        return _pads;
-    }
-
-    private IEnumerable<(EntityUid Entity, CargoPalletComponent Component, TransformComponent Transform)>
-        GetFreeCargoPallets(EntityUid gridUid,
-            List<(EntityUid Entity, CargoPalletComponent Component, TransformComponent Transform)> pallets)
-    {
-        _setEnts.Clear();
-
-        foreach (var pallet in pallets)
-        {
-            var aabb = _lookup.GetAABBNoContainer(pallet.Entity, pallet.Transform.LocalPosition, pallet.Transform.LocalRotation);
-
-            if (_lookup.AnyLocalEntitiesIntersecting(gridUid, aabb, LookupFlags.Dynamic))
-                continue;
-
-            yield return pallet;
-        }
+        return pads;
     }
 
     #endregion
 
     #region Station
 
-    private bool SellPallets(EntityUid gridUid, EntityUid? station, out double amount)
+    private void SellPallets(EntityUid gridUid, EntityUid? station, out double amount)
     {
         station ??= _station.GetOwningStation(gridUid);
         GetPalletGoods(gridUid, out var toSell, out amount);
 
         Log.Debug($"Cargo sold {toSell.Count} entities for {amount}");
-
-        if (toSell.Count == 0)
-            return false;
 
         if (station != null)
         {
@@ -237,8 +246,6 @@ public sealed partial class CargoSystem
         {
             Del(ent);
         }
-
-        return true;
     }
 
     private void GetPalletGoods(EntityUid gridUid, out HashSet<EntityUid> toSell, out double amount)
@@ -246,15 +253,10 @@ public sealed partial class CargoSystem
         amount = 0;
         toSell = new HashSet<EntityUid>();
 
-        foreach (var (palletUid, _, _) in GetCargoPallets(gridUid))
+        foreach (var (palletUid, _) in GetCargoPallets(gridUid))
         {
             // Containers should already get the sell price of their children so can skip those.
-            _setEnts.Clear();
-
-            _lookup.GetEntitiesIntersecting(palletUid, _setEnts,
-                LookupFlags.Dynamic | LookupFlags.Sundries);
-
-            foreach (var ent in _setEnts)
+            foreach (var ent in _lookup.GetEntitiesIntersecting(palletUid, LookupFlags.Dynamic | LookupFlags.Sundries | LookupFlags.Approximate))
             {
                 // Dont sell:
                 // - anything already being sold
@@ -302,6 +304,21 @@ public sealed partial class CargoSystem
         return true;
     }
 
+    private void AddCargoContents(EntityUid shuttleUid, CargoShuttleComponent shuttle, StationCargoOrderDatabaseComponent orderDatabase)
+    {
+        var xformQuery = GetEntityQuery<TransformComponent>();
+
+        var pads = GetCargoPallets(shuttleUid);
+        while (pads.Count > 0)
+        {
+            var coordinates = new EntityCoordinates(shuttleUid, xformQuery.GetComponent(_random.PickAndTake(pads).Entity).LocalPosition);
+            if (!FulfillOrder(orderDatabase, coordinates, shuttle.PrinterOutput))
+            {
+                break;
+            }
+        }
+    }
+
     private void OnPalletSale(EntityUid uid, CargoPalletConsoleComponent component, CargoPalletSellMessage args)
     {
         var player = args.Session.AttachedEntity;
@@ -310,32 +327,57 @@ public sealed partial class CargoSystem
             return;
 
         var bui = _uiSystem.GetUi(uid, CargoPalletConsoleUiKey.Sale);
-        var xform = Transform(uid);
-
-        if (xform.GridUid is not EntityUid gridUid)
+        if (Transform(uid).GridUid is not EntityUid gridUid)
         {
             _uiSystem.SetUiState(bui,
             new CargoPalletConsoleInterfaceState(0, 0, false));
             return;
         }
 
-        // // Delta-V change, on sale, add cash to the stations bank account instead of throwing it on the floor
-        // var stationUid = _station.GetOwningStation(uid);
+        // Delta-V change, on sale, add cash to the stations bank account instead of throwing it on the floor
+        var stationUid = _station.GetOwningStation(uid);
 
-        // if (TryComp<StationBankAccountComponent>(stationUid, out var bank))
-        // {
-        //     SellPallets(gridUid, null, out var amount);
-        //     bank.Balance += (int) amount;
-        // }
-        // // End of Delta-V change
+        if (TryComp<StationBankAccountComponent>(stationUid, out var bank))
+        {
+            SellPallets(gridUid, null, out var amount);
+            bank.Balance += (int) amount;
+        }
+        // End of Delta-V change
 
-        if (!SellPallets(gridUid, null, out var price))
+        UpdatePalletConsoleInterface(uid);
+    }
+
+    private void OnCargoFTLStarted(EntityUid uid, CargoShuttleComponent component, ref FTLStartedEvent args)
+    {
+        var stationUid = _station.GetOwningStation(uid);
+
+        // Called
+        if (CargoMap == null ||
+            args.FromMapUid != _mapManager.GetMapEntityId(CargoMap.Value) ||
+            !TryComp<StationCargoOrderDatabaseComponent>(stationUid, out var orderDatabase))
+        {
+            return;
+        }
+
+        AddCargoContents(uid, component, orderDatabase);
+        UpdateOrders(stationUid!.Value, orderDatabase);
+        UpdateCargoShuttleConsoles(uid, component);
+    }
+
+    private void OnCargoFTLCompleted(EntityUid uid, CargoShuttleComponent component, ref FTLCompletedEvent args)
+    {
+        var xform = Transform(uid);
+        // Recalled
+        if (xform.MapID != CargoMap)
             return;
 
-        var stackPrototype = _protoMan.Index<StackPrototype>(component.CashType);
-        _stack.Spawn((int) price, stackPrototype, xform.Coordinates);
-        _audio.PlayPvs(ApproveSound, uid);
-        UpdatePalletConsoleInterface(uid);
+        var stationUid = _station.GetOwningStation(uid);
+
+        if (TryComp<StationBankAccountComponent>(stationUid, out var bank))
+        {
+            SellPallets(uid, stationUid, out var amount);
+            bank.Balance += (int) amount;
+        }
     }
 
     #endregion
@@ -343,6 +385,63 @@ public sealed partial class CargoSystem
     private void OnRoundRestart(RoundRestartCleanupEvent ev)
     {
         Reset();
+        CleanupCargoShuttle();
+    }
+
+    private void OnRoundStart(RoundStartingEvent ev)
+    {
+        if (_cfgManager.GetCVar(CCVars.GridFill))
+            SetupCargoShuttle();
+    }
+
+    private void CleanupCargoShuttle()
+    {
+        if (CargoMap == null || !_mapManager.MapExists(CargoMap.Value))
+        {
+            CargoMap = null;
+            DebugTools.Assert(!EntityQuery<CargoShuttleComponent>().Any());
+            return;
+        }
+
+        _mapManager.DeleteMap(CargoMap.Value);
+        CargoMap = null;
+
+        // Shuttle may not have been in the cargo dimension (e.g. on the station map) so need to delete.
+        var query = AllEntityQuery<CargoShuttleComponent>();
+
+        while (query.MoveNext(out var uid, out var _))
+        {
+            if (TryComp<StationCargoOrderDatabaseComponent>(uid, out var station))
+            {
+                station.Shuttle = null;
+            }
+
+            QueueDel(uid);
+        }
+    }
+
+    private void SetupCargoShuttle()
+    {
+        if (CargoMap != null && _mapManager.MapExists(CargoMap.Value))
+        {
+            return;
+        }
+
+        // It gets mapinit which is okay... buuutt we still want it paused to avoid power draining.
+        CargoMap = _mapManager.CreateMap();
+        var mapUid = _mapManager.GetMapEntityId(CargoMap.Value);
+        var ftl = EnsureComp<FTLDestinationComponent>(_mapManager.GetMapEntityId(CargoMap.Value));
+        ftl.Whitelist = new EntityWhitelist()
+        {
+            Components = new[]
+            {
+                _factory.GetComponentName(typeof(CargoShuttleComponent))
+            }
+        };
+
+        _metaSystem.SetEntityName(mapUid, $"Trading post {_random.Next(1000):000}");
+
+        _console.RefreshShuttleConsoles();
     }
 }
 

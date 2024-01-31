@@ -8,7 +8,7 @@
   dollPrototype: MobFelinidDummy
   skinColoration: HumanToned
   # Parkstation-HeightSlider Start
-  minHeight: 0.65
+  minHeight: 0.75
   defaultHeight: 0.8
   maxHeight: 1.1
   # Parkstation-HeightSlider End

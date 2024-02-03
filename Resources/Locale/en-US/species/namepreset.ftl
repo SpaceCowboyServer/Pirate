@@ -4,3 +4,4 @@ namepreset-thefirstoflast = The {$first} of {$last}
 
 ## Parkstation
 namepreset-first = {$first}
+namepreset-firstdashlast = {$first}-{$last}

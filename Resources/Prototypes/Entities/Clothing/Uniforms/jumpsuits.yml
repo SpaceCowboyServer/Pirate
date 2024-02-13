@@ -1479,9 +1479,9 @@
   description: більше 200 нагород.
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Jumpsuit/dictatorial_fragrance.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/dictatorial_fragrance.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Jumpsuit/dictatorial_fragrance.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/dictatorial_fragrance.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -1490,9 +1490,9 @@
   description: Краще б це попрасувати.
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Jumpsuit/dirtyjeans_tshirt.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/dirtyjeans_tshirt.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Jumpsuit/dirtyjeans_tshirt.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/dirtyjeans_tshirt.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -1501,9 +1501,9 @@
   description: краще б це попрасувати.
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Shorts/dirtyjeans.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Shorts/dirtyjeans.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Shorts/dirtyjeans.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Shorts/dirtyjeans.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -1512,9 +1512,9 @@
   description: прості джинси, та проста майка. ідеальне комбо.
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Jumpsuit/jeans_tshirt.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/jeans_tshirt.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Jumpsuit/jeans_tshirt.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/jeans_tshirt.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -1523,6 +1523,6 @@
   description: Звичайні джинси.
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Shorts/jeans.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Shorts/jeans.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Uniforms/Shorts/jeans.rsi
+    sprite: T_Pirate/Clothing/Uniforms/Shorts/jeans.rsi

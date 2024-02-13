@@ -937,9 +937,9 @@
   description: тепленька!
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Head/Hats/blackhat.rsi
+    sprite: T_Pirate/Clothing/Head/Hats/blackhat.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Head/Hats/blackhat.rsi
+    sprite: T_Pirate/Clothing/Head/Hats/blackhat.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -948,9 +948,9 @@
   description: тепленька!
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Head/Hats/bluehat.rsi
+    sprite: T_Pirate/Clothing/Head/Hats/bluehat.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Head/Hats/bluehat.rsii
+    sprite: T_Pirate/Clothing/Head/Hats/bluehat.rsii
 
 - type: entity
   parent: ClothingHeadBase
@@ -959,9 +959,9 @@
   description: тепленька!
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Head/Hats/bluehat.rsi
+    sprite: T_Pirate/Clothing/Head/Hats/bluehat.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Head/Hats/bluehat.rsi
+    sprite: T_Pirate/Clothing/Head/Hats/bluehat.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -970,9 +970,9 @@
   description: тепленька!
   components:
   - type: Sprite
-    sprite: Resources/Textures/T_Pirate/Clothing/Head/Hats/yellowhat.rsi
+    sprite: T_Pirate/Clothing/Head/Hats/yellowhat.rsi
   - type: Clothing
-    sprite: Resources/Textures/T_Pirate/Clothing/Head/Hats/yellowhat.rsi
+    sprite: T_Pirate/Clothing/Head/Hats/yellowhat.rsi
 
 - type: entity
   parent: ClothingHeadBase

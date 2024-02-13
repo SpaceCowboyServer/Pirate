@@ -178,6 +178,9 @@
         },
         {
             "name": "BlueshieldOfficer"
+        },
+        {
+            "name": "Visitor"
         }
     ]
 }

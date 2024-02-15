@@ -154,6 +154,7 @@
       - SubstationMachineCircuitboard
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
+      - IndustrialChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:

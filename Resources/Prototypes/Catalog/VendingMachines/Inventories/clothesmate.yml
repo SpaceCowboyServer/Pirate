@@ -68,6 +68,8 @@
     ClothingUniformJumpsuitJeansRed: 2 # Nyano - Clothing addition
     ClothingUniformJumpsuitJeansBrown: 2 # Nyano - Clothing addition
     ClothingUniformJumpsuitLostTourist: 2 # Nyano - Clothing addition
+    ClothingUniformJumpsuitCasualWhite: 2 #Brasil
+    ClothingUniformJumpskirtCasualWhite: 2 #Brasil
     ClothingShoesColorBlack: 8
     ClothingShoesColorBrown: 4
     ClothingShoesColorWhite: 3
@@ -111,6 +113,8 @@
     ClothingHandsGlovesColorGreen: 2
     ClothingHandsGlovesColorOrange: 2
     ClothingHandsGlovesColorPurple: 2
+    ClothingUniformJumpskirtRedDress: 2
+    ClothingUniformJumpskirtWeddingDress: 2
   contrabandInventory:
     ClothingMaskNeckGaiter: 2
     ClothingUniformJumpsuitTacticool: 1

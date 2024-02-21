@@ -1000,7 +1000,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtFormalSuit
-  name: formal suit with skirt
+  name: formal suit with a skirt
   description: A loose worn white shirt with a grey pants, perfect for someone looking to relax.
   components:
   - type: Sprite
@@ -1047,4 +1047,174 @@
       - state: equipped-INNERCLOTHING-tie
         color: "#eb0b00"
 
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformBlack
+  name: Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#131313"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#131313"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformRed
+  name: Red Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#cc2102"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#cc2102"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformGreen
+  name: Green Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#00e600"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#00e600"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformBlue
+  name: Blue Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#4997ff"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#4997ff"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformPurple
+  name: Purple Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#853ab6"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#853ab6"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformJPNRed
+  name: Red Japanese Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial_jpn.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#ff0033"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial_jpn.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#ff0033"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformJPNBlue
+  name: Blue Japanese Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial_jpn.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#0066ff"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial_jpn.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#0066ff"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformJPNGreen
+  name: Green Japanese Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial_jpn.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#66cc33"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial_jpn.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#66cc33"
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtColegialUniformJPNYellow
+  name: Yellow Japanese Colegial Uniform
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/colegial_jpn.rsi
+    layers:
+    - state: icon-base
+    - state: icon-color
+      color: "#ffcc00"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/colegial_jpn.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-OUTERCLOTHING-base
+      - state: equipped-OUTERCLOTHING-color
+        color: "#ffcc00"
 

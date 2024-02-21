@@ -976,10 +976,10 @@
         color: "#ffffff"
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingOuterBase
   id: ClothingUniformJumpskirtWeddingDress
   name: Wedding Dress
-  description: A cute dress to be worn on weddings.
+  description: A cute dress to be worn on weddings. Better equipped with an underwear!
   components:
     - type: Sprite
       sprite: Clothing/Uniforms/Jumpskirt/wedding.rsi
@@ -987,10 +987,10 @@
       sprite: Clothing/Uniforms/Jumpskirt/wedding.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: ClothingOuterBase
   id: ClothingUniformJumpskirtRedDress
   name: Red Dress
-  description: A pretty red dress for a good social party.
+  description: A pretty red dress for a good social party. Better equipped with an underwear!
   components:
     - type: Sprite
       sprite: Clothing/Uniforms/Jumpskirt/red-dress.rsi

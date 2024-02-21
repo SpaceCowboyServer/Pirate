@@ -115,6 +115,9 @@
     ClothingHandsGlovesColorPurple: 2
     ClothingUniformJumpskirtRedDress: 2
     ClothingUniformJumpskirtWeddingDress: 2
+    ClothingUniformJumpsuitFormalSuit: 2
+    ClothingUniformJumpskirtFormalSuit: 2
+    
   contrabandInventory:
     ClothingMaskNeckGaiter: 2
     ClothingUniformJumpsuitTacticool: 1

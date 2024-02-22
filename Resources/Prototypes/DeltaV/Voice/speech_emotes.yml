@@ -91,18 +91,6 @@
     - cawing
     - cawed
 
-- type: emote
-  id: Chirp
-  icon: Interface/Emotes/chirp.png
-  category: Vocal
-  chatMessages: [щебече.]
-  chatTriggers:
-    - chirps.
-    - chirp.
-    - chirp!
-    - chirping.
-    - chirped.
-
 #Vulpkanin
 - type: emote
   id: Bark

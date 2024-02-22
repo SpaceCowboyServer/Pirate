@@ -1549,7 +1549,7 @@ Entries:
     - type: Tweak
       message: >-
         More improvements all around to Submarine Station as well as the
-        addition of medical cyborgs. 
+        addition of medical cyborgs.
   id: 233
   time: '2024-02-08T19:21:16.0000000+00:00'
 - author: FluffiestFloof
@@ -1610,7 +1610,7 @@ Entries:
       message: >-
         Harpies have received a full visual rework. Featuring clothing sprites,
         new markings, a complete overhaul of their layering, as well as visual
-        systems. 
+        systems.
     - type: Add
       message: Harpies now have bird related speech verbs
     - type: Add
@@ -1619,7 +1619,7 @@ Entries:
         default with the new Ultraviolet Vision trait, letting them see a whole
         new spectrum of colors. This trait can be taken by other curious people.
         Harpies that wish to see in RGB colors can instead take the new Normal
-        Vision trait. 
+        Vision trait.
   id: 242
   time: '2024-02-12T22:25:02.0000000+00:00'
 - author: DebugOk
@@ -1636,3 +1636,57 @@ Entries:
       message: Removed the ability of Harpies to destroy people's ears.
   id: 244
   time: '2024-02-13T13:29:37.0000000+00:00'
+- author: deltanedas
+  changes:
+    - type: Add
+      message: >-
+        Brought back paradox anomalies. Beware anyone that looks *just* like
+        you!
+  id: 245
+  time: '2024-02-13T15:55:35.0000000+00:00'
+- author: FluffiestFloof
+  changes:
+    - type: Add
+      message: Added Deuteranopia trait.
+    - type: Tweak
+      message: >-
+        Vulpkanin now start with Deuteranopia by default which can be removed
+        using the Normal Vision trait.
+  id: 246
+  time: '2024-02-15T17:27:24.0000000+00:00'
+- author: FluffiestFloof
+  changes:
+    - type: Tweak
+      message: Glimmer Drain now requires 5 Normality Crystals to craft.
+  id: 247
+  time: '2024-02-17T03:38:14.0000000+00:00'
+- author: VMSolidus
+  changes:
+    - type: Add
+      message: 'Metempsychosis machines have been added to the game. '
+  id: 248
+  time: '2024-02-18T02:36:16.0000000+00:00'
+- author: DebugOk
+  changes:
+    - type: Add
+      message: Merged upstream
+    - type: Fix
+      message: Fixed the upstream changelog not rendering
+  id: 249
+  time: '2024-02-18T23:05:48.0000000+00:00'
+- author: DebugOk
+  changes:
+    - type: Tweak
+      message: Whitelist to join now works based on slots instead of player count
+    - type: Tweak
+      message: Periapsis now has only 10 non-whitelisted slots
+  id: 250
+  time: '2024-02-20T19:46:17.0000000+00:00'
+- author: rosieposieeee
+  changes:
+    - type: Remove
+      message: >-
+        Submarine Station has been temporarily removed from rotation for routine
+        maintenance.
+  id: 251
+  time: '2024-02-21T01:15:08.0000000+00:00'

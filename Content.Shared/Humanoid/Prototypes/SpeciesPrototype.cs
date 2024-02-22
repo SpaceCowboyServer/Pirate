@@ -145,12 +145,13 @@ public sealed partial class SpeciesPrototype : IPrototype
 
 public enum SpeciesNaming : byte
 {
+    First,
     FirstLast,
     FirstDashFirst,
     //Start of Nyano - Summary: for Oni naming
     LastNoFirst,
     //End of Nyano - Summary: for Oni naming
     TheFirstofLast,
-    First, // Parkstation-Shadowkin
+    // First, // Parkstation-Shadowkin
     FirstDashLast, // Parkstation-IPC
 }

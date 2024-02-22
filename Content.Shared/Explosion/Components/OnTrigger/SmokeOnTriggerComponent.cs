@@ -1,6 +1,5 @@
 using Content.Shared.Explosion.EntitySystems;
 using Content.Shared.Chemistry.Components;
-using Content.Shared.Explosion.EntitySystems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.GameStates;

@@ -6537,13 +6537,6 @@ entities:
     - type: Transform
       pos: 8.697065,7.5010996
       parent: 1
-- proto: BoxShotgunSlug
-  entities:
-  - uid: 45
-    components:
-    - type: Transform
-      pos: 7.509094,0.92341375
-      parent: 1
 - proto: CableApcExtension
   entities:
   - uid: 28
@@ -8648,6 +8641,13 @@ entities:
     - type: Transform
       pos: 5.5,-5.5
       parent: 1
+- proto: CrateCargoGambling
+  entities:
+  - uid: 1537
+    components:
+    - type: Transform
+      pos: 2.5,15.5
+      parent: 1
 - proto: CratePartsT4
   entities:
   - uid: 214
@@ -8660,13 +8660,12 @@ entities:
     - type: Transform
       pos: 7.5,3.5
       parent: 1
-- proto: CyberPen
+- proto: CrateSyndicate
   entities:
-  - uid: 2850
+  - uid: 2786
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -6.66263,0.0030789375
+      pos: 0.5,15.5
       parent: 1
 - proto: DefibrillatorCabinetFilled
   entities:
@@ -9025,12 +9024,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 9.4807,-6.531718
       parent: 1
-- proto: Emag
+- proto: EldritchBlade
   entities:
-  - uid: 2786
+  - uid: 2850
     components:
     - type: Transform
-      pos: 0.5410099,15.535759
+      pos: 9.484079,14.502773
       parent: 1
 - proto: EmergencyLight
   entities:
@@ -10604,7 +10603,7 @@ entities:
       deviceLists:
       - 2780
     - type: Door
-      secondsUntilStateChange: -12519.825
+      secondsUntilStateChange: -16068.411
       state: Closing
   - uid: 2302
     components:
@@ -10643,7 +10642,7 @@ entities:
       deviceLists:
       - 2798
     - type: Door
-      secondsUntilStateChange: -12624.108
+      secondsUntilStateChange: -16172.694
       state: Closing
   - uid: 2773
     components:
@@ -12643,13 +12642,6 @@ entities:
     - type: Transform
       pos: 4.5,9.5
       parent: 1
-- proto: HolyHandGrenade
-  entities:
-  - uid: 3462
-    components:
-    - type: Transform
-      pos: 9.494265,14.547373
-      parent: 1
 - proto: HospitalCurtains
   entities:
   - uid: 536
@@ -13059,6 +13051,18 @@ entities:
     - type: Transform
       pos: -2.5,26.5
       parent: 1
+- proto: LuxuryPen
+  entities:
+  - uid: 298
+    components:
+    - type: Transform
+      pos: -8.505112,0.12758207
+      parent: 1
+  - uid: 645
+    components:
+    - type: Transform
+      pos: -8.286362,0.10673475
+      parent: 1
 - proto: MachineAPE
   entities:
   - uid: 46
@@ -13178,14 +13182,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -16.381996,-8.5095825
-      parent: 1
-- proto: PenCentcom
-  entities:
-  - uid: 2907
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -6.4024334,-0.02688694
       parent: 1
 - proto: PlantBGoneSpray
   entities:
@@ -14107,7 +14103,7 @@ entities:
   - uid: 486
     components:
     - type: Transform
-      pos: 2.5,15.5
+      pos: 9.5,14.5
       parent: 1
   - uid: 494
     components:
@@ -14124,11 +14120,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 7.5,0.5
-      parent: 1
-  - uid: 1537
-    components:
-    - type: Transform
-      pos: 0.5,15.5
       parent: 1
   - uid: 2030
     components:
@@ -14151,12 +14142,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,13.5
-      parent: 1
-  - uid: 3262
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 9.5,14.5
       parent: 1
   - uid: 3452
     components:
@@ -14460,10 +14445,15 @@ entities:
       parent: 1
 - proto: RandomAmmoBox
   entities:
-  - uid: 645
+  - uid: 45
     components:
     - type: Transform
       pos: -7.5,9.5
+      parent: 1
+  - uid: 2907
+    components:
+    - type: Transform
+      pos: 7.5,0.5
       parent: 1
 - proto: RandomArtifactSpawner
   entities:
@@ -14808,13 +14798,6 @@ entities:
     components:
     - type: Transform
       pos: -6.4839625,-3.2264616
-      parent: 1
-- proto: SecurityTechFabCircuitboard
-  entities:
-  - uid: 298
-    components:
-    - type: Transform
-      pos: 2.5161133,15.409932
       parent: 1
 - proto: SentientSlimeCore
   entities:
@@ -25707,15 +25690,6 @@ entities:
       currentFireMode:
         fireCost: 100
         proto: AnomalousParticleDeltaStrong
-- proto: WeaponPistolN1984
-  entities:
-  - uid: 2936
-    components:
-    - type: Transform
-      pos: 2.4643097,15.572181
-      parent: 1
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: True
 - proto: WeaponRackMeleeBase
   entities:
   - uid: 2738

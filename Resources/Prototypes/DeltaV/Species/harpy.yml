@@ -35,28 +35,6 @@
     RFoot: MobHarpyRFoot
 
 
-- type: speciesBaseSprites
-  id: MobHarpySprites
-  sprites:
-    Head: MobHarpyHead
-    Hair: MobHumanoidAnyMarking
-    FacialHair: MobHumanoidAnyMarking
-    Snout: MobHumanoidAnyMarking
-    Chest: MobHarpyTorso
-    HeadTop: MobHumanoidAnyMarking
-    HeadSide: MobHumanoidAnyMarking
-    Tail: MobHumanoidAnyMarking
-    Eyes: MobHumanoidEyes
-    LArm: MobHarpyLArm
-    RArm: MobHarpyRArm
-    LHand: MobHarpyLHand
-    RHand: MobHarpyRHand
-    LLeg: MobHarpyLLeg
-    RLeg: MobHarpyRLeg
-    LFoot: MobHarpyLFoot
-    RFoot: MobHarpyRFoot
-
-
 - type: markingPoints
   id: MobHarpyMarkingLimits
   points:

@@ -467,7 +467,7 @@
 
 - type: entity
   parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatOvercoat
+  id: ClothingOuterCoatOvercoatPirate
   name: шинель
   description: Стильно виглядає.
   components:

@@ -65,6 +65,9 @@
         - ClothingUniformJumpsuitPirate
         - ClothingShoesBootsCowboyFancy
         - ClothingHeadHatCowboyBountyHunter
+        - ClothingShoesRobocop
+        - ClothingHeadHatRobocop
+        - ClothingOuterSuitRobocop
       rareChance: 0.01
       prototypes:
         - Lighter

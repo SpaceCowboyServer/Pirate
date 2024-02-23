@@ -486,6 +486,9 @@
   id: EmitterBolt
 
 - type: Tag
+  id: EmptyMedipen
+
+- type: Tag
   id: Enzyme
 
 - type: Tag
@@ -798,6 +801,9 @@
 
 - type: Tag
   id: Medkit
+
+- type: Tag
+  id: Medipen
 
 - type: Tag
   id: Metal

@@ -109,3 +109,46 @@
   - type: ConditionalSpawner
     prototypes:
       - MobAbomination
+
+- type: entity
+  name: Watcher spawner
+  id: SpawnMobWatchers
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+        sprite: Mobs/Lavaland/watcher.rsi
+  - type: ConditionalSpawner
+    prototypes:
+      - MobWatcherLavaland
+      - MobWatcherMagmawing
+      - MobWatcherIcewing
+      
+- type: entity
+  name: KillerTomato spawner
+  id: SpawnMobTomatoKillers
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: produce
+        sprite: Nyanotrasen/Mobs/Mutants/killer_tomato.rsi
+  - type: ConditionalSpawner
+    prototypes:
+      - MobTomatoKiller
+
+- type: entity
+  name: Dungeon SpaceDragon spawner
+  id: SpawnDungeon SpaceDragon
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: alive
+        sprite: Mobs/Aliens/Carps/dragon.rsi
+  - type: ConditionalSpawner
+    prototypes:
+      - MobDragonDungeon

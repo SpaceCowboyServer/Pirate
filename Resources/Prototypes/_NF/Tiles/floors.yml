@@ -9,4 +9,4 @@
     collection: FootstepAsteroid
   heatCapacity: 10000
   weather: true
-  # spacing/notspacing is based on the BaseTurf, I change This one from plating to Space
+  # spacing, notspacing is based on the BaseTurf, I change This one from plating to Space

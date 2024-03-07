@@ -4,6 +4,7 @@
   sprite: /Textures/Tiles/Asteroid/asteroid_tile.png
   baseTurf: Space
   isSubfloor: false
+  canCrowbar: false
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000

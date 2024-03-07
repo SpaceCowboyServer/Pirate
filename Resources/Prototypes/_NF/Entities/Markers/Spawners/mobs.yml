@@ -118,7 +118,8 @@
   - type: Sprite
     layers:
       - state: green
-        sprite: Mobs/Lavaland/watcher.rsi
+      - state: unshaded
+        sprite: Mobs/Aliens/Lavaland/watcher.rsi
   - type: ConditionalSpawner
     prototypes:
       - MobWatcherLavaland

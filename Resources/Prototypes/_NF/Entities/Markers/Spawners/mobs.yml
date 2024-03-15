@@ -153,3 +153,17 @@
   - type: ConditionalSpawner
     prototypes:
       - MobDragonDungeon
+
+- type: entity
+  name: Tarantula (Angry) Spawner
+  id: SpawnTarantula
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: tarantula
+        sprite: Mobs/Animals/spider.rsi
+  - type: ConditionalSpawner
+    prototypes:
+      - MobGiantSpiderAngry

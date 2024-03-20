@@ -3,12 +3,14 @@ using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Text.RegularExpressions;
+using Content.Client.Guidebook;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI;
 using Content.Client.Message;
 using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
+using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -126,6 +128,8 @@ namespace Content.Client.Preferences.UI
             _configurationManager = configurationManager;
             _markingManager = IoCManager.Resolve<MarkingManager>();
             _loadoutSystem = EntitySystem.Get<LoadoutSystem>();
+
+            SpeciesInfoButton.ToolTip = Loc.GetString("humanoid-profile-editor-guidebook-button-tooltip");
 
             #region Left
 
@@ -590,8 +594,28 @@ namespace Content.Client.Preferences.UI
 
             preferencesManager.OnServerDataLoaded += LoadServerData;
 
+            SpeciesInfoButton.OnPressed += OnSpeciesInfoButtonPressed;
+
+            UpdateSpeciesGuidebookIcon();
 
             IsDirty = false;
+        }
+
+        private void OnSpeciesInfoButtonPressed(BaseButton.ButtonEventArgs args)
+        {
+            var guidebookController = UserInterfaceManager.GetUIController<GuidebookUIController>();
+            var species = Profile?.Species ?? SharedHumanoidAppearanceSystem.DefaultSpecies;
+            var page = "Species";
+            if (_prototypeManager.HasIndex<GuideEntryPrototype>(species))
+                page = species;
+
+            if (_prototypeManager.TryIndex<GuideEntryPrototype>("Species", out var guideRoot))
+            {
+                var dict = new Dictionary<string, GuideEntry>();
+                dict.Add("Species", guideRoot);
+                //TODO: Don't close the guidebook if its already open, just go to the correct page
+                guidebookController.ToggleGuidebook(dict, includeChildren:true, selected: page);
+            }
         }
 
         private void ToggleClothes(BaseButton.ButtonEventArgs obj)
@@ -606,10 +630,8 @@ namespace Content.Client.Preferences.UI
             _jobCategories.Clear();
             var firstCategory = true;
 
-            var departments = _prototypeManager.EnumeratePrototypes<DepartmentPrototype>()
-                .OrderByDescending(department => department.Weight)
-                .ThenBy(department => Loc.GetString($"department-{department.ID}"))
-                .ToList();
+            var departments = _prototypeManager.EnumeratePrototypes<DepartmentPrototype>().ToArray();
+            Array.Sort(departments, DepartmentUIComparer.Instance);
 
             foreach (var department in departments)
             {
@@ -657,9 +679,8 @@ namespace Content.Client.Preferences.UI
 
                 var jobs = department.Roles.Select(jobId => _prototypeManager.Index<JobPrototype>(jobId))
                     .Where(job => job.SetPreference)
-                    .OrderByDescending(job => job.Weight)
-                    .ThenBy(job => job.LocalizedName)
-                    .ToList();
+                    .ToArray();
+                Array.Sort(jobs, JobUIComparer.Instance);
 
                 foreach (var job in jobs)
                 {
@@ -899,6 +920,7 @@ namespace Content.Client.Preferences.UI
             CMarkings.SetSpecies(newSpecies); // Repopulate the markings tab as well.
             UpdateSexControls(); // update sex for new species
             RebuildSpriteView(); // they might have different inv so we need a new dummy
+            UpdateSpeciesGuidebookIcon();
             IsDirty = true;
             _needUpdatePreview = true;
         }
@@ -1055,6 +1077,25 @@ namespace Content.Client.Preferences.UI
                 }
             }
 
+        }
+
+        public void UpdateSpeciesGuidebookIcon()
+        {
+            SpeciesInfoButton.StyleClasses.Clear();
+
+            var species = Profile?.Species;
+            if (species is null)
+                return;
+
+            if (!_prototypeManager.TryIndex<SpeciesPrototype>(species, out var speciesProto))
+                return;
+
+            // Don't display the info button if no guide entry is found
+            if (!_prototypeManager.HasIndex<GuideEntryPrototype>(species))
+                return;
+
+            var style = speciesProto.GuideBookIcon;
+            SpeciesInfoButton.StyleClasses.Add(style);
         }
 
         private void UpdateMarkings()
@@ -1448,7 +1489,7 @@ namespace Content.Client.Preferences.UI
                 var icon = new TextureRect
                 {
                     TextureScale = new Vector2(2, 2),
-                    Stretch = TextureRect.StretchMode.KeepCentered
+                    VerticalAlignment = VAlignment.Center
                 };
                 var jobIcon = protoMan.Index<StatusIconPrototype>(proto.Icon);
                 icon.Texture = jobIcon.Icon.Frame0();

@@ -22,18 +22,6 @@
     - RampingStationEventScheduler
 
 - type: gamePreset
-  id: AllAtOnce
-  name: all-at-once-title
-  description: all-at-once-description
-  showInVote: false
-  rules:
-    - Nukeops
-    - Traitor
-    - Revolutionary
-    - Zombie
-    - RampingStationEventScheduler
-
-- type: gamePreset
   id: Extended
   alias:
   - extended
@@ -105,6 +93,7 @@
   showInVote: false
   rules:
     - Traitor
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
@@ -130,6 +119,7 @@
   showInVote: false
   rules:
     - Nukeops
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 
@@ -144,6 +134,7 @@
   showInVote: false
   rules:
     - Revolutionary
+    - SubGamemodesRule
     - BasicStationEventScheduler
     - BasicRoundstartVariation
 

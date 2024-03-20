@@ -16,4 +16,7 @@ public sealed partial class CargoShuttleComponent : Component
     [DataField("printerOutput", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
     public string PrinterOutput = "PaperCargoInvoice";
 
+    /*
+     * Still needed for drone console for now.
+     */
 }

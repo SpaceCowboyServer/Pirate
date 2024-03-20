@@ -3,6 +3,8 @@
   abstract: true
   parent: BaseItem
   components:
+  - type: Item
+    storedRotation: -90
   - type: Battery
     pricePerJoule: 0.15
   - type: PowerCell
@@ -27,7 +29,6 @@
           Quantity: 5
   - type: Tag
     tags:
-      - DroneUsable
       - PowerCell
   - type: Appearance
   - type: PowerCellVisuals
@@ -50,7 +51,6 @@
     startingCharge: 70
   - type: Tag
     tags:
-      - DroneUsable
       - PotatoBattery
   - type: Construction
     graph: PowerCellPotato

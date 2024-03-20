@@ -419,10 +419,8 @@ namespace Content.Shared.Preferences
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
-        public void EnsureValid()
+        public void EnsureValid(IConfigurationManager configManager, IPrototypeManager prototypeManager)
         {
-            var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
-
             if (!prototypeManager.TryIndex<SpeciesPrototype>(Species, out var speciesPrototype) || speciesPrototype.RoundStart == false)
             {
                 Species = SharedHumanoidAppearanceSystem.DefaultSpecies;
@@ -438,15 +436,10 @@ namespace Content.Shared.Preferences
             };
 
             // ensure the species can be that sex and their age fits the founds
-            var age = Age;
-            if (speciesPrototype != null)
-            {
-                if (!speciesPrototype.Sexes.Contains(sex))
-                {
-                    sex = speciesPrototype.Sexes[0];
-                }
-                age = Math.Clamp(Age, speciesPrototype.MinAge, speciesPrototype.MaxAge);
-            }
+            if (!speciesPrototype.Sexes.Contains(sex))
+                sex = speciesPrototype.Sexes[0];
+
+            var age = Math.Clamp(Age, speciesPrototype.MinAge, speciesPrototype.MaxAge);
 
             var gender = Gender switch
             {
@@ -473,7 +466,6 @@ namespace Content.Shared.Preferences
 
             name = name.Trim();
 
-            var configManager = IoCManager.Resolve<IConfigurationManager>();
             if (configManager.GetCVar(CCVars.RestrictedNames))
             {
                 name = Regex.Replace(name, @"[^\u0041-\u005A,\u0061-\u007A,\u00C0-\u00D6,\u00D8-\u00F6,\u00F8-\u00FF,\u0100-\u017F,\u0400-\u052F\u2DE0-\u2DFF\uA640-\uA69F' -]", string.Empty);
@@ -550,7 +542,7 @@ namespace Content.Shared.Preferences
             };
 
             var priorities = new Dictionary<string, JobPriority>(JobPriorities
-                .Where(p => prototypeManager.HasIndex<JobPrototype>(p.Key) && p.Value switch
+                .Where(p => prototypeManager.TryIndex<JobPrototype>(p.Key, out var job) && job.SetPreference && p.Value switch
                 {
                     JobPriority.Never => false, // Drop never since that's assumed default.
                     JobPriority.Low => true,
@@ -560,7 +552,7 @@ namespace Content.Shared.Preferences
                 }));
 
             var antags = AntagPreferences
-                .Where(prototypeManager.HasIndex<AntagPrototype>)
+                .Where(id => prototypeManager.TryIndex<AntagPrototype>(id, out var antag) && antag.SetPreference)
                 .ToList();
 
             var traits = TraitPreferences
@@ -613,6 +605,13 @@ namespace Content.Shared.Preferences
 
             _loadoutPreferences.Clear();
             _loadoutPreferences.AddRange(loadouts);
+        }
+
+        public ICharacterProfile Validated(IConfigurationManager configManager, IPrototypeManager prototypeManager)
+        {
+            var profile = new HumanoidCharacterProfile(this);
+            profile.EnsureValid(configManager, prototypeManager);
+            return profile;
         }
 
         // sorry this is kind of weird and duplicated,

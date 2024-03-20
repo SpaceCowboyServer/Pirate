@@ -261,6 +261,13 @@ namespace Content.Shared.CCVar
             CVarDef.Create("game.soft_max_players", 30, CVar.SERVERONLY | CVar.ARCHIVE);
 
         /// <summary>
+        /// If a player gets denied connection to the server,
+        /// how long they are forced to wait before attempting to reconnect.
+        /// </summary>
+        public static readonly CVarDef<int> GameServerFullReconnectDelay =
+            CVarDef.Create("game.server_full_reconnect_delay", 30, CVar.SERVERONLY);
+
+        /// <summary>
         /// Whether or not panic bunker is currently enabled.
         /// </summary>
         public static readonly CVarDef<bool> PanicBunkerEnabled =
@@ -381,6 +388,12 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<string> SecretWeightPrototype =
             CVarDef.Create("game.secret_weight_prototype", "Secret", CVar.SERVERONLY);
 
+        /// <summary>
+        /// The id of the sound collection to randomly choose a sound from and play when the round ends.
+        /// </summary>
+        public static readonly CVarDef<string> RoundEndSoundCollection =
+            CVarDef.Create("game.round_end_sound_collection", "RoundEnd", CVar.SERVERONLY);
+
         /*
          * Discord
          */
@@ -498,6 +511,13 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<int> PiratesPlayersPerOp =
             CVarDef.Create("pirates.players_per_pirate", 5);
+
+        /*
+         * Nukeops
+         */
+
+        public static readonly CVarDef<bool> NukeopsSpawnGhostRoles =
+            CVarDef.Create("nukeops.spawn_ghost_roles", false);
 
         /*
          * Tips
@@ -850,6 +870,13 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<float> AdminAfkTime =
             CVarDef.Create("admin.afk_time", 600f, CVar.SERVERONLY);
+
+        /// <summary>
+        /// If true, admins are able to connect even if
+        /// <see cref="SoftMaxPlayers"/> would otherwise block regular players.
+        /// </summary>
+        public static readonly CVarDef<bool> AdminBypassMaxPlayers =
+            CVarDef.Create("admin.bypass_max_players", true, CVar.SERVERONLY);
 
         /*
          * Explosions
@@ -1383,7 +1410,7 @@ namespace Content.Shared.CCVar
         /// Whether the arrivals shuttle is enabled.
         /// </summary>
         public static readonly CVarDef<bool> ArrivalsShuttles =
-            CVarDef.Create("shuttle.arrivals", false, CVar.SERVERONLY);
+            CVarDef.Create("shuttle.arrivals", true, CVar.SERVERONLY);
 
         /// <summary>
         /// The map to use for the arrivals station.
@@ -1491,15 +1518,6 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool> CrewManifestUnsecure =
             CVarDef.Create("crewmanifest.unsecure", true, CVar.REPLICATED);
 
-        /// <summary>
-        ///     Dictates the order the crew manifest will appear in, in terms of its sections.
-        ///     Sections not in this list will appear at the end of the list, in no
-        ///     specific order.
-        /// </summary>
-        public static readonly CVarDef<string> CrewManifestOrdering =
-            CVarDef.Create("crewmanifest.ordering", "Command,Security,Science,Medical,Engineering,Cargo,Civilian,Unknown",
-                CVar.REPLICATED);
-
         /*
          * Biomass
          */
@@ -1585,6 +1603,13 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<float> ScreenShakeIntensity =
             CVarDef.Create("accessibility.screen_shake_intensity", 1f, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+        /// <summary>
+        /// A generic toggle for various visual effects that are color sensitive.
+        /// As of 2/16/24, only applies to progress bar colors.
+        /// </summary>
+        public static readonly CVarDef<bool> AccessibilityColorblindFriendly =
+            CVarDef.Create("accessibility.colorblind_friendly", false, CVar.CLIENTONLY | CVar.ARCHIVE);
 
         /*
          * CHAT

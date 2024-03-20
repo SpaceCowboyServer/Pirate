@@ -42,7 +42,7 @@
       types:
         Blunt: 9.5
 - type: entity
-  parent: ClothingHandsBase 
+  parent: ClothingHandsBase
   id: ClothingHandsLobsterClaws
   name: lobster claws
   description: Snip, snip, snip.
@@ -56,3 +56,23 @@
   - type: Fiber
     fiberMaterial: fibers-leather
     fiberColor: fibers-red
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesChemist
+  name: heavy nitrile gloves
+  description: A pair of thick gloves that provide some protection from caustic chemicals.
+  components:
+  - type: Sprite
+    sprite: DeltaV/Clothing/Hands/Gloves/hvchemresgloves.rsi
+  - type: Clothing
+    sprite: DeltaV/Clothing/Hands/Gloves/hvchemresgloves.rsi
+  - type: Fiber
+    fiberMaterial: fibers-rubber
+    fiberColor: fibers-black
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.95
+  - type: TemperatureProtection
+    coefficient: 1

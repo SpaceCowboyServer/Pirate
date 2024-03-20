@@ -6,8 +6,6 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitSpatio
-      - id: OxygenTankFilled
-      - id: NitrogenTankFilled
       - id: ClothingShoesBootsMag
       - id: ClothingMaskGasExplorer
       - id: ClothingBeltUtilityFilled
@@ -19,6 +17,7 @@
       - id: ClothingShoesBootsWinterMiner #Delta V: Add departmental winter boots
       - id: SeismicCharge
         amount: 2
+      - id: JetpackMiniFilled # DeltaV - Salv lost their shuttle
       - id: OreBag
         prob: 0.5
       - id: Flare
@@ -48,6 +47,7 @@
       - id: ClothingShoesBootsWinterMiner #Delta V: Add departmental winter boots
       - id: SeismicCharge
         amount: 2
+      - id: JetpackMiniFilled # DeltaV - Salv lost their shuttle
       - id: OreBag
         prob: 0.5
       - id: Flare

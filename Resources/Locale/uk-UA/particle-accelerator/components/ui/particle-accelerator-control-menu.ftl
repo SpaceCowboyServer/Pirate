@@ -1,5 +1,5 @@
-particle-accelerator-control-menu-on-button = On
-particle-accelerator-control-menu-off-button = Off
+particle-accelerator-control-menu-on-button = Включ
+particle-accelerator-control-menu-off-button = Виключ
 particle-accelerator-control-menu-service-manual-reference = Refer to p.132 of service manual
 particle-accelerator-control-menu-device-version-label = Mark 2 Particle Accelerator
 particle-accelerator-control-menu-power-label = Power:
@@ -13,4 +13,4 @@ particle-accelerator-control-menu-status-label = Status: {$status}
 particle-accelerator-control-menu-status-operational = Operational
 particle-accelerator-control-menu-status-incomplete = Incomplete
 particle-accelerator-control-menu-draw-not-available = Draw: N/A
-particle-accelerator-control-menu-draw = Draw: {$watts}/{$lastReceive} 
+particle-accelerator-control-menu-draw = Draw: {$watts}/{$lastReceive}

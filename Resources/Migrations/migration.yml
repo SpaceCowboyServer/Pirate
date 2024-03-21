@@ -163,6 +163,21 @@ ClothingHeadHelmetVoidParamed: null
 # 2024-01-19
 DefaultStationBeaconTeslaEngine: null
 
+CrateSyndicateLightSurplusBundle: null
+ClothingBackpackDuffelSyndicateBundleSamurai: null
+FireAxeCabinetFilledCommand: null
+RandomCargoSpawner: null
+MedicalTrackingImplanter: null
+PlasteelArmingSword: null
+SolidReinforcedSecretDoor: SolidSecretDoor
+VendingMachineArcadia: null
+WeaponRackMeleeBase: null
+XenoAISpawnerQueen: null
+CrateNPCEmotionalSupportSafe: null
+PlushieCorgi: null
+PlushieGirlyCorgi: null
+PlushieSlips: null
+RandomMagicBookSafe: null
 
 PoweredlightColoredBlack : PoweredLightColoredBlack
 PoweredlightColoredRed: PoweredLightColoredRed

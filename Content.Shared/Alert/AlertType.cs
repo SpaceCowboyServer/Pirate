@@ -33,6 +33,7 @@ namespace Content.Shared.Alert
         Charge, // Parkstation-IPC
         Stamina,
         ShadowkinPower,
+        MageMana,
         Pulled,
         Pulling,
         Magboots,

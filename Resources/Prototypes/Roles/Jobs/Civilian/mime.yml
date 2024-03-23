@@ -6,6 +6,7 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 7200 # DeltaV - 2 hours
+    - !type:WhitelistRequirement # PIRATE - Whitelist requirement
   startingGear: MimeGear
   icon: "JobIconMime"
   supervisors: job-supervisors-hop
@@ -18,6 +19,7 @@
     components:
     - type: Psionic # Nyano - Summary: Makes the mime psionic.
     - type: MimePowers
+    - type: FrenchAccent
 
 - type: startingGear
   id: MimeGear

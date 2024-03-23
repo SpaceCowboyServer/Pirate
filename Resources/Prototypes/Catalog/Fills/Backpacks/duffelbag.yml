@@ -130,6 +130,18 @@
         amount: 2
 
 - type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledCSAR
+  name: C-SAR bundle
+  description: "A brand new, top of the line Cybersun Specialist Automatic Rifle, and 3 spare magazines."
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSubMachineGunCSAR
+      - id: MagazineCaselessRifle
+        amount: 2
+
+- type: entity
   parent: ClothingBackpackDuffelSyndicateAmmo
   id: ClothingBackpackDuffelSyndicateAmmoFilled
   name: ammo bundle
@@ -236,17 +248,18 @@
   id: ClothingBackpackChameleonFill
   suffix: Fill, Chameleon
   components:
-  - type: StorageFill
-    contents:
-      - id: ClothingUniformJumpsuitChameleon
-      - id: ClothingOuterChameleon
-      - id: ClothingNeckChameleon
-      - id: ClothingMaskGasChameleon
-      - id: ClothingHeadHatChameleon
-      - id: ClothingHandsChameleon
-      - id: ClothingEyesChameleon
-      - id: ClothingHeadsetChameleon
-      - id: ClothingShoesChameleon
+    - type: StorageFill
+      contents:
+        - id: ClothingUniformJumpsuitChameleon
+        - id: ClothingOuterChameleon
+        - id: ClothingNeckChameleon
+        - id: ClothingMaskGasChameleon
+        - id: ClothingHeadHatChameleon
+        - id: ClothingHandsChameleon
+        - id: ClothingEyesChameleon
+        - id: ClothingHeadsetChameleon
+        - id: ClothingShoesChameleon
+        - id: BarberScissors
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -259,6 +272,7 @@
       - id: ClothingHeadHelmetSyndicate
       - id: ClothingOuterHardsuitSyndicate
       - id: ClothingMaskGasSyndicate
+      - id: ClothingHandsGlovesColorYellowBudget
       - id: DoubleEmergencyOxygenTankFilled
       - id: DoubleEmergencyNitrogenTankFilled
 
@@ -273,6 +287,35 @@
       - id: ClothingOuterHardsuitSyndie
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: DoubleEmergencyNitrogenTankFilled
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
+  name: syndicate elite hardsuit bundle
+  description: "Contains the Syndicate's elite hardsuit, which comes with some more stuff in it."
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSyndieElite
+      - id: ClothingMaskGasSyndicate
+      - id: ClothingHandsGlovesCombat
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: DoubleEmergencyNitrogenTankFilled
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateHardsuitExtrasBundle
+  name: syndicate hardsuit extras bundle
+  description: "Contains stuff that you will absolutely want to have when purchasing a hardsuit."
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingMaskGasSyndicate
+      - id: ClothingHandsGlovesCombat
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: DoubleEmergencyNitrogenTankFilled
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
@@ -350,3 +393,22 @@
       contents:
         - id: ClothingShoesBootsSpeedMagic
         - id: PowerCellMicroreactor
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateDecoyKitFilled
+  name: decoy bundle
+  description: "Contains distractions, both auditory and visual. Smell coming soon."
+  components:
+  - type: StorageFill
+    contents:
+      - id: BalloonOperative
+      - id: BalloonAgent
+      - id: BalloonElite
+      - id: BalloonJuggernaut
+      - id: BalloonCommander
+      - id: SnapPopBox
+      - id: GrenadeDummy
+        amount: 2
+      - id: SyndieTrickyBomb
+        amount: 2

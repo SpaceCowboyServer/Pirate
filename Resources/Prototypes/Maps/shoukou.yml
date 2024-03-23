@@ -12,8 +12,9 @@
           mapNameTemplate: '{0} Shōkō "Little Port" {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+            prefixCreator: 'DV'
         - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml
         - type: StationJobs
           overflowJobs:
             - Passenger
@@ -44,6 +45,7 @@
             MedicalDoctor: [ 3, 3 ]
             Chemist: [ 1, 2 ]
             MedicalIntern: [ 2, 3 ]
+            Psychologist: [ 1, 1 ]
           #Security
             HeadOfSecurity: [ 1, 1 ]
             Blueshield: [ 1, 1 ]

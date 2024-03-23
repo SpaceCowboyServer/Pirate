@@ -23,7 +23,6 @@
   - type: Tag
     tags:
       - ClothMade
-      - DroneUsable
       - WhitelistChameleon
 
 - type: entity
@@ -128,14 +127,18 @@
   - type: TemperatureProtection
     coefficient: 0.2
   - type: IngestionBlocker
+  - type: Clothing
+    #Copies ClothingHeadHardsuitBase behavior
+    equipSound: /Audio/Mecha/mechmove03.ogg
+    unequipSound: /Audio/Mecha/mechmove03.ogg
   - type: Tag
     tags:
     - HidesHair
     - WhitelistChameleon
     - HelmetEVA
+    - HidesNose
   - type: DiseaseProtection
     protection: 0.05
-  - type: IdentityBlocker
 
 - type: entity
   abstract: true
@@ -173,6 +176,7 @@
     tags:
     - HidesHair
     - WhitelistChameleon
+    - HidesNose
   - type: DiseaseProtection
     protection: 0.05
   - type: IdentityBlocker

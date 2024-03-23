@@ -16,6 +16,16 @@
     icon: Interface/Actions/emotes.png
     event: !type:OpenEmotesActionEvent
     checkCanInteract: false
+# base actions
+
+- type: entity
+  id: BaseSuicideAction
+  abstract: true
+  components:
+  - type: ConfirmableAction
+    popup: suicide-action-popup
+
+# actions
 
 - type: entity
   id: ActionScream
@@ -52,6 +62,16 @@
     event: !type:ToggleActionEvent
 
 - type: entity
+  id: ActionToggleDome
+  name: Toggle energy dome
+  description: Turn the energy barrier on or off.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    icon: { sprite: Objects/Weapons/Melee/e_shield.rsi, state: eshield-on }
+    event: !type:ToggleActionEvent
+
+- type: entity
   id: ActionOpenStorageImplant
   name: Open Storage Implant
   description: Opens the storage implant embedded under your skin
@@ -66,6 +86,7 @@
     event: !type:OpenStorageImplantEvent
 
 - type: entity
+  parent: BaseSuicideAction
   id: ActionActivateMicroBomb
   name: Activate Microbomb
   description: Activates your internal microbomb, completely destroying you and your equipment
@@ -81,6 +102,7 @@
     event: !type:ActivateImplantEvent
 
 - type: entity
+  parent: BaseSuicideAction
   id: ActionActivateDeathAcidifier
   name: Activate Death-Acidifier
   description: Activates your death-acidifier, completely melting you and your equipment

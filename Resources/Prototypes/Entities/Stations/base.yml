@@ -46,15 +46,15 @@
       path: /Maps/Shuttles/cargo.yml
     - type: GridSpawn
       groups:
-        trade:
-          addComponents:
-            - type: ProtectedGrid
-            - type: TradeStation
-          paths:
-            - /Maps/Shuttles/trading_outpost.yml
-        mining:
-          paths:
-          - /Maps/Shuttles/mining.yml
+#        trade:
+#          addComponents:
+#          - type: ProtectedGrid
+#          - type: TradeStation
+#          paths:
+#          - /Maps/Shuttles/trading_outpost.yml
+#        mining:
+#          paths:
+#          - /Maps/Shuttles/mining.yml
         # Spawn last
         ruins:
           hide: true
@@ -63,14 +63,13 @@
           maxCount: 2
           stationGrid: false
           paths:
-          - /Maps/Ruins/derelict.yml
-          - /Maps/Ruins/djstation.yml
-          - /Maps/Ruins/old_ai_sat.yml
-          - /Maps/Ruins/relaystation.yml
-          - /Maps/Ruins/whiteship_ancient.yml
-          - /Maps/Ruins/whiteship_bluespacejumper.yml
-
-
+          - /Maps/Ruins/DeltaV/biodome_satellite.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/derelict.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/djstation.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/old_ai_sat.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/relaystation.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/whiteship_ancient.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/whiteship_bluespacejumper.yml #Delta V - Move to DV folder
 
 - type: entity
   id: BaseStationShuttlesCore
@@ -81,9 +80,9 @@
         cargo:
           paths:
           - /Maps/Shuttles/cargo_core.yml
-        mining:
-          paths:
-          - /Maps/Shuttles/mining.yml
+      #  mining:
+      #    paths:
+      #    - /Maps/Shuttles/mining.yml
         ruins:
           hide: true
           nameGrid: true
@@ -91,13 +90,13 @@
           maxCount: 2
           stationGrid: false
           paths:
-          - /Maps/Ruins/biodome_satellite.yml
-          - /Maps/Ruins/derelict.yml
-          - /Maps/Ruins/djstation.yml
-          - /Maps/Ruins/old_ai_sat.yml
-          - /Maps/Ruins/relaystation.yml
-          - /Maps/Ruins/whiteship_ancient.yml
-          - /Maps/Ruins/whiteship_bluespacejumper.yml
+          - /Maps/Ruins/DeltaV/biodome_satellite.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/derelict.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/djstation.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/old_ai_sat.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/relaystation.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/whiteship_ancient.yml #Delta V - Move to DV folder
+          - /Maps/Ruins/DeltaV/whiteship_bluespacejumper.yml #Delta V - Move to DV folder
 
 - type: entity
   id: BaseStationCentcomm
@@ -136,6 +135,12 @@
   components:
   - type: SiliconLawProvider
     laws: Crewsimov
+
+- type: entity
+  id: BaseStationNews
+  abstract: true
+  components:
+    - type: StationNews
 
 - type: entity
   id: BaseStationAllEventsEligible

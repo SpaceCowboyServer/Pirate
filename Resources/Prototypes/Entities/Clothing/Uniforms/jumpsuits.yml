@@ -514,6 +514,19 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitQMFormal
+  # DeltaV - Logistics Department - Replace Quartermaster with Logistics Officer
+  name: logistics officer's formal suit
+  description: Inspired by the logistics officers of military's past, the perfect outfit for supplying a formal occasion.
+  # End of modified code
+  components:
+    - type: Sprite
+      sprite: Clothing/Uniforms/Jumpsuit/qmformal.rsi
+    - type: Clothing
+      sprite: Clothing/Uniforms/Jumpsuit/qmformal.rsi
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitResearchDirector
   name: mystagogue's turtleneck # DeltaV - Epistemics Department replacing Science
   description: It's a turtleneck worn by those with the know-how to achieve the position of Mystagogue. Its fabric provides minor protection from biological contaminants. # DeltaV - Epistemics Department replacing Science
@@ -1471,3 +1484,139 @@
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDicatorialFragrance
+  name: диктаторський фраг
+  description: більше 200 нагород.
+  components:
+  - type: Sprite
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/dictatorial_fragrance.rsi
+  - type: Clothing
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/dictatorial_fragrance.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDirtyJeansThsirt
+  name: брудні джинси та майка
+  description: Краще б це попрасувати.
+  components:
+  - type: Sprite
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/dirtyjeans_tshirt.rsi
+  - type: Clothing
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/dirtyjeans_tshirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDirtyJeans
+  name: брудні джинси
+  description: краще б це попрасувати.
+  components:
+  - type: Sprite
+    sprite: T_Pirate/Clothing/Uniforms/Shorts/dirtyjeans.rsi
+  - type: Clothing
+    sprite: T_Pirate/Clothing/Uniforms/Shorts/dirtyjeans.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitJeansThsirt
+  name: джинси та майка
+  description: прості джинси, та проста майка. ідеальне комбо.
+  components:
+  - type: Sprite
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/jeans_tshirt.rsi
+  - type: Clothing
+    sprite: T_Pirate/Clothing/Uniforms/Jumpsuit/jeans_tshirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitJeans
+  name: джинси
+  description: Звичайні джинси.
+  components:
+  - type: Sprite
+    sprite: T_Pirate/Clothing/Uniforms/Shorts/jeans.rsi
+  - type: Clothing
+    sprite: T_Pirate/Clothing/Uniforms/Shorts/jeans.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualWhite
+  name: casual white jumpsuit
+  description: A loose worn white shirt with a grey pants, perfect for someone looking to relax.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    layers:
+    - state: icon-jumpsuit
+    - state: icon-shirt
+      color: "#ffffff"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-jumpsuit
+      - state: inhand-left-shirt
+        color: "#ffffff"
+      right:
+      - state: inhand-right-jumpsuit
+      - state: inhand-right-shirt
+        color: "#ffffff"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/casual.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-jumpsuit
+      - state: equipped-INNERCLOTHING-shirt
+        color: "#ffffff"
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitFormalSuit
+  name: formal suit
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/formal_suit.rsi
+    layers:
+    - state: icon-jumpsuit
+      color: "#101010"
+    - state: icon-shirt
+      color: "#ffffff"
+    - state: icon-coat
+      color: "#101010"
+    - state: icon-tie
+      color: "#eb0b00"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-jumpsuit
+        color: "#101010"
+      - state: inhand-left-shirt
+        color: "#ffffff"
+      - state: inhand-left-coat
+        color: "#101010"
+      - state: inhand-left-tie
+        color: "#eb0b00"
+      right:
+      - state: inhand-right-jumpsuit
+        color: "#101010"
+      - state: inhand-right-shirt
+        color: "#ffffff"
+      - state: inhand-right-coat
+        color: "#101010"
+      - state: inhand-right-tie
+        color: "#eb0b00"
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/formal_suit.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING-jumpsuit
+        color: "#101010"
+      - state: equipped-INNERCLOTHING-shirt
+        color: "#ffffff"
+      - state: equipped-INNERCLOTHING-coat
+        color: "#101010"
+      - state: equipped-INNERCLOTHING-tie
+        color: "#eb0b00"
+
+

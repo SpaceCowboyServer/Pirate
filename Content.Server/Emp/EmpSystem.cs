@@ -17,7 +17,6 @@ public sealed class EmpSystem : SharedEmpSystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<EmpDisabledComponent, EntityUnpausedEvent>(OnUnpaused);
         SubscribeLocalEvent<EmpDisabledComponent, ExaminedEvent>(OnExamine);
         SubscribeLocalEvent<EmpOnTriggerComponent, TriggerEvent>(HandleEmpTrigger);
 
@@ -36,9 +35,26 @@ public sealed class EmpSystem : SharedEmpSystem
     /// <param name="duration">The duration of the EMP effects.</param>
     public void EmpPulse(MapCoordinates coordinates, float range, float energyConsumption, float duration)
     {
+        /*
         foreach (var uid in _lookup.GetEntitiesInRange(coordinates, range))
         {
             TryEmpEffects(uid, energyConsumption, duration);
+        }
+        Spawn(EmpPulseEffectPrototype, coordinates);
+        */
+        foreach (var uid in _lookup.GetEntitiesInRange(coordinates, range))
+        {
+            var ev = new EmpPulseEvent(energyConsumption, false, false, TimeSpan.FromSeconds(duration)); // Parkstation-IPCs
+            RaiseLocalEvent(uid, ref ev);
+            if (ev.Affected)
+            {
+                Spawn(EmpDisabledEffectPrototype, Transform(uid).Coordinates);
+            }
+            if (ev.Disabled)
+            {
+                var disabled = EnsureComp<EmpDisabledComponent>(uid);
+                disabled.DisabledUntil = Timing.CurTime + TimeSpan.FromSeconds(duration);
+            }
         }
         Spawn(EmpPulseEffectPrototype, coordinates);
     }
@@ -96,12 +112,6 @@ public sealed class EmpSystem : SharedEmpSystem
         }
     }
 
-    private void OnUnpaused(EntityUid uid, EmpDisabledComponent component, ref EntityUnpausedEvent args)
-    {
-        component.DisabledUntil += args.PausedTime;
-        component.TargetTime += args.PausedTime;
-    }
-
     private void OnExamine(EntityUid uid, EmpDisabledComponent component, ExaminedEvent args)
     {
         args.PushMarkup(Loc.GetString("emp-disabled-comp-on-examine"));
@@ -142,7 +152,7 @@ public sealed partial class EmpAttemptEvent : CancellableEntityEventArgs
 }
 
 [ByRefEvent]
-public record struct EmpPulseEvent(float EnergyConsumption, bool Affected, bool Disabled, TimeSpan Duration);
+public record struct EmpPulseEvent(float EnergyConsumption, bool Affected, bool Disabled, TimeSpan Duration); // Parkstation-IPCs
 
 [ByRefEvent]
 public record struct EmpDisabledRemoved();

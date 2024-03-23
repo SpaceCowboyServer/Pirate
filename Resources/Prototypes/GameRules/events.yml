@@ -43,17 +43,17 @@
     minimumPlayers: 15
   - type: BreakerFlipRule
 
-# - type: entity
-#   id: BureaucraticError # DeltaV - Prevent the BureaucraticError event to happen.
-#   parent: BaseGameRule
-#   noSpawn: true
-#   components:
-#   - type: StationEvent
-#     startAnnouncement: station-event-bureaucratic-error-announcement
-#     minimumPlayers: 25
-#     weight: 5
-#     duration: 1
-#   - type: BureaucraticErrorRule
+- type: entity
+  id: BureaucraticError
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-bureaucratic-error-announcement
+    minimumPlayers: 25
+    weight: 5
+    duration: 1
+  - type: BureaucraticErrorRule
 
 - type: entity
   id: ClericalError
@@ -67,25 +67,16 @@
     duration: 1
   - type: ClericalErrorRule
 
-#- type: entity
-#  parent: BaseGameRule # DeltaV - this shit is busted most of the time
-#  id: ClosetSkeleton
-#  noSpawn: true
-#  components:
-#  - type: StationEvent
-#    weight: 10
-#    duration: 1
-#  - type: RandomEntityStorageSpawnRule
-#    prototype: MobSkeletonCloset
-
 - type: entity
   parent: BaseGameRule
   id: ClosetSkeleton
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 10
+    weight: 5
     duration: 1
+    earliestStart: 45
+    minimumPlayers: 10
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
 
@@ -114,7 +105,7 @@
       path: /Audio/Announcements/outbreak7.ogg
       params:
         volume: -4
-    weight: 3
+    weight: 5
     duration: 1
     earliestStart: 15
   - type: DiseaseOutbreakRule
@@ -218,7 +209,7 @@
   components:
   - type: StationEvent
     earliestStart: 30
-    weight: 7.5
+    weight: 5
     minimumPlayers: 10 #Enough to hopefully have at least one engineering guy
     startAnnouncement: station-event-meteor-swarm-start-announcement
     endAnnouncement: station-event-meteor-swarm-end-announcement
@@ -252,9 +243,11 @@
       prob: 0.02
     - id: MobMouse2
       prob: 0.02
-    specialEntries:
-    - id: SpawnPointGhostRatKing
-      prob: 0.005
+    # DeltaV - Rat King spawns under MidRoundAntag - Comment out Rat King from spawning with MouseMigration gamerule
+    # specialEntries:
+    # - id: SpawnPointGhostRatKing
+    #   prob: 0.005
+    # End of modified code
 
 - type: entity
   id: CockroachMigration
@@ -334,7 +327,7 @@
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0.001
 
-# - type: entity
+# - type: entity # DeltaV - replaced terminator with paradox anomaly in midroundantag rule
 #   parent: BaseGameRule
 #   id: TerminatorSpawn
 #   noSpawn: true
@@ -353,7 +346,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    weight: 8
+    weight: 5
     duration: 1
     earliestStart: 30
     minimumPlayers: 20
@@ -542,8 +535,7 @@
   components:
   - type: StationEvent
     weight: 10
-    earliestStart: 20
-    reoccurrenceDelay: 60
+    reoccurrenceDelay: 20
     duration: 1
   - type: IonStormRule
 

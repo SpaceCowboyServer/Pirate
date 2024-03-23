@@ -9,11 +9,12 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} Edge Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+            prefixCreator: 'DV'
         - type: StationJobs
           overflowJobs:
             - Passenger

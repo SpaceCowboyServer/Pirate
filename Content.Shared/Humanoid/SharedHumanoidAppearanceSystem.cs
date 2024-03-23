@@ -349,6 +349,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
         // Parkstation-CharacterInformation-End
 
+        humanoid.LastProfileLoaded = profile; // DeltaV - let paradox anomaly be cloned
+
         Dirty(humanoid);
     }
 

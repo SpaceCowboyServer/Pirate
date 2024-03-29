@@ -462,6 +462,8 @@
     equippedPrefix: 0
     slots:
     - HEAD
+    - HEAD1
+    - HEAD2
   - type: Appearance
   - type: DamageStateVisuals
     states:
@@ -1486,6 +1488,8 @@
     equippedPrefix: 0
     slots:
     - HEAD
+    - HEAD1
+    - HEAD2
   - type: NpcFactionMember
     factions:
       - Mouse

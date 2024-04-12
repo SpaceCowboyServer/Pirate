@@ -1,3 +1,4 @@
+using Content.Server._Pirate.MakeATraitor;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Shared.Administration;
@@ -5,7 +6,7 @@ using Robust.Server.Player;
 using Robust.Shared.Console;
 using Robust.Shared.Network;
 
-namespace Content.Server._Pirate.MakeATraitor.Commands;
+namespace Content.Server._Pirate.BwoinkFromConsole.Commands;
 
 [AdminCommand(AdminFlags.Admin)]
 public sealed class BwoinkFromConsoleCommand : IConsoleCommand
@@ -18,7 +19,7 @@ public sealed class BwoinkFromConsoleCommand : IConsoleCommand
 
     public string Description => "відправити ахелп меседж гравцю";
 
-    public string Help => "ahelp-bwoink <username> <message>";
+    public string Help => "ahelp-bwoink <username> <admin_name> <message>";
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
@@ -29,7 +30,7 @@ public sealed class BwoinkFromConsoleCommand : IConsoleCommand
             return;
         }
 
-        if (args.Length != 2)
+        if (args.Length != 3)
         {
             shell.WriteLine(Loc.GetString("shell-wrong-arguments-number"));
             return;
@@ -43,7 +44,14 @@ public sealed class BwoinkFromConsoleCommand : IConsoleCommand
             return;
         }
 
-        var message = args[1];
+        var adminName = args[1];
+        if (string.IsNullOrWhiteSpace(adminName))
+        {
+            shell.WriteError("adminName cannot be empty");
+            return;
+        }
+
+        var message = args[2];
         if (string.IsNullOrWhiteSpace(message))
         {
             shell.WriteError("message cannot be empty");
@@ -66,6 +74,6 @@ public sealed class BwoinkFromConsoleCommand : IConsoleCommand
             return;
         }
 
-        EntityManager.System<BwoinkFromConsoleSystem>().SendBwoink(session, message);
+        EntityManager.System<BwoinkFromConsoleSystem>().SendBwoink(adminName, session, message);
     }
 }

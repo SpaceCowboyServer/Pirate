@@ -35,6 +35,22 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatHairflower
+  name: hairflower
+  description: A red flower for beautiful ladies.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Misc/hairflower.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Misc/hairflower.rsi
+  - type: Construction
+    graph: hairflower
+    node: hairflower
+
+
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatFlowerWreath
   name: flower wreath
   description: A wreath of colourful flowers. Can be worn both on head and neck.

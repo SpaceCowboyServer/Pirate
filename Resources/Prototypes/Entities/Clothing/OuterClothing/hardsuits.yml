@@ -956,7 +956,7 @@
 #MISC. HARDSUITS
 #Clown Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: ClothingOuterEVASuitBase # Delta V-Brings back clownsuit but make it make sense
   id: ClothingOuterHardsuitClown
   name: clown hardsuit
   description: A custom-made clown hardsuit.
@@ -968,15 +968,15 @@
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.9
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Caustic: 0.8
+  #- type: ExplosionResistance # Delta V-Brings back clownsuit but make it make sense
+  #  damageCoefficient: 0.9
+  #- type: Armor
+  #  modifiers:
+  #    coefficients:
+  #      Blunt: 0.9
+  #      Slash: 0.9
+  #      Piercing: 0.9
+  #      Caustic: 0.8
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -986,6 +986,9 @@
     node: clownHardsuit
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitClown
+  - type: ContainerContainer # Delta V-Brings back clownsuit but make it make sense
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
 
 #Mime Hardsuit
 - type: entity

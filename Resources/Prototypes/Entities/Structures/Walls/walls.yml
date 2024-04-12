@@ -530,9 +530,6 @@
         !type:DamageTrigger
         damage: 600
       behaviors:
-      - !type:PlaySoundBehavior #Nyano
-        sound:
-          collection: MetalBreak
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
@@ -801,14 +798,6 @@
           collection: MetalSlam
       - !type:DoActsBehavior
         acts: ["Destruction"]
-    - trigger: #this trigger is a Nyano addition
-        !type:DamageTrigger
-        damage: 300
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
     destroySound:
       collection: MetalBreak
   - type: Construction
@@ -816,40 +805,16 @@
     node: diagonalshuttleWall
 
 - type: entity
-  parent: WallReinforced #Nyano, basically Reinforced Wall (shuttle variant)
+  parent: WallReinforced
   id: WallShuttle
   name: shuttle wall
   suffix: Reinforced, Exterior
   components:
-  - type: Tag
-    tags:
-      - Wall
   - type: Sprite
     sprite: Structures/Walls/shuttle.rsi
   - type: Icon
     sprite: Structures/Walls/shuttle.rsi
     state: full
-#  - type: Destructible
-#    thresholds:
-#    - trigger:
-#        !type:DamageTrigger
-#        damage: 1000
-#      behaviors:
-#        - !type:DoActsBehavior
-#          acts: [ "Destruction" ]
-#    - trigger:
-#        !type:DamageTrigger
-#        damage: 500
-#      behaviors:
-#      - !type:PlaySoundBehavior
-#        sound:
-#          path: /Audio/Effects/metalbreak.ogg
-#      - !type:DoActsBehavior
-#        acts: ["Destruction"]
-#    destroySound:
-#      path: /Audio/Effects/metalbreak.ogg
-  - type: Reflect
-    reflectProb: 1
   - type: Construction
     graph: Girder
     node: shuttleWall
@@ -868,8 +833,8 @@
           3: { state: shuttle_construct-3, visible: true}
           4: { state: shuttle_construct-4, visible: true}
           5: { state: shuttle_construct-5, visible: true}
-  # - type: Reflect
-  #   reflectProb: 1
+  - type: Reflect
+    reflectProb: 1
 
 - type: entity
   parent: WallSolid

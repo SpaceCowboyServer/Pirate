@@ -75,6 +75,7 @@
     boardName: "ipc-board-name"
     layoutId: IPC
   - type: SSDIndicator
+  - type: EmitBuzzOnCrit
 #  - type: UnblockableSpeech
 
 - type: entity

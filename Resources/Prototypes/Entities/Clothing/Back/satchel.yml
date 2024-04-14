@@ -189,3 +189,13 @@
   components:
   - type: Sprite
     sprite: Clothing/Back/Satchels/blueshield.rsi    
+
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelMerc
+  name: mercenary satchel
+  description: A satchel that has been in many dangerous places, a reliable combat satchel.
+  components:
+    - type: Sprite
+      sprite: Clothing/Back/Satchels/mercenary.rsi

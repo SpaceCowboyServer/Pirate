@@ -864,3 +864,15 @@
       heldPrefix: special
     - type: PresetIdCard
       job: Blueshield
+
+- type: entity
+  parent: IDCardStandard
+  id: MercenaryIDCard
+  name: ID найманця
+  components:
+  - type: PresetIdCard
+    job: Mercenary
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idmercenary

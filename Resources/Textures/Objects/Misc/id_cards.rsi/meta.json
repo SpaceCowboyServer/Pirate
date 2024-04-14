@@ -224,6 +224,9 @@
       "name": "special"
     },
     {
+      "name": "idmercenary"
+    },
+    {
       "name": "gold-inhand-left",
       "directions": 4
     },

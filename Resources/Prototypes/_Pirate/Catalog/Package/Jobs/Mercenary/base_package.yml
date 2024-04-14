@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseItem
+  id: MercPackageBase
+  name: Mercenary base package
+  description: A small package with base equipment
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: Objects/Storage/boxes.rsi
+    state: boxwide
+  - type: SpawnItemsOnUse
+    items:
+    - id: CaptainIDCard #test
+    sound:
+      path: /Audio/Effects/unwrap.ogg

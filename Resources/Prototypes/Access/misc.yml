@@ -45,3 +45,7 @@
   - Reporter # DeltaV - Add Reporter access
   - Zookeeper # DeltaV - Add Zookeeper access
   - Corpsman # DeltaV - Add Corpsman access
+
+- type: accessLevel
+  id: Mercenary
+  name: id-card-access-level-mercenary

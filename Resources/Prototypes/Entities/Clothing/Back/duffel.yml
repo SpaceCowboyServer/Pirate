@@ -265,3 +265,12 @@
   components:
     - type: Sprite
       sprite: Clothing/Back/Duffels/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelMerc
+  name: mercenary duffel
+  description: A duffel that has been in many dangerous places, a reliable combat duffel.
+  components:
+    - type: Sprite
+      sprite: Clothing/Back/Duffels/mercenary.rsi

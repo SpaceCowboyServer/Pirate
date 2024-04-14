@@ -310,3 +310,17 @@
     - id: GasAnalyzer
     - id: trayScanner
   - type: Unremoveable
+
+# Mercenary
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSatchelMerc
+  id: ClothingBackpackSatchelMercFilled
+  components:
+    - type: StorageFill
+      contents:
+      - id: BoxSurvival
+      - id: Lighter
+      - id: CigPackBlack
+      - id: Flash

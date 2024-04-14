@@ -423,3 +423,17 @@
         - id: Cutlass
         - id: WeaponRevolverPirate
         - id: ClothingEyesEyepatch
+
+# Mercenary
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackMerc
+  id: ClothingBackpackMercFilled
+  components:
+    - type: StorageFill
+      contents:
+      - id: BoxSurvival
+      - id: Lighter
+      - id: CigPackBlack
+      - id: Flash

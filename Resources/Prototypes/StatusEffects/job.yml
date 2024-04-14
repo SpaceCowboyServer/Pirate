@@ -382,3 +382,10 @@
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Visitor
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMercenary
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Mercenary

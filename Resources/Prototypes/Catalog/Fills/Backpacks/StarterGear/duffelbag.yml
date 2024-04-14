@@ -286,3 +286,17 @@
       - id: HandheldCrewMonitor
       - id: Flash
       - id: WeaponDisabler
+
+# Mercenary
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffelMerc
+  id: ClothingBackpackDuffelMercFilled
+  components:
+    - type: StorageFill
+      contents:
+      - id: BoxSurvival
+      - id: Lighter
+      - id: CigPackBlack
+      - id: Flash

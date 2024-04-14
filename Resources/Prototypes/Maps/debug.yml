@@ -29,8 +29,10 @@
         - type: StationJobs
           overflowJobs:
           - Captain
+          - Mercenary
           availableJobs:
             Captain: [ -1, -1 ]
+            Mercenary: [ -1, -1 ]
 
 - type: gameMap
   id: TestTeg

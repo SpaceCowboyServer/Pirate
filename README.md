@@ -31,15 +31,11 @@
 [![Docs][docs-shield]][docs-url]
 <br/>Тут міститься документація щодо вмісту SS14, двигуна, дизайну тощо.
 
-<!-- ## Contributing
+ ## Внесок
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/DeltaV-Station/Delta-v/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
+Ми раді прийняти будь-які внески до нашого репозиторію. Заходьте в нашу спільноту Discord, якщо хочете допомогти. 
 
-We are currently accepting translations of the game on our main repository. If you would like to translate the game into another language check the #localization channel in our [Discord](https://go.delta-v.org/AtDxv)
-
-If you make any contributions, please make sure to read the markers section in [MARKERS.md](https://github.com/DeltaV-Station/Delta-v/blob/master/MARKERS.md)
-Any changes made to files belonging to our upstream should be properly marked in accordance to what is specified there.
--->
+Будь-які зміни, внесені до файлів, що належать до нашого репозиторію, мають бути належним чином позначені відповідно до того, що вказано у них.
 
 ## Збірка
 

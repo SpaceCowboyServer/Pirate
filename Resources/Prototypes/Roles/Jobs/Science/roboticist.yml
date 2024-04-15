@@ -7,7 +7,7 @@
     - !type:DepartmentTimeRequirement
       department: Epistemics 
       time: 21600 #6 hrs
-  startingGear: JobRoboticistGear
+  startingGear: RoboticistGear
   icon: "JobIconRoboticist"
   supervisors: job-supervisors-rd
   access:

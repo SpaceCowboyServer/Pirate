@@ -13,7 +13,6 @@
   access:
   - Research
   - Maintenance
-  - Cryogenics
   
 - type: startingGear
   id: RoboticistGear
@@ -22,7 +21,7 @@
     back: ClothingBackpackScienceFilled
     shoes: ClothingShoesColorBlack
     outerClothing: ClothingOuterCoatRobo
-    id: SciencePDA
+    id: RoboticistPDA
     ears: ClothingHeadsetRobotics
   innerClothingSkirt: ClothingUniformJumpskirtRoboticist
   satchel: ClothingBackpackSatchelScienceFilled

@@ -1,0 +1,29 @@
+- type: job
+  id: Roboticist
+  name: job-name-roboticist
+  description: job-description-roboticist
+  playTimeTracker: JobRoboticist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Epistemics 
+      time: 21600 #6 hrs
+  startingGear: JobRoboticistGear
+  icon: "JobIconRoboticist"
+  supervisors: job-supervisors-rd
+  access:
+  - Research
+  - Maintenance
+  - Cryogenics
+  
+- type: startingGear
+  id: RoboticistGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRoboticist
+    back: ClothingBackpackScienceFilled
+    shoes: ClothingShoesColorBlack
+    outerClothing: ClothingOuterCoatRobo
+    id: SciencePDA
+    ears: ClothingHeadsetRobotics
+  innerClothingSkirt: ClothingUniformJumpskirtRoboticist
+  satchel: ClothingBackpackSatchelScienceFilled
+  duffelbag: ClothingBackpackDuffelScienceFilled

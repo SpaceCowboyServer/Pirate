@@ -271,3 +271,17 @@
     stampState: "paper_stamp-detective"
   - type: Sprite
     state: stamp-detective
+
+- type: entity
+  name: robotics rubber stamp
+  parent: RubberStampBase
+  id: RubberStampRobotics
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-robotics
+    stampedColor: "#bb3521"
+    stampState: "paper_stamp-robotics"
+  - type: Sprite
+    state: stamp-robotics
+    

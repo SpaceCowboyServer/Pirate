@@ -18,11 +18,11 @@
   id: RoboticistGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitRoboticist
-    back: ClothingBackpackScienceFilled
+    back: ClothingBackpackRoboticsFilled
     shoes: ClothingShoesColorBlack
     outerClothing: ClothingOuterCoatRobo
     id: RoboticistPDA
     ears: ClothingHeadsetRobotics
   innerClothingSkirt: ClothingUniformJumpskirtRoboticist
-  satchel: ClothingBackpackSatchelScienceFilled
+  satchel: ClothingBackpackSatchelRoboticsFilled
   duffelbag: ClothingBackpackDuffelRoboticsFilled

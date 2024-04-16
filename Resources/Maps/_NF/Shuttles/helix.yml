@@ -2778,32 +2778,6 @@ entities:
     - type: Transform
       pos: 3.3985784,5.468597
       parent: 1
-- proto: PortableGeneratorPacmanShuttle
-  entities:
-  - uid: 124
-    components:
-    - type: Transform
-      anchored: True
-      pos: 1.5,12.5
-      parent: 1
-    - type: MaterialStorage
-      storage:
-        Plasma: 3000
-    - type: Physics
-      bodyType: Static
-    - type: InsertingMaterialStorage
-  - uid: 238
-    components:
-    - type: Transform
-      anchored: True
-      pos: 0.5,12.5
-      parent: 1
-    - type: MaterialStorage
-      storage:
-        Plasma: 3000
-    - type: Physics
-      bodyType: Static
-    - type: InsertingMaterialStorage
 - proto: PowerCellRecharger
   entities:
   - uid: 33
@@ -3347,7 +3321,7 @@ entities:
     - type: Transform
       pos: 2.5,10.5
       parent: 1
-- proto: SuitStorageWallmountCMO
+- proto: SuitStorageCMO
   entities:
   - uid: 329
     components:

@@ -36,4 +36,4 @@
           availableJobs:
             Chef: [ 0, 0 ]
             SalvageSpecialist: [ 0, 0 ]
-            Pilot: [ 0, 0 ]
+#            Pilot: [ 0, 0 ]

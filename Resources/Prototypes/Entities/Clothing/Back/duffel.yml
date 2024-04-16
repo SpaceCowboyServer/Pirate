@@ -265,3 +265,13 @@
   components:
     - type: Sprite
       sprite: Clothing/Back/Duffels/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelRobotics
+  name: robotics duffel backpack
+  description: Великий речовий мішок для робототехнічного обладнання.
+  components:
+    - type: Sprite
+      sprite: Clothing/Back/Duffels/robotics.rsi
+      

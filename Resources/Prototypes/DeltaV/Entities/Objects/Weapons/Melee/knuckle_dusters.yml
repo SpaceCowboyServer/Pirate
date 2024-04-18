@@ -10,7 +10,7 @@
     scale: 0.81, 0.81
   - type: Item
     sprite: DeltaV/Objects/Weapons/Melee/bloody_knuckle_dusters.rsi
-    state: icon_item
+    #state: icon_item
     size: Small
   - type: Insulated
   - type: EmitSoundOnLand

@@ -132,3 +132,6 @@ reagent-desc-necrosol = A necrotic substance that seems to be able to heal froze
 
 reagent-name-aloxadone = aloxadone
 reagent-desc-aloxadone = A cryogenics chemical. Used to treat severe third degree burns via regeneration of the burnt tissue. Works regardless of the patient being alive or dead.
+
+reagent-name-spaceacillin = spaceacillin
+reagent-desc-spaceacillin = A theta-lactam antibiotic, effective against space diseases. Side-effects may include cancer. Phalanximine is recommended after ingestion.

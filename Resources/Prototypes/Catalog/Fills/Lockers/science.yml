@@ -28,7 +28,5 @@
       - id: ClothingOuterCoatRobo
       - id: ClothingEyesHudDiagnostic
       - id: ClothingBeltUtilityFilled
-      - id: EMPGrenade
-      - id: EMPGrenade
       - id: LunchboxEpistemicsFilledRandom
         prob: 0.3

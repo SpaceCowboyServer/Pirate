@@ -62,8 +62,8 @@
     components:
       - BorgChassis
   components:
-    - type: BuckleOnMapInit
-      prototype: VehicleWheelchair
+#    - type: BuckleOnMapInit
+#      prototype: VehicleWheelchair
     - type: LegsParalyzed
 
 # - type: trait

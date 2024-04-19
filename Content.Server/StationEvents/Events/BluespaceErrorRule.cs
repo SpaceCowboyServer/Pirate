@@ -40,9 +40,9 @@ public sealed class BluespaceErrorRule : StationEventSystem<BluespaceErrorRuleCo
             LoadMap = true,
         };
 
-        if (!_map.TryLoad(shuttleMap, component.GridPath, out var gridUids, options))
-            return;
-        component.GridUid = gridUids[0];
+///        if (!_map.TryLoad(shuttleMap, component.GridPath, out var gridUids, options))
+///           return;
+///        component.GridUid = gridUids[0];
         if (component.GridUid is not EntityUid gridUid)
             return;
         component.startingValue = _pricing.AppraiseGrid(gridUid);

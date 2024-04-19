@@ -73923,6 +73923,13 @@ entities:
     - type: Transform
       pos: 4.5,-5.5
       parent: 34
+- proto: SpawnPointBlueshield
+  entities:
+  - uid: 13846
+    components:
+    - type: Transform
+      pos: 52.5,-36.5
+      parent: 34      
 - proto: SpawnPointBorg
   entities:
   - uid: 1941

@@ -270,7 +270,7 @@
   parent: ClothingBackpackDuffel
   id: ClothingBackpackDuffelRobotics
   name: robotics duffel backpack
-  description: Великий речовий мішок для робототехнічного обладнання.
+  description: Велика сумка для робототехнічного обладнання.
   components:
     - type: Sprite
       sprite: Clothing/Back/Duffels/robotics.rsi

@@ -31869,7 +31869,7 @@ entities:
     - type: Transform
       pos: -24.594517,-34.532703
       parent: 4812
-- proto: ClothingHeadHatHairflower
+- proto: ClothingHeadHatFlowerWreath
   entities:
   - uid: 2716
     components:

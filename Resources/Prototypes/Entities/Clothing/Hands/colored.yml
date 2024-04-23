@@ -294,110 +294,32 @@
 
 - type: entity
   parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesColorBlue
-  name: blue gloves
-  description: Regular blue gloves that do not keep you from frying.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/blue.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/blue.rsi
-  - type: DiseaseProtection
-    protection: 0.15
-  - type: Fiber
-    fiberColor: fibers-blue
-
-- type: entity
-  parent: ClothingHandsGlovesSyntheticBase
   id: ClothingHandsGlovesColorBlueIsolated
   name: ізольовані сині рукавички
   description: Сині рукавички, які вбережуть від електрики.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/blue.rsi
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+      color: "#0089EF"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#0089EF"
+      right:
+      - state: inhand-right
+        color: "#0089EF"
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/blue.rsi
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    clothingVisuals:
+      gloves:
+      - state: equipped-HAND
+        color: "#0089EF"
   - type: Fiber
     fiberColor: fibers-blue
   - type: Insulated
-
-- type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesColorBrown
-  name: brown gloves
-  description: Regular brown gloves that do not keep you from frying.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/brown.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/brown.rsi
-  - type: Fiber
-    fiberColor: fibers-brown
-
-- type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesColorGray
-  name: grey gloves
-  description: Regular grey gloves that do not keep you from frying.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/gray.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/gray.rsi
-  - type: Fiber
-    fiberColor: fibers-grey
-
-- type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesColorGreen
-  name: green gloves
-  description: Regular green gloves that do not keep you from frying.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/green.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/green.rsi
-  - type: Fiber
-    fiberColor: fibers-green
-
-- type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesColorLightBrown
-  name: light brown gloves
-  description: Regular light brown gloves that do not keep you from frying.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/lightbrown.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/lightbrown.rsi
-  - type: Fiber
-    fiberColor: fibers-brown
-
-- type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesColorOrange
-  name: orange gloves
-  description: Regular orange gloves that do not keep you from frying.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/orange.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/orange.rsi
-  - type: Fiber
-    fiberColor: fibers-orange
-
-- type: entity
-  parent: ClothingHandsGlovesSyntheticBase
-  id: ClothingHandsGlovesColorWhite
-  name: white gloves
-  description: Those gloves look fancy.
-  components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/white.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/white.rsi
-  - type: Fiber
-    fiberColor: fibers-white
 
 # Insulated Gloves (Yellow Gloves)
 # Currently can not be greyscaled without looking like shit.

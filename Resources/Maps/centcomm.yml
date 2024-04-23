@@ -18197,7 +18197,7 @@ entities:
     - type: Transform
       pos: -16.552616,8.708888
       parent: 1668
-- proto: ClothingHeadHatHairflower
+- proto: ClothingHeadHatFlowerWreath
   entities:
   - uid: 6605
     components:

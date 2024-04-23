@@ -67,10 +67,3 @@
   cost: 1
   items:
     - ClothingNeckTieGreen
-
-- type: loadout
-  id: LoadoutNeckFlowerWreath
-  category: Neck
-  cost: 1
-  items:
-    - ClothingNeckFlowerWreath

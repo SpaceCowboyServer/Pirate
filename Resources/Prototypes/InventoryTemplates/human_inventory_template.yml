@@ -86,6 +86,7 @@
       displayName: Hat 2
     - name: pocket1
       slotTexture: pocket
+      fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
       stripTime: 3
@@ -96,6 +97,7 @@
       stripHidden: true
     - name: pocket2
       slotTexture: pocket
+      fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
       stripTime: 3
@@ -115,6 +117,7 @@
       displayName: Suit Storage
     - name: id
       slotTexture: id
+      fullTextureName: template_small
       slotFlags: IDCARD
       slotGroup: SecondHotbar
       stripTime: 6
@@ -124,6 +127,7 @@
       displayName: ID
     - name: belt
       slotTexture: belt
+      fullTextureName: template_small
       slotFlags: BELT
       slotGroup: SecondHotbar
       stripTime: 6
@@ -132,6 +136,7 @@
       displayName: Belt
     - name: back
       slotTexture: back
+      fullTextureName: template_small
       slotFlags: BACK
       slotGroup: SecondHotbar
       stripTime: 6

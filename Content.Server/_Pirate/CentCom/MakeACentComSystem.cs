@@ -16,7 +16,7 @@ namespace Content.Server._Pirate.CentCom;
 
 public sealed class MakeACentComSystem : EntitySystem
 {
-    private const string ShuttlePath = "Maps/Shuttles/dart.yml";
+    private const string ShuttlePath = "Maps/Shuttles/Qazmlp/shuttle_CentCom_atmos.yml";
     [ValidatePrototypeId<EntityPrototype>] private const string Official = "CentcomOfficial";
     [ValidatePrototypeId<EntityPrototype>] private const string Disk = "CoordinatesDisk";
     [Dependency] private readonly IEntityManager _entManager = default!;

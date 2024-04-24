@@ -183,82 +183,82 @@ entities:
         nodes:
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignBottom1
+            id: DirtMedium
           decals:
             8: -5,-1
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignBottom2
+            id: DirtMedium
           decals:
             9: -4,-1
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignBottom3
+            id: DirtMedium
           decals:
             10: -3,-1
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignBottom4
+            id: DirtMedium
           decals:
             11: -2,-1
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignBottom5
+            id: DirtMedium
           decals:
             12: -1,-1
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignBottom6
+            id: DirtMedium
           decals:
             13: 0,-1
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignBottom7
+            id: DirtMedium
           decals:
             14: 1,-1
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignBottom8
+            id: DirtMedium
           decals:
             15: 2,-1
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignTop1
+            id: DirtMedium
           decals:
             0: -5,0
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignTop2
+            id: DirtMedium
           decals:
             1: -4,0
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignTop3
+            id: DirtMedium
           decals:
             2: -3,0
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignTop4
+            id: DirtMedium
           decals:
             3: -2,0
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignTop5
+            id: DirtMedium
           decals:
             4: -1,0
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignTop6
+            id: DirtMedium
           decals:
             5: 0,0
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignTop7
+            id: DirtMedium
           decals:
             6: 1,0
         - node:
             color: '#FFFFFFFF'
-            id: DerelictSignTop8
+            id: DirtMedium
           decals:
             7: 2,0
         - node:

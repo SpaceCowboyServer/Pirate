@@ -48,7 +48,7 @@
       - PosterContrabandTools
       - PosterContrabandPower
       - PosterContrabandSpaceCube
-      - PosterContrabandCommunistState
+      - PosterContrabandERT
       - PosterContrabandLamarr
       - PosterContrabandBorgFancy
       - PosterContrabandBorgFancyv2
@@ -111,6 +111,7 @@
   - type: RandomSpawner
     offset: 0
     prototypes:
+      - PosterContrabandERT
       - PosterLegitHereForYourSafety
       - PosterLegitNanotrasenLogo
       - PosterLegitCleanliness

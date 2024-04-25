@@ -314,9 +314,9 @@
       speechSounds: Pai
     - type: Vocal
       sounds:
-        Male: MaleHuman
-        Female: FemaleHuman
-        Unsexed: MaleHuman
+        Male: UnisexSilicon
+        Female: UnisexSilicon
+        Unsexed: UnisexSilicon
     - type: MeleeWeapon
       hidden: true
       soundHit:

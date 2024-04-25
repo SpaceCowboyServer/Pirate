@@ -315,6 +315,12 @@
       path: /Audio/Items/bikehorn.ogg
     Ping:
       path: /Audio/Effects/Cargo/ping.ogg
+    Scream:
+      path: /Audio/_Pirate/Voice/IPC/robot-scream.ogg
+    Laugh:
+      path: /Audio/_Pirate/Voice/IPC/robot-laugh_3.ogg
+    Crying:
+      path: /Audio/_Pirate/Voice/IPC/cry_robot_1.ogg
 
 # body emotes
 - type: emoteSounds

@@ -1,1 +1,3 @@
 lung-behavior-gasp = Задихається
+
+silicon-behavior-buzz = Бззззз...

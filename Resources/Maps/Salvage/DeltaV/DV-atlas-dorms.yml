@@ -1546,7 +1546,7 @@ entities:
     - type: Transform
       pos: 10.417007,-13.04132
       parent: 377
-- proto: PosterContrabandCommunistState
+- proto: PosterContrabandERT
   entities:
   - uid: 159
     components:

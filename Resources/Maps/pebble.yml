@@ -53055,7 +53055,7 @@ entities:
     - type: Transform
       pos: 2.5,-13.5
       parent: 2
-- proto: PosterContrabandCommunistState
+- proto: PosterContrabandERT
   entities:
   - uid: 7841
     components:

@@ -92899,14 +92899,7 @@ entities:
     - type: Transform
       pos: -23.5,14.5
       parent: 100
-- proto: PosterContrabandClown
-  entities:
-  - uid: 19796
-    components:
-    - type: Transform
-      pos: -34.5,52.5
-      parent: 100
-- proto: PosterContrabandCommunistState
+- proto: PosterContrabandERT
   entities:
   - uid: 12338
     components:

@@ -143,7 +143,7 @@
   category: Accessories
   cost: 1
   items:
-    - ClothingHeadHatHairflower
+    - ClothingHeadHatFlowerWreath
 
 - type: loadout
   id: LoadoutHeadHatShrineMaidenWig

@@ -54,6 +54,8 @@
   id: VendingMachineBoozeUnlocked
   suffix: Unlocked
   components:
+  - type: VendingMachine
+    pack: BoozeOMatUnlockedInventory
   - type: AccessReader
     enabled: false
 

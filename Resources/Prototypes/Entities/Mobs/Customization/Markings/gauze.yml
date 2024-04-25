@@ -1,8 +1,8 @@
 - type: marking
   id: GauzeLefteyePatch
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Moth, Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -13,10 +13,10 @@
     state: gauze_lefteye_2
 
 - type: marking
-  id: GauzeLefteyeTape
+  id: GauzeLefteyePad
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -29,8 +29,8 @@
 - type: marking
   id: GauzeRighteyePatch
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Moth, Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -41,10 +41,10 @@
     state: gauze_righteye_2
 
 - type: marking
-  id: GauzeRighteyeTape
+  id: GauzeRighteyePad
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -57,8 +57,8 @@
 - type: marking
   id: GauzeBlindfold
   bodyPart: Eyes
-  markingCategory: Head
-  speciesRestriction: [Moth, Dwarf, Human, Arachnid, Felinid, Oni, Harpy, Vulpkanin] # Delta V - Felinid, Oni, Harpy, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Harpy, Vulpkanin] # Delta V - Felinid, Oni, Harpy, Vulpkanin
   coloring:
     default:
       type:
@@ -71,8 +71,8 @@
 - type: marking
   id: GauzeShoulder
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -84,8 +84,8 @@
 - type: marking
   id: GauzeStomach
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -98,8 +98,8 @@
 - type: marking
   id: GauzeUpperArmRight
   bodyPart: RArm
-  markingCategory: Arms
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -112,8 +112,8 @@
 - type: marking
   id: GauzeLowerArmRight
   bodyPart: RArm, RHand
-  markingCategory: Arms
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -126,8 +126,8 @@
 - type: marking
   id: GauzeLeftArm
   bodyPart: LArm, LHand
-  markingCategory: Arms
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -140,8 +140,8 @@
 - type: marking
   id: GauzeLowerLegLeft
   bodyPart: LFoot
-  markingCategory: Legs
-  speciesRestriction: [Moth, Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -154,8 +154,8 @@
 - type: marking
   id: GauzeUpperLegLeft
   bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -168,8 +168,8 @@
 - type: marking
   id: GauzeUpperLegRight
   bodyPart: RLeg
-  markingCategory: Legs
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -181,8 +181,8 @@
 - type: marking
   id: GauzeLowerLegRight
   bodyPart: RFoot
-  markingCategory: Legs
-  speciesRestriction: [Moth, Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -195,8 +195,8 @@
 - type: marking
   id: GauzeBoxerWrapRight
   bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -209,8 +209,8 @@
 - type: marking
   id: GauzeBoxerWrapLeft
   bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [Moth, Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Felinid, Oni, Vulpkanin] # Delta V - Felinid, Oni, Vulpkanin
   coloring:
     default:
       type:
@@ -224,7 +224,7 @@
 - type: marking
   id: GauzeLizardLefteyePatch
   bodyPart: Eyes
-  markingCategory: Head
+  markingCategory: Overlay
   speciesRestriction: [Reptilian]
   coloring:
     default:
@@ -233,12 +233,12 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_lizardlefteye
+    state: gauze_lizard_lefteye
 
 - type: marking
   id: GauzeLizardRighteyePatch
   bodyPart: Eyes
-  markingCategory: Head
+  markingCategory: Overlay
   speciesRestriction: [Reptilian]
   coloring:
     default:
@@ -247,12 +247,12 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_lizardrighteye
+    state: gauze_lizard_righteye
 
 - type: marking
   id: GauzeLizardFootRight
   bodyPart: RFoot
-  markingCategory: Legs
+  markingCategory: Overlay
   speciesRestriction: [Reptilian]
   coloring:
     default:
@@ -261,12 +261,12 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_lizardfoot_r
+    state: gauze_lizard_foot_r
 
 - type: marking
   id: GauzeLizardFootLeft
   bodyPart: LFoot
-  markingCategory: Legs
+  markingCategory: Overlay
   speciesRestriction: [Reptilian]
   coloring:
     default:
@@ -275,12 +275,12 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_lizardfoot_l
+    state: gauze_lizard_foot_l
 
 - type: marking
   id: GauzeLizardBlindfold
   bodyPart: Eyes
-  markingCategory: Head
+  markingCategory: Overlay
   speciesRestriction: [Reptilian]
   coloring:
     default:
@@ -289,4 +289,187 @@
           color: "#FFFFFF"
   sprites:
   - sprite: Mobs/Customization/gauze.rsi
-    state: gauze_lizardblindfold
+    state: gauze_lizard_blindfold
+
+# Moth Specific Markings
+- type: marking
+  id: GauzeMothBlindfold
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_blindfold
+
+- type: marking
+  id: GauzeMothShoulder
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_shoulder
+
+- type: marking
+  id: GauzeMothStomach
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_abdomen
+
+- type: marking
+  id: GauzeMothLeftEyePatch
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_lefteye_2
+
+- type: marking
+  id: GauzeMothLeftEyePad
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_lefteye_1
+
+- type: marking
+  id: GauzeMothRightEyePatch
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_righteye_2
+
+- type: marking
+  id: GauzeMothRightEyePad
+  bodyPart: Eyes
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_righteye_1
+
+- type: marking
+  id: GauzeMothUpperArmRight
+  bodyPart: RArm
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_upperarm_r
+
+- type: marking
+  id: GauzeMothUpperArmLeft
+  bodyPart: LArm
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_upperarm_l
+
+- type: marking
+  id: GauzeMothUpperLegRight
+  bodyPart: RLeg
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_upperleg_r
+
+- type: marking
+  id: GauzeMothUpperLegLeft
+  bodyPart: LLeg
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_upperleg_l
+
+- type: marking
+  id: GauzeMothLowerLegRight
+  bodyPart: RFoot
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_lowerleg_r
+
+- type: marking
+  id: GauzeMothLowerLegLeft
+  bodyPart: LFoot
+  markingCategory: Overlay
+  speciesRestriction: [Moth]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+          color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/gauze.rsi
+    state: gauze_moth_lowerleg_l

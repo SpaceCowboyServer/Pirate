@@ -337,16 +337,6 @@
      Gold: 100
 
 - type: latheRecipe
-  id: TraversalDistorterMachineCircuitboard
-  result: TraversalDistorterMachineCircuitboard
-  category: Circuitry
-  completetime: 4
-  materials:
-     Steel: 100
-     Glass: 900
-     Gold: 100
-
-- type: latheRecipe
   id: ArtifactCrusherMachineCircuitboard
   result: ArtifactCrusherMachineCircuitboard
   category: Circuitry
@@ -612,7 +602,7 @@
   completetime: 4
   materials:
      Steel: 50
-     Glass: 350
+     Glass: 450
 
 - type: latheRecipe
   id: SMESMachineCircuitboard
@@ -929,7 +919,7 @@
   materials:
      Steel: 100
      Glass: 900
-     
+
 - type: latheRecipe
   id: ShuttleGunPerforatorCircuitboard
   result: ShuttleGunPerforatorCircuitboard
@@ -938,7 +928,7 @@
      Steel: 100
      Glass: 900
      Gold: 100
-     
+
 - type: latheRecipe
   id: ShuttleGunKineticCircuitboard
   result: ShuttleGunKineticCircuitboard
@@ -946,7 +936,7 @@
   materials:
      Steel: 100
      Glass: 900
-     
+
 - type: latheRecipe
   id: ShuttleGunFriendshipCircuitboard
   result: ShuttleGunFriendshipCircuitboard
@@ -955,7 +945,7 @@
      Steel: 100
      Glass: 900
      Gold: 50
-     
+
 - type: latheRecipe
   id: ShuttleGunDusterCircuitboard
   result: ShuttleGunDusterCircuitboard
@@ -973,3 +963,11 @@
      Steel: 100
      Glass: 900
      Gold: 100
+ 
+- type: latheRecipe
+  id: JukeboxCircuitBoard
+  result: JukeboxCircuitBoard
+  completetime: 4
+  materials:
+    Steel: 100
+    Glass: 900

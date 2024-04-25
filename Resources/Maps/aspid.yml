@@ -49559,7 +49559,7 @@ entities:
     - type: Transform
       pos: 20.427416,11.411529
       parent: 1
-- proto: ClothingHeadHatHairflower
+- proto: ClothingHeadHatFlowerWreath
   entities:
   - uid: 7260
     components:

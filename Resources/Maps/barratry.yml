@@ -41180,7 +41180,7 @@ entities:
     - pos: 3.488522,44.563385
       parent: 1
       type: Transform
-- proto: ClothingHeadHatHairflower
+- proto: ClothingHeadHatFlowerWreath
   entities:
   - uid: 10873
     components:

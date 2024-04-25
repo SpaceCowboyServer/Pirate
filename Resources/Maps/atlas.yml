@@ -18411,7 +18411,7 @@ entities:
       parent: 30
     - type: Physics
       canCollide: False
-- proto: ClothingHeadHatHairflower
+- proto: ClothingHeadHatFlowerWreath
   entities:
   - uid: 289
     components:

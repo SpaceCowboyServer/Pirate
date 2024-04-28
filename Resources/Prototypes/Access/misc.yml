@@ -46,3 +46,7 @@
   - Zookeeper # DeltaV - Add Zookeeper access
   - Corpsman # DeltaV - Add Corpsman access
   - Robotics # Troyéshina pirates - Add Robotics access
+
+- type: accessLevel
+  id: Mercenary
+  name: id-card-access-level-mercenary

@@ -867,6 +867,7 @@
 
 - type: entity
   parent: IDCardStandard
+
   id: RoboticistIDCard
   name: Roboticist ID card
   components:
@@ -879,3 +880,12 @@
     - type: PresetIdCard
       job: Roboticist
   
+  id: MercenaryIDCard
+  name: ID найманця
+  components:
+  - type: PresetIdCard
+    job: Mercenary
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idmercenary

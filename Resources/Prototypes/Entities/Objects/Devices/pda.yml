@@ -1155,6 +1155,7 @@
 
 - type: entity
   parent: BasePDA
+
   id: RoboticistPDA
   name: Roboticist PDA
   description: Найкращий друг робота.
@@ -1167,3 +1168,21 @@
     accentVColor: "#891417"
   - type: Icon
     state: pda-roboticist
+    
+  id: MercenaryPDA
+  name: Планшет найманця
+  description: Чому не зелений?
+  components:
+  - type: Pda
+    id: MercenaryIDCard
+    state: pda-mercenary
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#A32D26"
+  - type: Icon
+    state: pda-mercenary
+  - type: CartridgeLoader # DeltaV - Crime Assist
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge

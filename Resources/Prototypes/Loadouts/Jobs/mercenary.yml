@@ -1,0 +1,11 @@
+- type: loadout
+  id: LoadoutMercenaryPackageBse
+  category: Jobs
+  cost: 3
+  exclusive: true
+  requirements:
+    - !type:LoadoutJobRequirement
+      jobs:
+        - Mercenary
+  items:
+    - MercPackageBase

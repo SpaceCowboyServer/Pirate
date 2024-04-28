@@ -13,9 +13,9 @@
     {
       "name": "centcom"
     },
-	{
-		"name": "cardroboticist"
-	},
+    {
+      "name": "cardroboticist"
+    },
     {
       "name": "ert_chaplain"
     },
@@ -225,6 +225,9 @@
     },
     {
       "name": "special"
+    },
+    {
+      "name": "idmercenary"
     },
     {
       "name": "gold-inhand-left",

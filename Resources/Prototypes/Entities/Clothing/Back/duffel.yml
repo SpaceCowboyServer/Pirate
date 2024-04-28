@@ -274,4 +274,10 @@
   components:
     - type: Sprite
       sprite: Clothing/Back/Duffels/robotics.rsi
-      
+
+  id: ClothingBackpackDuffelMerc
+  name: mercenary duffel
+  description: A duffel that has been in many dangerous places, a reliable combat duffel.
+  components:
+    - type: Sprite
+      sprite: Clothing/Back/Duffels/mercenary.rsi

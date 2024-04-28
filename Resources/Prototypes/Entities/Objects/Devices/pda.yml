@@ -1155,6 +1155,20 @@
 
 - type: entity
   parent: BasePDA
+
+  id: RoboticistPDA
+  name: Roboticist PDA
+  description: Найкращий друг робота.
+  components:
+  - type: Pda
+    id: RoboticistIDCard
+    state: pda-roboticist
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentVColor: "#891417"
+  - type: Icon
+    state: pda-roboticist
+    
   id: MercenaryPDA
   name: Планшет найманця
   description: Чому не зелений?

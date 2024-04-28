@@ -205,12 +205,15 @@
 
 - type: entity
   parent: PosterBase
-  id: PosterContrabandCommunistState
-  name: "Communist State"
-  description: "All hail the Communist party!"
+  id: PosterContrabandERT
+  name: "ERT"
+  description: "join to ERT!"
   components:
   - type: Sprite
-    state: poster18_contraband
+    layers:
+    - state: poster18_contraband
+    - state: poster18_contraband_unshaded
+      shader: unshaded
 
 - type: entity
   parent: PosterBase
